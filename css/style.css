@@ -12634,7 +12634,7 @@ textarea.form-control {
 .blob-2{
   left:80%;
   animation:osc-r 2.5s ease infinite;
-  background:#0ff;
+  background:rgb(255, 51, 0);
 }
 @keyframes osc-l{
   0%{left:20%;}
