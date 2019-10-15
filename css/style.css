@@ -54,13 +54,13 @@ html {
 .row2 {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  justify-content: space-between;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 1 auto;
+  max-width: 30%;
   padding: 0 4px;
 }
 
@@ -12634,7 +12634,7 @@ textarea.form-control {
 .blob-2{
   left:80%;
   animation:osc-r 2.5s ease infinite;
-  background:rgb(156, 156, 156);
+  background:rgb(255, 48, 48);
 }
 @keyframes osc-l{
   0%{left:20%;}
