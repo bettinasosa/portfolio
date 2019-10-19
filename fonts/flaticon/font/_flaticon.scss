@@ -1,12 +1,13 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 23/07/2018 14:52
+    Creation date: 19/10/2019 15:49
     */
 
     @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
        url("./Flaticon.woff") format("woff"),
        url("./Flaticon.ttf") format("truetype"),
        url("./Flaticon.svg#Flaticon") format("svg");
@@ -36,10 +37,22 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-yoga:before { content: "\f100"; }
-.flaticon-gym-1:before { content: "\f101"; }
-.flaticon-gym:before { content: "\f102"; }
+    .flaticon-python-snake:before { content: "\f100"; }
+.flaticon-cute-rocket-launching:before { content: "\f101"; }
+.flaticon-css-3:before { content: "\f102"; }
+.flaticon-html-5-logo:before { content: "\f103"; }
+.flaticon-js:before { content: "\f104"; }
+.flaticon-java-script:before { content: "\f105"; }
+.flaticon-adobe-illustrator:before { content: "\f106"; }
+.flaticon-adobe-indesign:before { content: "\f107"; }
+.flaticon-adobe-photoshop:before { content: "\f108"; }
     
-    $font-Flaticon-yoga: "\f100";
-    $font-Flaticon-gym-1: "\f101";
-    $font-Flaticon-gym: "\f102";
+    $font-Flaticon-python-snake: "\f100";
+    $font-Flaticon-cute-rocket-launching: "\f101";
+    $font-Flaticon-css-3: "\f102";
+    $font-Flaticon-html-5-logo: "\f103";
+    $font-Flaticon-js: "\f104";
+    $font-Flaticon-java-script: "\f105";
+    $font-Flaticon-adobe-illustrator: "\f106";
+    $font-Flaticon-adobe-indesign: "\f107";
+    $font-Flaticon-adobe-photoshop: "\f108";
