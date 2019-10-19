@@ -1,15 +1,16 @@
-  /*
-    Flaticon icon font: Flaticon
-    Creation date: 23/07/2018 14:52
-    */
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 19/10/2019 15:49
+  	*/
 
 @font-face {
   font-family: "Flaticon";
-  src: url("../fonts/flaticon/font/Flaticon.eot");
-  src: url("../fonts/flaticon/font/Flaticon.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/flaticon/font/Flaticon.woff") format("woff"),
-       url("../fonts/flaticon/font/Flaticon.ttf") format("truetype"),
-       url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,24 +18,24 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
-    src: url("../fonts/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+    src: url("./Flaticon.svg#Flaticon") format("svg");
   }
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
 }
 
-.flaticon-yoga:before { content: "\f100"; }
-.flaticon-gym-1:before { content: "\f101"; }
-.flaticon-gym:before { content: "\f102"; }
+.flaticon-python-snake:before { content: "\f100"; }
+.flaticon-cute-rocket-launching:before { content: "\f101"; }
+.flaticon-css-3:before { content: "\f102"; }
+.flaticon-html-5-logo:before { content: "\f103"; }
+.flaticon-js:before { content: "\f104"; }
+.flaticon-java-script:before { content: "\f105"; }
+.flaticon-adobe-illustrator:before { content: "\f106"; }
+.flaticon-adobe-indesign:before { content: "\f107"; }
+.flaticon-adobe-photoshop:before { content: "\f108"; }
