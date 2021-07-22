@@ -210,14 +210,14 @@ sup {
 }
 
 a {
-  color: #666666;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #8f8f8f;
+  color: #bebebe;
   text-decoration: underline;
 }
 
@@ -431,14 +431,14 @@ h6,
 h1,
 .h1 {
   font-size: 5rem;
-  color: #000;
+  color: rgb(255, 255, 255);
   font-weight: 1000;
 }
 
 h2,
 .h2 {
   font-size: 2rem;
-  color: #868686;
+  color: #d1d1d1;
 }
 
 h3,
@@ -494,7 +494,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(204, 204, 204, 0.1);
 }
 
 small,
@@ -3773,7 +3773,7 @@ input[type="button"].btn-block {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #575757;
 }
 
 .dropdown-item {
@@ -5548,7 +5548,7 @@ input[type="button"].btn-block {
 
 .badge-secondary[href]:hover,
 .badge-secondary[href]:focus {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   background-color: #545b62;
 }
@@ -10450,11 +10450,10 @@ a.text-dark:focus {
 
 body {
   font-family: 'Roboto Mono', monospace;
-  background: #ffffff;
   font-size: 18px;
   line-height: 1.8;
-  color: #777777;
-  position: relative;
+  color: #d1d1d1;
+  background-color: #000000;
 }
 
 body:after {
@@ -10546,14 +10545,14 @@ h5,
 .h4,
 .h5 {
   line-height: 1.5;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 400;
 }
 
 h2,
 .h2 {
   line-height: 1.5;
-  color: rgb(0, 0, 0);
+  color: rgb(90, 90, 90);
   font-weight: 700;
 }
 
@@ -10808,7 +10807,7 @@ header .colorlib-navbar-brand {
 header .colorlib-navbar-brand .colorlib-logo {
   font-size: 30px;
   text-transform: uppercase;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 700;
   letter-spacing: 5px;
   text-align: center;
@@ -10870,15 +10869,15 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   -webkit-transition: all .2s ease-out;
   -o-transition: all .2s ease-out;
   transition: all .2s ease-out;
 }
 
 .menu-show .colorlib-nav-toggle i {
-  background: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .colorlib-nav-toggle i::before,
@@ -10886,7 +10885,7 @@ header .colorlib-navbar-brand .colorlib-logo:focus {
   content: '';
   width: 40px;
   height: 3px;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -12165,7 +12164,7 @@ textarea.form-control {
 }
 
 .contact-section .contact-info p a {
-  color: #000000;
+  color: #d1d1d1;
 }
 
 .block-9 .form-control {
@@ -12228,9 +12227,8 @@ textarea.form-control {
 
 .block-3 .text .subheading {
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: .1em;
-  color: #8c8c8c;
+  color: #d1d1d1;
 }
 
 .block-3 .text .heading {
@@ -12239,7 +12237,7 @@ textarea.form-control {
 }
 
 .block-3 .text .heading a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .block-3 .text p:last-child {
