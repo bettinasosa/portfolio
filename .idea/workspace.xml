@@ -5,348 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/astro-theme-stone" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/about.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/hero.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/logo-inverted.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/team-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/team-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/team-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/testimonial-1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/testimonial-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/testimonial-3.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/Heading.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/Mission.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/Team.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/Values.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/contact/ContactForm.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/contact/ContactInfo.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/About.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/Cta.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/Expertise.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/Hero.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/Services.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/Testimonials.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Footer.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Header.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/Cta.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/Faq.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/Heading.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/404.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/contact.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/projects.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/styleguide.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASTRA.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/ASTRA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M31.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/M31.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/4bottle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/OWEI.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/VCP.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/VCP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/assembly.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/astra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/astra.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/astra.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bike.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bike.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/block.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/block.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/block.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cheese and w.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/cheesew.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/coffee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/control.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/control.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controller.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/daft.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/draw1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/draw2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dress.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dress1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dress2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dress3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dress4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/face.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/front.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/game.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/giz1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/giz2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/giz3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/giz4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/gizmo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/info.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mars.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/me.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/package.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/packaging.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/packaging.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/phones.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/portfolio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/poster.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/research.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/specs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/stack1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/stack2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/stack3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/stack4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/stack5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/surf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/system.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/talksposter.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tandem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tea coffee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tetris.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tetris.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tetris1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tetris2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tetris3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/tetris4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vcp1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vcp2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vcp3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vcp4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vcp5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vcp6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vcp7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/woody.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/astro.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/about.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/hero.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/logo-inverted.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/team-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/team-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/team-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/testimonial-1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/testimonial-2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/assets/testimonial-3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/public/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/about/Heading.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/about/Mission.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/about/Team.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/about/Values.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/contact/ContactForm.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/contact/ContactInfo.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/home/About.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/home/Cta.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/home/Expertise.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/home/Hero.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/home/Services.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/home/Testimonials.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/layout/Footer.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/layout/Header.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/pricing/Cta.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/pricing/Faq.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/pricing/Heading.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/components/pricing/PricingTable.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/layouts/Layout.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/pages/404.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/pages/about.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/pages/contact.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/pages/index.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/pages/pricing.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/pages/privacy.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/src/pages/styleguide.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/tailwind.config.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro-theme-stone/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettina_CV_2020.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/bettina_CV_2020.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bettina_portfolio_2020.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/bettina_portfolio_2020.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/bike.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/aos.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap-datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css/mixins/_text-hide.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/flaticon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/icomoon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ionicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery.timepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/open-iconic-bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/owl.carousel.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/owl.theme.default.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/daftbot.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/daftbot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawings.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/drawings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dress.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/dress.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/Flaticon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/Flaticon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/Flaticon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/Flaticon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/_flaticon.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/backup.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/flaticon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/flaticon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/flaticon/license/license.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/icomoon/icomoon.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/icomoon/icomoon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/icomoon/icomoon.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/icomoon/icomoon.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ionicons/css/_ionicons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ionicons/css/ionicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ionicons/fonts/ionicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ionicons/fonts/ionicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ionicons/fonts/ionicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ionicons/fonts/ionicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ionicons/fonts/ionicons.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/open-iconic/open-iconic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/open-iconic/open-iconic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/open-iconic/open-iconic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/open-iconic/open-iconic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/open-iconic/open-iconic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index copy.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/index copy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/aos.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap-datepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/google-map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-migrate-3.0.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.animateNumber.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.easing.1.3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.stellar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.timepicker.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/owl.carousel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scrollax.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros-6.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_breadcrumb.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_button-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_card.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_carousel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_close.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_code.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_custom-forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_images.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_input-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_jumbotron.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_media.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_modal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_nav.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_popover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_print.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_root.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_tooltip.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_transitions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_type.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/bootstrap-grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/bootstrap-reboot.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/bootstrap.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_alert.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_badge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_box-shadow.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_caret.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_grid.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_hover.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_image.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_resize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_size.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_transition.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/mixins/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_align.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_borders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_display.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_embed.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_flex.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_float.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_position.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_shadows.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_sizing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_text.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackers.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/stackers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tetris.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/tetris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcp.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/vcp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woody.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/woody.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/projects/projectHero.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/projects/m31.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Hero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Hero.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Services.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Services.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -372,33 +39,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "new__ui",
-    "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/231.9161.29/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;new__ui&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bettinasosa/portfolio/public/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/231.9161.29/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/layouts" />
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/OldHtmlFiles" />
-      <recent name="$PROJECT_DIR$/OldHtml" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -413,7 +80,9 @@
       <workItem from="1692783036491" duration="732000" />
       <workItem from="1692784004961" duration="1044000" />
       <workItem from="1694504018094" duration="5865000" />
-      <workItem from="1695109690623" duration="6303000" />
+      <workItem from="1695109690623" duration="7143000" />
+      <workItem from="1695291582249" duration="8096000" />
+      <workItem from="1695395231042" duration="598000" />
     </task>
     <servers />
   </component>

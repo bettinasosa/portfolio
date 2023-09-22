@@ -1,0 +1,14 @@
+---
+import Layout from "./Layout.astro";
+import Cta from "../components/projects/Cta.astro";
+import ProjectHero from "../components/projects/projectHero.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout
+        description="My personal portfolio website."
+>
+    <ProjectHero title={frontmatter.title} description={frontmatter.description} isImage={frontmatter.isImage} heroImage={frontmatter.image} />
+    <Cta />
+</Layout>

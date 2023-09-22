@@ -1,12 +1,12 @@
 ---
-const pricing = [
+const projects = [
   {
     name: 'M31 Controller',
     description: 'A video/audio game controller to make digital entertainment more approachable to those with\n' +
         '                  visual impairments.',
     image: '/assets/control.jpg',
     tag: '',
-    action: 'Buy Now',
+    link: 'projects/m31',
     features: [],
   },
   {
@@ -15,7 +15,7 @@ const pricing = [
     isFlagged: true,
     image: "/assets/astra.png",
     tag: '',
-    action: 'Buy Now',
+    link: '/projects/astra',
     features: [],
   },
   {
@@ -23,7 +23,7 @@ const pricing = [
     description: 'Reusable packaging made of highly recyclable materials for baby bathing products.',
     image: '/assets/block.jpg',
     tag: '',
-    action: 'Buy Now',
+    link: '/projects/stackers',
     features: [],
   },
 ];
@@ -33,7 +33,7 @@ const pricing = [
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="-mt-8 grid gap-8 lg:mt-0 lg:grid-cols-3">
       {
-        pricing.map((item) => (
+        projects.map((item) => (
           <div
             class:list={[
               'relative flex flex-col gap-8 rounded-3xl p-8',
@@ -72,7 +72,7 @@ const pricing = [
               </ul>
             </div>
             <a
-              href="#"
+              href={item.link}
               class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               View project
