@@ -5,20 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/projects/projectHero.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/projects/m31.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/app.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/controller.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/gold.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/research.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/specs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/swiper/Swiper.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Hero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Hero.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Services.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Services.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/about.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/control.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/m31/controller.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/hero.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/logo-inverted.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Body.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/team-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/team-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/team-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/testimonial-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/testimonial-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/testimonial-3.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects/m31.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects/m31.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -31,6 +53,12 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2UNXLppNQHkIRN2O8N2cUTR1hBW" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -39,33 +67,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;new__ui&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/bettinasosa/portfolio/public/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/231.9161.29/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "new__ui",
+    "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/bettinasosa/portfolio/node_modules/prettier",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/231.9161.29/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/layouts" />
-      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/public/assets/m31" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/layouts" />
+      <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -82,7 +115,10 @@
       <workItem from="1694504018094" duration="5865000" />
       <workItem from="1695109690623" duration="7143000" />
       <workItem from="1695291582249" duration="8096000" />
-      <workItem from="1695395231042" duration="598000" />
+      <workItem from="1695395231042" duration="10536000" />
+      <workItem from="1695557663239" duration="125000" />
+      <workItem from="1695557797447" duration="70000" />
+      <workItem from="1695557875517" duration="4747000" />
     </task>
     <servers />
   </component>
