@@ -1,5 +1,13 @@
 ---
-const projects = [
+const projects: [{ image: string; features: any[]; name: string; link: string; description: string; tag: string }, {
+  image: string;
+  features: any[];
+  name: string;
+  link: string;
+  description: string;
+  tag: string;
+  isFlagged: boolean
+}, { image: string; features: any[]; name: string; link: string; description: string; tag: string }] = [
   {
     name: 'M31 Controller',
     description: 'A video/audio game controller to make digital entertainment more approachable to those with\n' +
@@ -78,7 +86,7 @@ const projects = [
               View project
             </a>
           </div>
-        ))
+        ))}
     </div>
   </div>
 </section>
