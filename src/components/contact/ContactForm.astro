@@ -1,3 +1,21 @@
+---
+if (Astro.request.method === 'POST') {
+  try {
+    const data = await Astro.request.formData();
+    const subject = data.get('subject');
+    const email = data.get('email');
+    const body = data.get('body');
+    // Do something with the data
+
+    const apikey = 'AIzaSyDs74HtXKfYeXAhWK27dGe-a5qS6AT7ro4';
+  } catch (error) {
+    if (error) {
+      console.error(error.message);
+    }
+  }
+}
+---
+
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="grid gap-12 lg:grid-cols-2 lg:gap-8">
@@ -12,14 +30,22 @@
           collaborate!
         </p>
       </div>
-      <form action="#" method="POST" class="mt-3 flex flex-col gap-y-6">
+      <form
+        action="mailto:bettinasosarohl@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm"
+        class="mt-3 flex flex-col gap-y-6"
+      >
         <!-- Full name input -->
         <div>
-          <label for="full-name" class="sr-only">Full name</label>
+          <label for="subject" class="sr-only">Subject</label>
           <input
+            required
             type="text"
-            name="full-name"
-            id="full-name"
+            size="19"
+            name="subject"
+            id="subject"
             autocomplete="name"
             class="block w-full appearance-none rounded-md border-0 bg-primary-50 px-4 py-4 text-base ring-1 ring-primary-900/40 transition placeholder:text-primary-950/60 hover:ring-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-primary-950 dark:ring-primary-200/40 dark:placeholder:text-primary-200/60 dark:hover:ring-primary-400 dark:focus:ring-primary-400"
             placeholder="Full name"
@@ -30,6 +56,7 @@
         <div>
           <label for="email" class="sr-only">Email</label>
           <input
+            required
             type="email"
             name="email"
             id="email"
@@ -41,10 +68,11 @@
 
         <!-- Message textarea -->
         <div>
-          <label for="message" class="sr-only">Message</label>
+          <label for="body" class="sr-only">Message</label>
           <textarea
-            name="message"
-            id="message"
+            required
+            name="body"
+            id="body"
             rows="3"
             class="block w-full appearance-none rounded-md border-0 bg-primary-50 px-4 py-4 text-base ring-1 ring-primary-900/40 transition placeholder:text-primary-950/60 hover:ring-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:bg-primary-950 dark:ring-primary-200/40 dark:placeholder:text-primary-200/60 dark:hover:ring-primary-400 dark:focus:ring-primary-400"
             placeholder="Message"></textarea>

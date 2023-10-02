@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/privacy.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactForm.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactForm.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/styleguide.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/styleguide.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +98,7 @@
       <workItem from="1695395231042" duration="10536000" />
       <workItem from="1695557663239" duration="125000" />
       <workItem from="1695557797447" duration="70000" />
-      <workItem from="1695557875517" duration="23065000" />
+      <workItem from="1695557875517" duration="27180000" />
     </task>
     <servers />
   </component>
