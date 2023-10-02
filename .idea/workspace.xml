@@ -5,8 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects/astra.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_empty-middleware.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/404@_@astro.a225dedb.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/about@_@astro.575f71a5.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/astro.11cd3780.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/contact@_@astro.0c22cd3a.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/index@_@astro.940ace31.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/m31@_@md.25eeb181.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404.astro.a94a0438.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about.astro.3dc85748.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/contact.astro.9fff38c2.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/index.astro.7ca9d457.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/privacy.astro.3012f512.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/projects.astro.4b6595dd.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/styleguide.astro.34815d46.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/privacy@_@astro.b91ed156.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/projects@_@astro.919c8d0e.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/styleguide@_@astro.741a5486.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/entry.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/renderers.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
