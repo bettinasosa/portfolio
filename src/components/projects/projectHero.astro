@@ -1,0 +1,30 @@
+---
+const { description, title , isImage, heroImage} = Astro.props;
+---
+<section class="py-16 sm:py-20">
+    <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div class="flex flex-col gap-16">
+            <div class="flex flex-col items-start gap-8 sm:gap-10">
+                <div class="flex max-w-xl flex-col items-start gap-4 sm:gap-6">
+                    <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
+                        { title }
+                    </h1>
+                    <p class="text-primary-950/70 dark:text-primary-200/70 text-lg sm:text-xl">
+                        { description }
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full rounded-3xl">
+                {{ isImage } == true
+                    ? <img src={heroImage} class="w-full h-full rounded-3xl" alt="hero image" />
+                    :
+                <iframe
+                        src={heroImage}
+                        class="w-full h-full rounded-3xl aspect-video"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+---
+layout: ../../layouts/MarkdownProjectLayout.astro
+title: 'Astra'
+subtitle: 'Expanding the Non-Visual Output of Games'
+description: 'Explore Worlds Through Feel and Sound'
+author: 'Bettina Sosa'
+isImage: 'false'
+image: 'https://www.youtube.com/embed/bXaLimCtK50'
+slides: [ "/assets/m31/controller.jpg", "/assets/m31/research.png", "/assets/m31/specs.png","/assets/m31/app.png", "/assets/m31/controller.png" ]
+secondaryImages: [ "" ]
+tags: [ "astro", "blogging", "learning in public" ]
+introduction: "Andromeda is a new audio-tactile gaming system that promotes socially inclusive play between visually impaired and sighted individuals.
+ It expands the non-visual output of existing games, opening up the possibility for people with severe visual impairments to explore digital spaces and experience games."
+
+myRole: "As a web designer and full stack software engineer, I was heavily involved in all aspects of the Andromeda project,
+from the initial concept to the final launch. I worked closely with the team to develop the overall aesthetics,
+brand identity, and user interface/user experience (UI/UX) design of the product, as well as the engineering of the audio-tactile gaming system."
+
+paragraphs: [
+  "Andromeda is a truly innovative product that has the potential to make a real difference in the lives of people with disabilities. I am proud of my work on this project,
+ and I am excited to continue using my skills to create products that make the world a more inclusive place.
+In addition to my technical skills, I also brought my creativity and passion for social impact to the Andromeda project.",
+
+  "The Andromeda App is the central hub for discovering Andromeda-supported games, finding other players, and learning how to use Controller M31.
+ We chose to develop an app because it is the most accessible and user-friendly way to communicate the necessary information to our target audience.",
+
+  "We conducted user interviews to gain insights into how to make the packaging for Controller M31 fun,
+ easy to unbox, and accessible. The packaging features QR codes that link to voiceover walk-throughs,
+  embossed Braille descriptions, and shapes that indicate where to open the magnetic lid of the box.
+   Additionally, the packaging is made from recycled paperboard with starch-based adhesive to connect the parts together." ]
+---
