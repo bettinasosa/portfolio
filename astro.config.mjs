@@ -9,6 +9,11 @@ export default defineConfig({
   experimental: {
     viewTransitions: true
   },
+  vite: {
+    ssr: {
+      external: ['applyPolyfills']
+    }
+  },
   integrations: [tailwind(), compress()],
   output: 'server',
   adapter: netlify()
