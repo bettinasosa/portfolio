@@ -1,0 +1,91 @@
+---
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import { ViewTransitions } from 'astro:transitions';
+import Particles from '../components/Particles.astro';
+
+const navigation = [{ name: 'Home', href: '/home' }];
+---
+
+<!doctype html>
+<html lang="en" x-cloak x-data>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="generator" content={Astro.generator} />
+    <ViewTransitions />
+  </head>
+
+  <body
+    class="absolute bg-primary-950 text-primary-200 antialiased"
+    id="landing"
+  >
+    <button type="button" x-data @click="/home" id="homeButton">
+      <div
+        class="bg-black from-black via-zinc-600/20 to-black flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-tl"
+      >
+        <div
+          class="animate-glow animate-fade-right from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 hidden h-px w-screen bg-gradient-to-r md:block"
+        >
+          <Particles />
+        </div>
+        <nav class="animate-fade-in my-16">
+          <ul class="flex items-center justify-center gap-4">
+            {
+              navigation.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  class="text-zinc-500 hover:text-zinc-300 text-sm duration-500"
+                >
+                  {item.name}
+                </a>
+              ))
+            }
+          </ul>
+        </nav>
+        <h1
+          class="text-edge-outline animate-title font-display md:text-9xl z-10 cursor-default whitespace-nowrap bg-white bg-clip-text text-4xl text-transparent duration-1000 sm:text-6xl"
+        >
+          Bettina Sosa
+        </h1>
+
+        <div
+          class="animate-glow animate-fade-right from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 hidden h-px w-screen bg-gradient-to-r md:block"
+        >
+        </div>
+        <div class="animate-fade-in my-16 text-center">
+          <h2 class="text-zinc-500 text-sm">
+            Hi, I am a software engineer with a passion for innovation and
+            cutting-edge technology. <br /> I am currently the founding full
+            stack software engineer
+            <a
+              target="_blank"
+              href="https://catapult.xyz"
+              class="hover:text-zinc-300 underline duration-500"
+              >@Catapult
+            </a>
+
+            <br />
+          </h2>
+          <br />
+          <br />
+          <p>Click anywhere to start exploring</p>
+        </div>
+      </div>
+      <main>
+        <slot />
+      </main>
+    </button>
+    <script>
+      const button = document.getElementById('homeButton');
+      button.onclick = function () {
+        location.assign('/home');
+      };
+    </script>
+  </body>
+</html>
