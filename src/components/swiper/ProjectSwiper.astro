@@ -13,30 +13,29 @@ const { slides } = Astro.props;
     {
       slides.map((item) => (
         <div class ="swiper-slide">
-          <div class ="rounded-3xl p-8 grid grid-cols-2 space-x-14 h-full ">
+          <div class ="rounded-3xl p-8 lg:grid lg:grid-cols-2 lg:space-x-14 h-full ">
               <img
                 class="mx-auto h-auto w-full max-w-xl rounded-3xl"
                 width="300"
                 height="300"
                 src={item.image}
-                alt="Our experts working together"
+                alt="project image"
               />
-          <div class='grid-rows-4 grid'>
-            <div class='row-span-4'>
-              <h2 class="text-xl font-medium">{item.name}</h2>
-              <p class="text-primary-950/70 dark:text-primary-200/70 mt-6">{item.description}</p>
-            </div>
-            <div>
-              <div class='max-w-xs'>
-            <Button link={item.link} ButtonText="View project"/></div>
+            <div class='grid-rows-4 grid'>
+              <div class='row-span-4'>
+                <h2 class="text-xl font-medium">{item.name}</h2>
+                <p class="text-primary-950/70 dark:text-primary-200/70 mt-6">{item.description}</p>
+              </div>
+              <div class='max-w-xs pt-4'>
+                <Button link={item.link} ButtonText="View project"/>
+              </div>
             </div>
           </div>
         </div>
-        </div>
-      ))}
-      </div>
-
-  <div class="swiper-pagination"></div>
+      ))
+    }
+  </div>
+      <div class="swiper-pagination"></div>
 
 <link
   rel="stylesheet"
@@ -44,7 +43,8 @@ const { slides } = Astro.props;
 />
 <script
   is:inline
-  src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js">
+</script>
 <script is:inline>
   new Swiper('.swiper', {
     // slidesPerView: 1,
@@ -76,3 +76,4 @@ const { slides } = Astro.props;
     }
   });
 </script>
+

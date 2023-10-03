@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/linkedin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactInfo.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactInfo.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feat/mobile-view",
     "last_opened_file_path": "/Users/bettinasosa/portfolio/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
