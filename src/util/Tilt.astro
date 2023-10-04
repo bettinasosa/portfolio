@@ -7,11 +7,17 @@ const options = {
   max: 30,
   glare: true
 };
-const { input, styling } = Astro.props;
+const { input, styling, bgImage } = Astro.props;
 ---
 
 <html lang="en">
   <body>
-    <Tilt className={styling} input={input} options={options} client:load />
+    <Tilt
+      className={styling}
+      input={input}
+      options={options}
+      bgImage={bgImage}
+      client:load
+    />
   </body>
 </html>

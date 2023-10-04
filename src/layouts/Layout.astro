@@ -13,7 +13,7 @@ interface Props {
 const { description, title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" x-cloak x-data :class="{ 'dark': $store.theme.isDark }">
   <head>
     <meta charset="utf-8" />
@@ -28,7 +28,7 @@ const { description, title } = Astro.props;
     <ViewTransitions />
   </head>
   <body
-    class="bg-primary-50 text-primary-950 dark:bg-primary-950 dark:text-primary-200 antialiased transition"
+    class="w-screen overflow-x-hidden bg-primary-50 text-primary-950 antialiased transition dark:bg-primary-950 dark:text-primary-200"
   >
     <Header />
     <main>
@@ -49,7 +49,10 @@ const { description, title } = Astro.props;
       Alpine.store('theme', {
         init() {
           this.isDark = (() => {
-            if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+            if (
+              typeof localStorage !== 'undefined' &&
+              localStorage.getItem('theme')
+            ) {
               return localStorage.getItem('theme') === 'dark';
             }
             if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -64,7 +67,7 @@ const { description, title } = Astro.props;
         toggle() {
           this.isDark = !this.isDark;
           localStorage.setItem('theme', this.isDark ? 'dark' : 'light');
-        },
+        }
       });
 
       window.Alpine = Alpine;

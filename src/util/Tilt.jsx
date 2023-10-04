@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 
 export default function Tilt(props) {
-  const { options, className, input } = props;
+  const { options, className, input, bgImage } = props;
   const tilt = useRef(null);
 
   useEffect(() => {
@@ -11,7 +11,14 @@ export default function Tilt(props) {
 
   return (
     <div ref={tilt} className={className}>
-      <div>{input}</div>
+      {bgImage && (
+        <img
+          src={`/assets/${bgImage}`}
+          alt="artwork"
+          className="object-cover"
+        />
+      )}
+      {input && <div>{input}</div>}
     </div>
   );
 }

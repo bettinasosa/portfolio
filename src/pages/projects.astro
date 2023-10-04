@@ -3,24 +3,13 @@ import Cta from '../components/projects/Cta.astro';
 import Heading from '../components/projects/Heading.astro';
 import ProjectsTable from '../components/projects/projectsHome.astro';
 import Layout from '../layouts/Layout.astro';
-import ArtworkCarousel from '../components/artworks/ArtworkCarousel.astro';
 ---
 
 <Layout
   description="Find the pricing plan that best fits your needs. Plans include seats, projects, support and more"
   title="Projects · Bettina"
 >
-  <Heading />
+  <Heading title={'Projects'} description={'Catalogue of past projects.'} />
   <ProjectsTable />
-  <ArtworkCarousel
-    slides={[
-      'astra.png',
-      'astra.png',
-      'astra.png',
-      'astra.png',
-      'block.jpg',
-      'm31/app.png'
-    ]}
-  />
   <Cta />
 </Layout>

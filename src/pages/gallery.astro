@@ -1,0 +1,34 @@
+---
+import Cta from '../components/home/Cta.astro';
+import Layout from '../layouts/Layout.astro';
+import Heading from '../components/projects/Heading.astro';
+import ArtworkCarousel from '../components/artworks/ArtworkCarousel';
+import Subheading from '../components/layout/Subheading.astro';
+---
+
+<Layout description="Art gallery">
+  <Heading title={'Gallery'} description={'artwork'} />
+  <Subheading title={'Fashion drawings'} description={'Cheers collection'} />
+  <ArtworkCarousel
+    slides={[
+      'dresses/dress1.jpg',
+      'dresses/dress2.jpg',
+      'dresses/dress3.jpg',
+      'dresses/dress4.jpg'
+    ]}
+    client:load
+  />
+  <Subheading title={'Posters'} description={'Collection of event posters'} />
+  <ArtworkCarousel
+    slides={[
+      'posters/cheese-w.jpg',
+      'posters/cheesew.jpg',
+      'posters/coffee.jpg',
+      'posters/poster.jpg'
+    ]}
+    client:load
+  />
+  <Subheading title={'Artwork'} description={'Mixed media content'} />
+  <ArtworkCarousel slides={['art/draw1.png', 'art/draw2.png']} client:load />
+  <Cta />
+</Layout>

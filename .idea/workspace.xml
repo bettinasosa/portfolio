@@ -5,20 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/dresses/dress.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Tilt.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Tilt.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gloabal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/art/draw1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/art/draw2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/astra/giz1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/astra/gizmo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bottles/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dresses/dress1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dresses/dress2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dresses/dress3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/dresses/dress4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/assembly.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/package.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/m31/packaging.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/posters/cheesew.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/posters/coffee.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/posters/poster.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/theme.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Subheading.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/gallery.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/block.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/bottles/block.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/astra.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/astra/astra.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/posters/cheese and w.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/posters/cheese-w.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Hero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Hero.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Heading.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Heading.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Tilt.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Tilt.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Tilt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Tilt.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.cjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +52,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feat/landing-animation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/landing-animation",
+    "git-widget-placeholder": "feat/artwork-carousel",
     "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -80,11 +101,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/m31" />
       <recent name="$PROJECT_DIR$/public/assets/bottles" />
-      <recent name="$PROJECT_DIR$/public/assets/dresses" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/public/assets" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/assets/astra" />
+      <recent name="$PROJECT_DIR$/public/assets/art" />
+      <recent name="$PROJECT_DIR$/public/assets/posters" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -105,6 +126,7 @@
       <workItem from="1695557663239" duration="125000" />
       <workItem from="1695557797447" duration="70000" />
       <workItem from="1695557875517" duration="27180000" />
+      <workItem from="1696418847147" duration="20328000" />
     </task>
     <servers />
   </component>

@@ -17,34 +17,30 @@ const { slides } = Astro.props;
 
     <!-- Demo styles -->
     <style>
-      .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        background-image: url('/assets/astra.png');
+      .swiper-slide {
+        max-width: 30rem;
       }
     </style>
+    <title></title>
   </head>
 
   <body>
     <!-- Swiper -->
-    <div
-      class="swiper mySwiper"
-      style="--swiper-navigation-color: #64748b; --swiper-pagination-color: #64748b"
-    >
+    <div class="swiper artworkSwiper">
       <div class="swiper-wrapper">
         {
           slides.map((item) => (
-            <div class="swiper-slide">
+            <div class="swiper-slide" key={item}>
               <Tilt
-                styling={`h-96 w-80 m-14 rounded-3xl py-16 shadow-3xl bg-cover z-10 bg-[url('/assets/astra.png')]`}
+                styling={`m-20 rounded-3xl shadow-3xl bg-cover overflow-hidden`}
                 input={''}
+                bgImage={item}
               />
             </div>
           ))
         }
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
 
     <!-- Swiper JS -->
@@ -53,10 +49,10 @@ const { slides } = Astro.props;
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 4,
-        spaceBetween: 20,
-        freeMode: true,
+      const swiper = new Swiper('.artworkSwiper', {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
         pagination: {
           el: '.swiper-pagination',
           clickable: true

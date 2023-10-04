@@ -17,6 +17,11 @@ const links = [
   },
   {
     ref: '04',
+    name: '.gallery( )',
+    href: '/gallery'
+  },
+  {
+    ref: '05',
     name: '.contact( )',
     href: '/contact'
   }
@@ -25,7 +30,7 @@ const links = [
 
 <header
   x-data="{ open: false }"
-  class="transition"
+  class="z-20 transition"
   :class="{ 'bg-primary-500/10 dark:bg-primary-400/10': open, 'bg-primary-50 dark:bg-primary-950': !(open) }"
 >
   <div
@@ -49,7 +54,7 @@ const links = [
     </div>
 
     <!-- Actions -->
-    <div class="-mr-2 flex items-center space-x-2 sm:space-x-3">
+    <div class="-mr-2 flex items-center space-x-1 sm:space-x-2">
       <!-- Toggle theme mode -->
       <button
         type="button"
@@ -127,7 +132,7 @@ const links = [
 
   <!-- Menu content -->
   <div
-    class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8"
+    class="z-20 mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8"
     id="website-menu"
     x-cloak
     x-show="open"
@@ -154,7 +159,7 @@ const links = [
           links.map((link) => (
             <a
               href={link.href}
-              class="group inline-flex py-6 text-3xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-none dark:text-primary-200 sm:py-8 sm:text-4xl"
+              class="group inline-flex py-3 text-2xl font-medium tracking-tight text-primary-950 transition focus-visible:outline-none dark:text-primary-200 sm:py-4 sm:text-3xl"
             >
               <div class="flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
                 <div class="flex items-center gap-6">
