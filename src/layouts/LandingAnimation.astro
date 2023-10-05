@@ -29,11 +29,11 @@ const navigation = [{ name: 'Home', href: '/home' }];
         class="bg-black from-black via-zinc-600/20 to-black flex h-screen w-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-tl"
       >
         <div
-          class="animate-glow animate-fade-right from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 hidden h-px w-screen bg-gradient-to-r md:block"
+          class="animate-glow from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 hidden h-px w-screen animate-fade-right bg-gradient-to-r md:block"
         >
-          <Particles client:visible />
+          <Particles />
         </div>
-        <nav class="animate-fade-in my-16">
+        <nav class="my-16 animate-fade-in">
           <ul class="flex items-center justify-center gap-4">
             {
               navigation.map((item) => (
@@ -49,16 +49,16 @@ const navigation = [{ name: 'Home', href: '/home' }];
           </ul>
         </nav>
         <h1
-          class="text-edge-outline animate-title font-display md:text-9xl z-10 cursor-default whitespace-nowrap bg-white bg-clip-text text-4xl text-transparent duration-1000 sm:text-6xl"
+          class="text-edge-outline font-display md:text-9xl z-10 animate-title cursor-default whitespace-nowrap bg-white bg-clip-text text-4xl text-transparent duration-1000 sm:text-6xl"
         >
           Bettina Sosa
         </h1>
 
         <div
-          class="animate-glow animate-fade-right from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 hidden h-px w-screen bg-gradient-to-r md:block"
+          class="animate-glow from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 hidden h-px w-screen animate-fade-right bg-gradient-to-r md:block"
         >
         </div>
-        <div class="animate-fade-in my-16 text-center">
+        <div class="my-16 animate-fade-in text-center">
           <h2 class="text-zinc-500 text-sm">
             Hi, I am a software engineer with a passion for innovation and
             cutting-edge technology. <br /> I am currently the founding full
