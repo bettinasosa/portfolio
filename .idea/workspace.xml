@@ -5,47 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/404.e158a8ae.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/gallery.cf825247.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/home.d6fc63cb.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/index.0087f5df.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/inter-latin-400-normal.0364d368.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/inter-latin-400-normal.e3982e96.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/inter-latin-500-normal.bf069d84.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/inter-latin-500-normal.d5333670.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/_astro/m31.bbc74dd0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/404_5fa24c15.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/about_fb3acd66.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/astro-assets-services_1bbbd105.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/astro_d3200be8.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/contact_3295459e.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/gallery_b8b7b1cc.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/generic_e42d08eb.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/home_bd5e5a5b.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/index_f3b6a95d.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/m31_5cc0d8c0.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404_82dd810c.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about_555edc2c.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/contact_a3f367a0.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/gallery_629c928a.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/generic_a968c4d5.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/home_054e3956.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/index_c04b0b13.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/privacy_9d694644.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/projects_95d0ffa1.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/stackers_4136090a.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/styleguide_8d57da33.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/privacy_20011551.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/projects_d5a90493.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/stackers_fd9fd9e1.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/styleguide_f2629368.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/vnode-children_3769332a.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/artworks/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/renderers.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/renderers.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Particles.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Particles.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/landing-animation" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feat/content",
     "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

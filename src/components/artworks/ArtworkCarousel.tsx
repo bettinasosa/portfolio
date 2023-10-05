@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css/free-mode';
+import './styles.css';
 
 // import required modules
 import { FreeMode } from 'swiper/modules';
