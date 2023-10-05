@@ -10,10 +10,12 @@ module.exports = {
       current: 'currentColor',
       transparent: 'transparent',
       white: '#ffffff',
-      primary: colors.stone
+      primary: colors.zinc,
+      accent: colors.blue
     },
     fontFamily: {
-      sans: ['Inter', 'sans-serif']
+      sans: ['Inter', 'sans-serif'],
+      dmsans: ['DM+Sans', 'sans-serif']
     },
     fontSize: {
       xs: ['0.75rem', '1rem'],
@@ -25,7 +27,8 @@ module.exports = {
       '3xl': ['1.875rem', '2.375rem'],
       '4xl': ['2.25rem', '2.75rem'],
       '5xl': ['3rem', '3.5rem'],
-      '6xl': ['3.75rem', '4.25rem']
+      '6xl': ['3.75rem', '4.25rem'],
+      'hero': ['11rem', '10rem']
     },
     extend: {
       backgroundImage: {
