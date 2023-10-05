@@ -20,20 +20,16 @@ export default function ArtworkCarousel(props: { slides: string[] }) {
   };
   return (
     <Swiper
-      slidesPerView={3.5}
-      spaceBetween={10}
+      direction={'horizontal'}
+      spaceBetween={30}
       freeMode={true}
-      pagination={{
-        clickable: true
-      }}
       modules={[FreeMode]}
-      className="mt-10 content-center items-center justify-center overflow-visible"
     >
       {slides.map((item: string) => (
         <SwiperSlide key={item}>
           <Tilt
             className={
-              'shadow-3xl z-10 m-10 overflow-hidden rounded-3xl bg-cover'
+              'shadow-3xl z-10 m-2 overflow-hidden rounded-3xl bg-cover sm:m-10'
             }
             input={''}
             options={options}
