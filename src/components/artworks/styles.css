@@ -1,4 +1,10 @@
 .swiper-wrapper {
     display: flex;
     flex-direction: row;
+    position: relative;
+    overflow-scrolling: auto;
+}
+
+.swiper-slide {
+    flex: 1 0 30%;
 }
