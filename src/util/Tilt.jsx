@@ -12,11 +12,7 @@ export default function Tilt(props) {
   return (
     <div ref={tilt} className={className}>
       {bgImage && (
-        <img
-          src={`/assets/${bgImage}`}
-          alt="artwork"
-          className="object-cover"
-        />
+        <img src={`${bgImage}`} alt="artwork" className="object-cover" />
       )}
       {input && <div>{input}</div>}
     </div>

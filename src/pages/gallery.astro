@@ -11,24 +11,28 @@ import Subheading from '../components/layout/Subheading.astro';
   <Subheading title={'Fashion drawings'} description={'Cheers collection'} />
   <ArtworkCarousel
     slides={[
-      'dresses/dress1.jpg',
-      'dresses/dress2.jpg',
-      'dresses/dress3.jpg',
-      'dresses/dress4.jpg'
+      '/assets/dresses/dress1.jpg',
+      '/assets/dresses/dress2.jpg',
+      '/assets/dresses/dress3.jpg',
+      '/assets/dresses/dress4.jpg'
     ]}
     client:load
   />
   <Subheading title={'Posters'} description={'Collection of event posters'} />
   <ArtworkCarousel
     slides={[
-      'posters/cheese-w.jpg',
-      'posters/cheesew.jpg',
-      'posters/coffee.jpg',
-      'posters/poster.jpg'
+      '/assets/posters/talksposter.jpg',
+      '/assets/posters/cheesew.jpg',
+      '/assets/posters/coffee.jpg',
+      '/assets/posters/teacoffee.jpg',
+      '/assets/posters/cheese-w.jpg'
     ]}
     client:load
   />
   <Subheading title={'Artwork'} description={'Mixed media content'} />
-  <ArtworkCarousel slides={['art/draw1.png', 'art/draw2.png']} client:load />
+  <ArtworkCarousel
+    slides={['/assets/art/draw1.png', '/assets/art/draw2.png']}
+    client:load
+  />
   <Cta />
 </Layout>
