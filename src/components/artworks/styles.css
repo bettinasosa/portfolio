@@ -1,10 +1,13 @@
 .swiper-wrapper {
     display: flex;
     flex-direction: row;
-    position: relative;
-    overflow-scrolling: auto;
+    max-width: max-content;
 }
 
 .swiper-slide {
     flex: 1 0 30%;
+}
+
+.swiper {
+    overflow: hidden;
 }

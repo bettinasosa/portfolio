@@ -1,24 +1,5 @@
 <section>
   <div class="gap-16">
-    <div
-      class="absolute bottom-0 flex w-full flex-col items-start gap-8 p-10 sm:gap-10"
-    >
-      <div class="flex space-x-5">
-        <a
-          href="/projects"
-          class="hover:bg-accent-300 focus-visible:outline-accent-400 inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 bg-opacity-50 bg-gradient-radial px-6 py-3 text-base font-medium text-white backdrop-blur-lg backdrop-filter transition hover:bg-opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-        >
-          Explore projects
-        </a>
-        <a
-          href="/gallery"
-          class="hover:bg-accent-300 focus-visible:outline-accent-400 inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 bg-opacity-50 bg-gradient-radial px-6 py-3 text-base font-medium text-white backdrop-blur-lg backdrop-filter transition hover:bg-opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-        >
-          Explore gallery
-        </a>
-      </div>
-    </div>
-
     <div class="w-full rounded-3xl">
       <iframe
         src="https://player.vimeo.com/video/362997602?autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1&controls=0"
@@ -27,5 +8,23 @@
         allowfullscreen></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
+    <div
+      class="bottom-0 flex w-full flex-col items-start gap-8 p-10 sm:absolute sm:gap-10"
+    >
+      <div class="flex space-x-5">
+        <a
+          href="/projects"
+          class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 bg-opacity-50 bg-gradient-radial px-6 py-3 text-sm font-medium text-white backdrop-blur-lg backdrop-filter transition hover:bg-accent-300 hover:bg-opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-400 sm:text-base"
+        >
+          Explore projects
+        </a>
+        <a
+          href="/gallery"
+          class="inline-flex items-center justify-center rounded-full border border-transparent bg-primary-600 bg-opacity-50 bg-gradient-radial px-6 py-3 text-sm font-medium text-white backdrop-blur-lg backdrop-filter transition hover:bg-accent-300 hover:bg-opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-400 sm:text-base"
+        >
+          Explore gallery
+        </a>
+      </div>
+    </div>
   </div>
 </section>
