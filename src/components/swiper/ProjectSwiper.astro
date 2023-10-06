@@ -13,9 +13,9 @@ const { slides } = Astro.props;
     {
       slides.map((item) => (
         <div class ="swiper-slide">
-          <div class ="rounded-3xl p-8 lg:grid lg:grid-cols-2 lg:space-x-14 h-full ">
+          <div class ="rounded-3xl p-8 lg:grid lg:grid-cols-2 lg:space-x-14 h-full">
               <img
-                class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+                class="mx-auto h-auto w-full max-w-xl rounded-3xl hover:transform"
                 width="300"
                 height="300"
                 src={item.image}

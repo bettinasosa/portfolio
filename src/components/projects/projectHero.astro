@@ -16,8 +16,14 @@ const { description, title , isImage, heroImage} = Astro.props;
             </div>
 
             <div class="w-full rounded-3xl">
-                {{ isImage } == true
-                    ? <img src={heroImage} class="w-full h-full rounded-3xl" alt="hero image" />
+                { isImage == 'true' ?
+                      <img
+                        class="mx-auto h-auto w-full max-w-xl rounded-3xl"
+                        width="300"
+                        height="300"
+                        src={heroImage}
+                        alt="project image"
+                      />
                     :
                 <iframe
                         src={heroImage}
