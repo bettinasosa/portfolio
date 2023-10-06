@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/projects/astra.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/M31.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/stackers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gloabal.css" beforeDir="false" afterPath="$PROJECT_DIR$/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/artworks/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Hero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Hero.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectHero.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectHero.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/gallery.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/gallery.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feat/new-content" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/new-content",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

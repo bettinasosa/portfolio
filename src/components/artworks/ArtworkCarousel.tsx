@@ -7,8 +7,8 @@ import 'swiper/css/free-mode';
 import './styles.css';
 
 // import required modules
-import { FreeMode } from 'swiper/modules';
 import Tilt from '../../util/Tilt.jsx';
+import { FreeMode } from 'swiper/modules';
 
 export default function ArtworkCarousel(props: { slides: string[] }) {
   const { slides } = props;
@@ -22,6 +22,7 @@ export default function ArtworkCarousel(props: { slides: string[] }) {
     <Swiper
       direction={'horizontal'}
       spaceBetween={30}
+      slidesPerView={'auto'}
       freeMode={true}
       modules={[FreeMode]}
     >
