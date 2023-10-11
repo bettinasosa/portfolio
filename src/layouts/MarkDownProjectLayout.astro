@@ -3,25 +3,31 @@ import Layout from './Layout.astro';
 import Cta from '../components/projects/Cta.astro';
 import ProjectHero from '../components/projects/projectHero.astro';
 import Body from '../components/projects/Body.astro';
+// Import multiple files with Astro.glob
+const projects = await Astro.glob('../pages/projects/*.md');
 
 const { frontmatter } = Astro.props;
+import { SEOMetadata } from 'astro-seo-metadata';
 ---
 
-<Layout description="My personal portfolio website.">
-  <ProjectHero
-    title={frontmatter.title}
-    description={frontmatter.description}
-    isImage={frontmatter.isImage}
-    heroImage={frontmatter.image}
-  />
-  <Body
-    subtitle={frontmatter.subtitle}
-    description={frontmatter.description}
-    introduction={frontmatter.introduction}
-    myRole={frontmatter.myRole}
-    paragraphs={frontmatter.paragraphs}
-    secondaryImages={frontmatter.secondaryImages}
-    slides={frontmatter.slides}
-  />
-  <Cta />
-</Layout>
+  <Layout description="My personal portfolio website.">
+    <slot />
+    <ProjectHero
+      title={frontmatter.title}
+      description={frontmatter.description}
+      isImage={frontmatter.isImage}
+      heroImage={frontmatter.image}
+    />
+    <Body
+      subtitle={frontmatter.subtitle}
+      description={frontmatter.description}
+      introduction={frontmatter.introduction}
+      myRole={frontmatter.myRole}
+      paragraphs={frontmatter.paragraphs}
+      secondaryImages={frontmatter.secondaryImages}
+      slides={frontmatter.slides}
+    />
+
+    <Cta />
+  </Layout></head
+>

@@ -6,9 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/artworks/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/gallery.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/gallery.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.bcf13e12.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.bcf13e12.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/manifest_9d5435a7.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/manifest_9d5435a7.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects/m31.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects/m31.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/new-content" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,7 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "feat/SEO",
     "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -59,7 +67,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/bettinasosa/portfolio/node_modules/prettier",
     "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/232.9921.42/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -97,6 +105,9 @@
       <workItem from="1695557875517" duration="27180000" />
       <workItem from="1696418847147" duration="20328000" />
       <workItem from="1696445366745" duration="6261000" />
+      <workItem from="1696948159029" duration="1134000" />
+      <workItem from="1696949304328" duration="521000" />
+      <workItem from="1697034444221" duration="1078000" />
     </task>
     <servers />
   </component>
