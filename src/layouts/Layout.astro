@@ -4,13 +4,15 @@ import '@fontsource/inter/latin-500.css';
 import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
+import { SEOMetadata } from 'astro-seo-metadata';
 
 interface Props {
   description: string;
   title: string;
+  image: string;
 }
 
-const { description, title } = Astro.props;
+const { description, title, image } = Astro.props;
 ---
 
 <!doctype html>
@@ -24,8 +26,20 @@ const { description, title } = Astro.props;
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <title>{title}</title>
     <ViewTransitions />
+    <SEOMetadata
+      siteName={'Bettina sosa portfolio'}
+      title={title}
+      description={description}
+      image={image}
+      favicon={'/favicon.svg'}
+      author="Bettina Sosa"
+      copyright="ISC"
+      astroSitemap={true}
+      canonicalUrl={Astro.url.toString()}
+      type={'website'}
+      astroGenerator={true}
+    />
   </head>
   <body
     class="w-screen overflow-x-hidden bg-primary-50 text-primary-950 antialiased transition dark:bg-primary-950 dark:text-primary-200"
