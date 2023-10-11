@@ -6,17 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.bcf13e12.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.bcf13e12.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/manifest_9d5435a7.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/manifest_9d5435a7.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects/m31.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects/m31.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects/m31.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects/m31.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/SEO",
-    "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/bettinasosa/portfolio/node_modules/prettier",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/232.9921.42/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/SEO&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/bettinasosa/portfolio/public/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/bettinasosa/portfolio/node_modules/prettier&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/232.9921.42/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/assets" />
