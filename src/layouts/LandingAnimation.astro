@@ -18,7 +18,21 @@ const navigation = [{ name: 'Home', href: '/home' }];
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
     <ViewTransitions />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9FD59WE345"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-9FD59WE345');
+    </script>
   </head>
+  <!-- Google tag (gtag.js) -->
 
   <body
     class="absolute bg-primary-950 text-primary-200 antialiased"
