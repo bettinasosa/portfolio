@@ -29,7 +29,7 @@ const $$ProjectHero = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$ProjectHero;
   const { description, title, isImage, heroImage } = Astro2.props;
-  return renderTemplate`${maybeRenderHead()}<section class='py-16 sm:py-20'><div class='mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8'><div class='flex flex-col gap-16'><div class='flex flex-col items-start gap-8 sm:gap-10'><div class='flex max-w-xl flex-col items-start gap-4 sm:gap-6'><h1 class='text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl'>${title}</h1><p class='text-primary-950/70 dark:text-primary-200/70 text-lg sm:text-xl'>${description}</p></div></div><div class='w-full rounded-3xl'>${{ isImage } == true ? renderTemplate`<img${addAttribute(heroImage, 'src')} class="w-full h-full rounded-3xl" alt="hero image">` : renderTemplate`<iframe${addAttribute(heroImage, 'src')} class="w-full h-full rounded-3xl aspect-video" allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`}</div></div></div></section>`;
+  return renderTemplate`${maybeRenderHead()}<section class='py-16 sm:py-20'><div class='mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8'><div class='flex flex-col gap-16'><div class='flex flex-col items-start gap-8 sm:gap-10'><div class='flex max-w-xl flex-col items-start gap-4 sm:gap-6'><h1 class='text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl'>${title}</h1><p class='text-primary-950/70 dark:text-primary-200/70 text-lg sm:text-xl'>${description}</p></div></div><div class='w-full rounded-3xl'>${{ isImage } == true ? renderTemplate`<img${addAttribute(heroImage, 'src')} class='w-full h-full rounded-3xl' alt='hero image'>` : renderTemplate`<iframe${addAttribute(heroImage, 'src')} class='w-full h-full rounded-3xl aspect-video' allow='accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`}</div></div></div></section>`;
 }, '/Users/bettinasosa/portfolio/src/components/projects/projectHero.astro', void 0);
 
 var __freeze = Object.freeze;
@@ -87,18 +87,18 @@ const $$Body = createComponent(async ($$result, $$props, $$slots) => {
     glare: true
   };
   return renderTemplate`${maybeRenderHead()}<section class='py-14 sm:py-20'><div class='mx-auto max-w-2xl px-8 sm:px-12 lg:max-w-7xl lg:px-16 space-y-6'><h2 class='text-3xl font-medium tracking-tight sm:text-4xl'>${subtitle}</h2><div class='space-y-12'><p class='text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg'>${introduction}</p><p class='text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg'>${myRole}</p></div><div class='space-y-12 py-12'>${renderComponent($$result, 'Swiper', $$Swiper, { 'slides': slides })}</div>${paragraphs.map(
-    (paragraph) => renderTemplate`<div class="grid grid-cols-2 gap-10">${renderComponent($$result, 'Tilt', Tilt, {
+    (paragraph) => renderTemplate`<div class='grid grid-cols-2 gap-10'>${renderComponent($$result, 'tilt', Tilt, {
       'className': 'shadow-3xl z-10 m-10 overflow-hidden rounded-3xl bg-cover',
       'input': '',
       'options': options,
       'bgImage': paragraph.images[0],
       'client:load': true,
       'client:component-hydration': 'load',
-      'client:component-path': '/Users/bettinasosa/portfolio/src/util/Tilt.jsx',
+      'client:component-path': '/Users/bettinasosa/portfolio/src/tilt/tilt.jsx',
       'client:component-export': 'default'
-    })}<div class="space-y-6 sm:space-y-8"><h3 class="text-xl font-medium tracking-tight">${paragraph.title}</h3><p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">${paragraph.text}</p></div></div>`
+    })}<div class='space-y-6 sm:space-y-8'><h3 class='text-xl font-medium tracking-tight'>${paragraph.title}</h3><p class='text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg'>${paragraph.text}</p></div></div>`
   )}</div></section>`;
-}, '/Users/bettinasosa/portfolio/src/components/projects/Body.astro', void 0);
+}, '/Users/bettinasosa/portfolio/src/components/projects/BlogBody.astro', void 0);
 
 const $$Astro = createAstro();
 const $$MarkDownProjectLayout = createComponent(async ($$result, $$props, $$slots) => {

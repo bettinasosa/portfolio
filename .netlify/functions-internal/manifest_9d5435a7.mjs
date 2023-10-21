@@ -268,13 +268,13 @@ const manifest = deserializeManifest({
       'content': '@font-face{font-family:Inter;font-style:normal;font-display:swap;font-weight:400;src:url(/_astro/inter-latin-400-normal.0364d368.woff2) format("woff2"),url(/_astro/inter-latin-400-normal.e3982e96.woff) format("woff")}@font-face{font-family:Inter;font-style:normal;font-display:swap;font-weight:500;src:url(/_astro/inter-latin-500-normal.d5333670.woff2) format("woff2"),url(/_astro/inter-latin-500-normal.bf069d84.woff) format("woff")}\n[x-cloak]{display:none!important}\n'
     }],
     'routeData': {
-      'route': '/about',
+      'route': '/blog',
       'type': 'page',
-      'pattern': '^\\/about\\/?$',
+      'pattern': '^\\/blog\\/?$',
       'segments': [[{ 'content': 'about', 'dynamic': false, 'spread': false }]],
       'params': [],
-      'component': 'src/pages/about.astro',
-      'pathname': '/about',
+      'component': 'src/pages/blog.astro',
+      'pathname': '/blog',
       'prerender': false,
       '_meta': { 'trailingSlash': 'ignore' }
     }
@@ -331,7 +331,7 @@ const manifest = deserializeManifest({
   }], ['/Users/bettinasosa/portfolio/src/pages/404.astro', {
     'propagation': 'none',
     'containsHead': true
-  }], ['/Users/bettinasosa/portfolio/src/pages/about.astro', {
+  }], ['/Users/bettinasosa/portfolio/src/pages/blog.astro', {
     'propagation': 'none',
     'containsHead': true
   }], ['/Users/bettinasosa/portfolio/src/pages/contact.astro', {
@@ -384,14 +384,14 @@ const manifest = deserializeManifest({
     '\u0000@astro-page:src/pages/404@_@astro': 'chunks/404_5fa24c15.mjs',
     '/astro/hoisted.js?q=0': '_astro/hoisted.25fe1377.js',
     '/astro/hoisted.js?q=2': '_astro/hoisted.5297e4b1.js',
-    '/Users/bettinasosa/portfolio/src/util/Tilt.jsx': '_astro/Tilt.bcce0b75.js',
+    '/Users/bettinasosa/portfolio/src/util/Tilt.jsx': '_astro/tilt.bcce0b75.js',
     '/astro/hoisted.js?q=1': '_astro/hoisted.98ced75c.js',
     '/Users/bettinasosa/portfolio/src/components/artworks/ArtworkCarousel': '_astro/ArtworkCarousel.aa95113f.js',
     '@astrojs/react/client.js': '_astro/client.4ae814ea.js',
     '/astro/hoisted.js?q=3': '_astro/hoisted.3704cd80.js',
     'astro:scripts/before-hydration.js': ''
   },
-  'assets': ['/_astro/inter-latin-500-normal.d5333670.woff2', '/_astro/inter-latin-400-normal.0364d368.woff2', '/_astro/inter-latin-400-normal.e3982e96.woff', '/_astro/inter-latin-500-normal.bf069d84.woff', '/_astro/404.e158a8ae.css', '/_astro/gallery.cf825247.css', '/_astro/home.d6fc63cb.css', '/_astro/index.0087f5df.css', '/_astro/m31.bbc74dd0.css', '/android-chrome-192x192.png', '/android-chrome-512x512.png', '/apple-touch-icon.png', '/favicon-16x16.png', '/favicon-32x32.png', '/favicon.ico', '/site.webmanifest', '/_astro/ArtworkCarousel.aa95113f.js', '/_astro/Tilt.0251b498.js', '/_astro/Tilt.bcce0b75.js', '/_astro/ViewTransitions.astro_astro_type_script_index_0_lang.bd7fdfe4.js', '/_astro/client.4ae814ea.js', '/_astro/hoisted.25fe1377.js', '/_astro/hoisted.3704cd80.js', '/_astro/hoisted.5297e4b1.js', '/_astro/hoisted.98ced75c.js', '/_astro/index.03be2d59.js', '/assets/bike.png', '/assets/linkedin.png', '/assets/logo.jpg', '/assets/profile.jpg', '/assets/theme.png', '/assets/art/draw1.png', '/assets/art/draw2.png', '/assets/dresses/dress.jpg', '/assets/dresses/dress1.jpg', '/assets/dresses/dress2.jpg', '/assets/dresses/dress3.jpg', '/assets/dresses/dress4.jpg', '/assets/m31/app.png', '/assets/m31/controller.jpg', '/assets/m31/controller.png', '/assets/m31/gold.webp', '/assets/m31/package.jpg', '/assets/m31/packaging.png', '/assets/m31/research.png', '/assets/m31/specs.png', '/assets/m31/system.png', '/assets/posters/cheese-w.jpg', '/assets/posters/cheesew.jpg', '/assets/posters/coffee.jpg', '/assets/posters/poster.jpg', '/assets/posters/talksposter.jpg', '/assets/posters/teacoffee.jpg', '/assets/vcp/VCP.png', '/assets/astra/astra.png', '/assets/astra/giz1.png', '/assets/astra/gizmo.png', '/assets/bottles/block.jpg', '/assets/bottles/block.png', '/assets/bottles/blue.png', '/assets/bottles/stack1.png', '/assets/bottles/stack2.png', '/assets/bottles/stack3.png', '/assets/bottles/stack4.png', '/assets/bottles/stack5.png']
+  'assets': ['/_astro/inter-latin-500-normal.d5333670.woff2', '/_astro/inter-latin-400-normal.0364d368.woff2', '/_astro/inter-latin-400-normal.e3982e96.woff', '/_astro/inter-latin-500-normal.bf069d84.woff', '/_astro/404.e158a8ae.css', '/_astro/gallery.cf825247.css', '/_astro/home.d6fc63cb.css', '/_astro/index.0087f5df.css', '/_astro/m31.bbc74dd0.css', '/android-chrome-192x192.png', '/android-chrome-512x512.png', '/apple-touch-icon.png', '/favicon-16x16.png', '/favicon-32x32.png', '/favicon.ico', '/site.webmanifest', '/_astro/ArtworkCarousel.aa95113f.js', '/_astro/tilt.0251b498.js', '/_astro/tilt.bcce0b75.js', '/_astro/ViewTransitions.astro_astro_type_script_index_0_lang.bd7fdfe4.js', '/_astro/client.4ae814ea.js', '/_astro/hoisted.25fe1377.js', '/_astro/hoisted.3704cd80.js', '/_astro/hoisted.5297e4b1.js', '/_astro/hoisted.98ced75c.js', '/_astro/index.03be2d59.js', '/assets/bike.png', '/assets/linkedin.png', '/assets/logo.jpg', '/assets/profile.jpg', '/assets/theme.png', '/assets/art/draw1.png', '/assets/art/draw2.png', '/assets/dresses/dress.jpg', '/assets/dresses/dress1.jpg', '/assets/dresses/dress2.jpg', '/assets/dresses/dress3.jpg', '/assets/dresses/dress4.jpg', '/assets/m31/app.png', '/assets/m31/controller.jpg', '/assets/m31/controller.png', '/assets/m31/gold.webp', '/assets/m31/package.jpg', '/assets/m31/packaging.png', '/assets/m31/research.png', '/assets/m31/specs.png', '/assets/m31/system.png', '/assets/posters/cheese-w.jpg', '/assets/posters/cheesew.jpg', '/assets/posters/coffee.jpg', '/assets/posters/poster.jpg', '/assets/posters/talksposter.jpg', '/assets/posters/teacoffee.jpg', '/assets/vcp/VCP.png', '/assets/astra/astra.png', '/assets/astra/giz1.png', '/assets/astra/gizmo.png', '/assets/bottles/block.jpg', '/assets/bottles/block.png', '/assets/bottles/blue.png', '/assets/bottles/stack1.png', '/assets/bottles/stack2.png', '/assets/bottles/stack3.png', '/assets/bottles/stack4.png', '/assets/bottles/stack5.png']
 });
 
 export { manifest };

@@ -25,7 +25,7 @@ const _page8 = () => import('./chunks/privacy_20011551.mjs');
 const _page9 = () => import('./chunks/about_fb3acd66.mjs');
 const _page10 = () => import('./chunks/home_bd5e5a5b.mjs');
 const _page11 = () => import('./chunks/404_5fa24c15.mjs');
-const pageMap = new Map([['node_modules/astro/dist/assets/endpoint/generic.js', _page0], ['src/pages/index.astro', _page1], ['src/pages/styleguide.astro', _page2], ['src/pages/projects/stackers.md', _page3], ['src/pages/projects/m31.mdx', _page4], ['src/pages/projects.astro', _page5], ['src/pages/contact.astro', _page6], ['src/pages/gallery.astro', _page7], ['src/pages/privacy.astro', _page8], ['src/pages/about.astro', _page9], ['src/pages/home.astro', _page10], ['src/pages/404.astro', _page11]]);
+const pageMap = new Map([['node_modules/astro/dist/assets/endpoint/generic.js', _page0], ['src/pages/index.astro', _page1], ['src/pages/styleguide.astro', _page2], ['src/pages/projects/stackers.md', _page3], ['src/pages/projects/m31.mdx', _page4], ['src/pages/projects.astro', _page5], ['src/pages/contact.astro', _page6], ['src/pages/gallery.astro', _page7], ['src/pages/privacy.astro', _page8], ['src/pages/blog.astro', _page9], ['src/pages/home.astro', _page10], ['src/pages/404.astro', _page11]]);
 const _manifest = Object.assign(manifest, {
   pageMap,
   renderers

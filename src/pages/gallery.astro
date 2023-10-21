@@ -7,7 +7,7 @@ import Subheading from '../components/layout/Subheading.astro';
 ---
 
 <Layout description="Art gallery">
-  <div class="overflow-hidden">
+  <section class="mx-2 overflow-hidden lg:mx-28">
     <Heading title={'Gallery'} description={'artwork'} />
     <Subheading title={'Fashion drawings'} description={'Cheers collection'} />
     <ArtworkCarousel
@@ -35,6 +35,6 @@ import Subheading from '../components/layout/Subheading.astro';
       slides={['/assets/art/draw1.png', '/assets/art/draw2.png']}
       client:load
     />
-    <Cta />
-  </div>
+  </section>
+  <Cta />
 </Layout>

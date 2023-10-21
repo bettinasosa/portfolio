@@ -1,0 +1,31 @@
+---
+import Tilt from '../tilt/Tilt.jsx';
+import React from 'react';
+const options = {
+  scale: 1.4,
+  speed: 800,
+  max: 30,
+  glare: true
+};
+const allPosts = await Astro.glob('../../pages/blog/*.mdx');
+---
+
+<section class="py-14 sm:py-20">
+  <div
+    class="mx-auto flex max-w-sm space-y-6 px-8 sm:px-12 lg:max-w-xl lg:px-16"
+  >
+    {
+      allPosts.map((post) => (
+        <a href={post.url}>
+          <Tilt
+            className={'shadow-3xl overflow-hidden rounded-3xl bg-cover'}
+            input={post.frontmatter.title}
+            options={options}
+            bgImage={post.frontmatter.image}
+            client:load
+          />
+        </a>
+      ))
+    }
+  </div>
+</section>

@@ -5,9 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/analytics/Google.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/analytics/Posthog.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/blog/BlogBody.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/theme/ThemeToggle.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/blog.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404.astro.a94a0438.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404.astro.a94a0438.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404_82dd810c.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404_82dd810c.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about.astro.3dc85748.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about.astro.3dc85748.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about_555edc2c.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about_555edc2c.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.bcf13e12.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.bcf13e12.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/manifest_9d5435a7.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.netlify/functions-internal/manifest_9d5435a7.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/About.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/About.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Heading.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/Heading.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Team.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/Team.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Values.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/Values.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactInfo.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact/ContactInfo.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Body.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Body.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/gallery.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/gallery.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/projects/m31.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects/m31.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Tilt.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tilt/Tilt.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Tilt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tilt/Tilt.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +97,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/contact" />
       <recent name="$PROJECT_DIR$/public/assets/bottles" />
       <recent name="$PROJECT_DIR$/public/assets/m31" />
       <recent name="$PROJECT_DIR$/public/assets/posters" />
-      <recent name="$PROJECT_DIR$/public/assets/astra" />
-      <recent name="$PROJECT_DIR$/public/assets/art" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -99,7 +127,7 @@
       <workItem from="1696948159029" duration="1134000" />
       <workItem from="1696949304328" duration="521000" />
       <workItem from="1697034444221" duration="1078000" />
-      <workItem from="1697619428487" duration="6176000" />
+      <workItem from="1697619428487" duration="14154000" />
     </task>
     <servers />
   </component>

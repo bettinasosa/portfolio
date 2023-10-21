@@ -7,7 +7,7 @@ import 'swiper/css/free-mode';
 import './styles.css';
 
 // import required modules
-import Tilt from '../../util/Tilt.jsx';
+import Tilt from '../tilt/Tilt.jsx';
 import { FreeMode } from 'swiper/modules';
 
 export default function ArtworkCarousel(props: { slides: string[] }) {
@@ -30,7 +30,7 @@ export default function ArtworkCarousel(props: { slides: string[] }) {
         <SwiperSlide key={item}>
           <Tilt
             className={
-              'shadow-3xl z-10 m-2 overflow-hidden rounded-3xl bg-cover sm:m-10'
+              'shadow-3xl z-10 m-2 overflow-hidden rounded-3xl bg-cover sm:m-8'
             }
             input={''}
             options={options}

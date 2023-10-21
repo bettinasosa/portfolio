@@ -157,7 +157,7 @@ const $$Body = createComponent(async ($$result, $$props, $$slots) => {
         </div>`)}
     </div>
 </section>`;
-}, '/Users/bettinasosa/portfolio/src/components/projects/Body.astro', void 0);
+}, '/Users/bettinasosa/portfolio/src/components/projects/BlogBody.astro', void 0);
 
 const $$Astro = createAstro();
 const $$MarkDownProjectLayout = createComponent(async ($$result, $$props, $$slots) => {
