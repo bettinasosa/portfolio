@@ -1,0 +1,23 @@
+---
+import Tilt from '../../../src/components/artworks/Tilt.jsx';
+
+const options = {
+  scale: 1.2,
+  speed: 800,
+  max: 30,
+  glare: true
+};
+const { input, styling, bgImage } = Astro.props;
+---
+
+<html lang="en">
+  <body>
+    <Tilt
+      className={styling}
+      input={input}
+      options={options}
+      bgImage={bgImage}
+      client:load
+    />
+  </body>
+</html>

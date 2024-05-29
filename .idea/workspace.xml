@@ -5,26 +5,176 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/contact.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contact/ContactForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contact/ContactInfo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/custom/menuButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/nav/NavLinks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/nav/anim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/nav/nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/About.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/googleAnalytics.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/meta.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/subheading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/scrollAnimation/scrollAnim.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/scrollAnimation/scrollText.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/scrollingText.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/swiper/Swiper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/textScramble.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/progress.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useScreenSize.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects/m31.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects/m31.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/_empty-middleware.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/404@_@astro.a225dedb.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/404_5fa24c15.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/about@_@astro.575f71a5.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/about_fb3acd66.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/astro-assets-services_1bbbd105.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/astro.11cd3780.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/astro_d3200be8.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/contact@_@astro.0c22cd3a.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/contact_3295459e.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/gallery_b8b7b1cc.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/generic_e42d08eb.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/home_bd5e5a5b.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/index@_@astro.940ace31.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/index_9b3f8ed6.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/index_f3b6a95d.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/m31@_@md.25eeb181.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/m31@_@md.bb76e235.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/m31_5cc0d8c0.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404.astro.a94a0438.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/404_82dd810c.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about.astro.3dc85748.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/about_555edc2c.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/contact.astro.9fff38c2.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/contact_a3f367a0.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/gallery_629c928a.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/generic_a968c4d5.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/home_054e3956.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/index.astro.7ca9d457.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/index_19afbfe7.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/index_c04b0b13.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.bcf13e12.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31.md.d95f1b81.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/m31_05ef5236.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/privacy.astro.3012f512.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/privacy_9d694644.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/projects.astro.4b6595dd.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/projects.astro.4c65a843.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/projects_95d0ffa1.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/stackers_4136090a.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/styleguide.astro.34815d46.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/pages/styleguide_8d57da33.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/privacy@_@astro.b91ed156.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/privacy_20011551.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/projects@_@astro.919c8d0e.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/projects@_@astro.ef0c6c63.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/projects_d5a90493.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/stackers_fd9fd9e1.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/styleguide@_@astro.741a5486.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/styleguide_f2629368.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/chunks/vnode-children_3769332a.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/entry.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/entry.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/manifest_9d5435a7.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.netlify/functions-internal/renderers.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/bike.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/bike.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/daftbot.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/daftbot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/tetris.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/tetris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/vcp.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/vcp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/woody.html" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/woody.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Particles.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/Particles.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/About.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Heading.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Team.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/Values.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactForm.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactInfo.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/About.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Hero.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Projects.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Subheading.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Body.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/Body.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/Swiper.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/LandingAnimation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/LandingAnimation.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MarkDownProjectLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/404.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/about.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/gallery.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/gallery.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/home.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/index.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/privacy.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/privacy.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects/astra.md" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/astra.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects/m31.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/m31.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects/stackers.md" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/stackers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/styleguide.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/styleguide.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Tilt.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/util/Tilt.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Tilt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/Tilt.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat/add-mdx-components-for-blog" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bettinasosa&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:bettinasosa/portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;11f5476d-b084-4767-9cdb-5a97add952e3&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,9 +198,10 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/add-posthog",
-    "last_opened_file_path": "/Users/bettinasosa/portfolio/public/assets",
+    "git-widget-placeholder": "redesign/main-page",
+    "last_opened_file_path": "/Users/bettinasosa/portfolio/src/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,22 +210,32 @@
     "prettierjs.PrettierConfiguration.Package": "/Users/bettinasosa/portfolio/node_modules/prettier",
     "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/Users/bettinasosa/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/232.9921.42/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Users/bettinasosa/portfolio/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/layout" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assets/bottles" />
-      <recent name="$PROJECT_DIR$/public/assets/m31" />
-      <recent name="$PROJECT_DIR$/public/assets/posters" />
-      <recent name="$PROJECT_DIR$/public/assets/astra" />
-      <recent name="$PROJECT_DIR$/public/assets/art" />
+      <recent name="$PROJECT_DIR$/src/app/about" />
+      <recent name="$PROJECT_DIR$/src/components/artworks" />
+      <recent name="$PROJECT_DIR$/src/components/custom" />
+      <recent name="$PROJECT_DIR$/OldHtmlFiles" />
+      <recent name="$PROJECT_DIR$/src/components" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,11 +261,17 @@
       <workItem from="1696949304328" duration="521000" />
       <workItem from="1697034444221" duration="1078000" />
       <workItem from="1697619428487" duration="6176000" />
+      <workItem from="1716505246630" duration="57429000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/tailwind.config.cjs" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

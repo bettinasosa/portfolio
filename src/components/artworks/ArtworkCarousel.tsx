@@ -1,14 +1,10 @@
 import React from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css/free-mode';
 import './styles.css';
 
-// import required modules
-import Tilt from '../../util/Tilt.jsx';
 import { FreeMode } from 'swiper/modules';
+import Tilt from '@/components/artworks/Tilt';
 
 export default function ArtworkCarousel(props: { slides: string[] }) {
   const { slides } = props;
