@@ -1,9 +1,12 @@
 'use client';
 import { LetterCollision } from '@/components/scrollAnimation/scrollText';
-import { Hero } from '@/components/home/hero';
+import Hero from '@/app/home/hero';
 import { useEffect, useState } from 'react';
 import { ArrowDownRight } from 'lucide-react';
 import { Element, scroller } from 'react-scroll';
+import Cta from '@/app/home/cta';
+import ProjectsSection from '@/app/home/projects';
+import { AboutSection } from '@/app/home/aboutSection';
 
 export default function Home() {
   const [showScrollButton, setShowScrollButton] = useState(true);
@@ -40,6 +43,9 @@ export default function Home() {
       <Element name="hero">
         <Hero />
       </Element>
+      <ProjectsSection />
+      <AboutSection />
+      <Cta />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Hero() {
+export default function Hero() {
   return (
     <div className="bg-background">
       <div className="xs:pt-16 relative z-0 w-full pt-8">

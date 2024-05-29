@@ -1,13 +1,15 @@
-export function ContactInfo() {
+import { ContactForm } from '@/app/contact/contactForm';
+
+export default function ContactInfo() {
   return (
     <div className="py-16 sm:py-20">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <dl className="grid gap-6 lg:grid-cols-3">
-          <div className="rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+          <div className="bg-primary-500/10 dark:bg-primary-400/10 rounded-3xl px-6 py-8">
             <dt className="sr-only">Postal address</dt>
             <dd className="flex h-full flex-col justify-between gap-12">
               <svg
-                className="h-6 w-6 text-primary-600 dark:text-primary-400"
+                className="text-primary-600 dark:text-primary-400 h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -21,13 +23,13 @@ export function ContactInfo() {
             </dd>
           </div>
 
-          <div className="rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+          <div className="bg-primary-500/10 dark:bg-primary-400/10 rounded-3xl px-6 py-8">
             <dt className="sr-only">LinkedIn</dt>
             <dd className="flex h-full flex-col justify-between gap-12">
               <img
                 src="/assets/linkedin.png"
                 alt="likedin"
-                className="h-6 w-6 text-primary-600 dark:text-primary-400"
+                className="text-primary-600 dark:text-primary-400 h-6 w-6"
               />
               <a
                 className="text-base font-medium"
@@ -38,11 +40,11 @@ export function ContactInfo() {
             </dd>
           </div>
 
-          <div className="rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
+          <div className="bg-primary-500/10 dark:bg-primary-400/10 rounded-3xl px-6 py-8">
             <dt className="sr-only">Email</dt>
             <dd className="flex h-full flex-col justify-between gap-12">
               <svg
-                className="h-6 w-6 text-primary-600 dark:text-primary-400"
+                className="text-primary-600 dark:text-primary-400 h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
@@ -55,6 +57,7 @@ export function ContactInfo() {
           </div>
         </dl>
       </div>
+      <ContactForm />
     </div>
   );
 }
