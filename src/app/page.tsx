@@ -33,7 +33,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-background h-[200vh] scroll-smooth pt-10">
+    <div className="bg-background min-h-screen scroll-smooth pt-10">
       <LetterCollision />
       {showScrollButton && (
         <div className="fixed bottom-8 right-8 flex items-center space-x-2 text-3xl font-semibold">

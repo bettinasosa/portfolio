@@ -5,7 +5,7 @@ import { buttonVariants } from '@/components/ui/button';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
-interface Slide {
+export interface Slide {
   image: string;
   name: string;
   description: string;

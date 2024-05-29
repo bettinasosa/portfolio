@@ -76,10 +76,10 @@ const bottomLinks = [
   }
 ];
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer
-      className="bg-primary-500/10 dark:bg-primary-400/10 mt-16 py-16 lg:mt-20 lg:py-20"
+      className="h-full w-screen bg-black py-16 text-white"
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
@@ -99,7 +99,7 @@ export function Footer() {
               place.
             </p>
             <p className="text-primary-950/70 dark:text-primary-200/70 text-sm">
-              © 2023 Bettina Sosa
+              © 2024 Bettina Sosa
             </p>
           </div>
 

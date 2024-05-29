@@ -153,7 +153,7 @@ export function LetterCollision() {
   return (
     <div
       ref={containerRef}
-      className="mt-16 flex flex-col justify-end lg:mt-80 lg:h-screen xl:mt-[60vh]"
+      className="relative mt-16 flex flex-col justify-end lg:mt-80 lg:h-screen xl:mt-[55vh] 2xl:mt-[25vh]"
     >
       <div className="flex flex-wrap p-0">
         <LetterDisplay word={creativity} />

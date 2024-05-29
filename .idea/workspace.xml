@@ -5,29 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/home/cta.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/home/hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/label.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/textarea.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/projects/body.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/projects/projectHero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/MarkDownProjectLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/contact.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/contact.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/gallery.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/gallery.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/home.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/home.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/contactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/contactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/contactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/aboutSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Cta.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Expertise.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Projects.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Testimonials.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/hero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/artworks/Tilt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/artworks/Tilt.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Body.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Cta.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/Cta.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Faq.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/Faq.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/Heading.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/heading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectHero.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectsHome.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projectsHome.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/scrollAnimation/scrollText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/scrollAnimation/scrollText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,11 +101,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/projects/astra" />
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/about" />
       <recent name="$PROJECT_DIR$/src/components/artworks" />
       <recent name="$PROJECT_DIR$/src/components/custom" />
-      <recent name="$PROJECT_DIR$/OldHtmlFiles" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -141,17 +139,12 @@
       <workItem from="1696949304328" duration="521000" />
       <workItem from="1697034444221" duration="1078000" />
       <workItem from="1697619428487" duration="6176000" />
-      <workItem from="1716505246630" duration="61509000" />
+      <workItem from="1716505246630" duration="65391000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/tailwind.config.cjs" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
