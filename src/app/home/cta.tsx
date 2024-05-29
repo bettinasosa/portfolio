@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Cta() {
   return (
@@ -14,12 +16,9 @@ export default function Cta() {
               Let's collaborate!
             </p>
           </div>
-          <a
-            href="/contact"
-            className="bg-primary-600 hover:bg-primary-700 focus-visible:outline-primary-600 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 dark:focus-visible:outline-primary-400 inline-flex items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-          >
-            Contact me
-          </a>
+          <Link href={'/contact'}>
+            <Button>Contact me</Button>
+          </Link>
         </div>
       </div>
     </div>
