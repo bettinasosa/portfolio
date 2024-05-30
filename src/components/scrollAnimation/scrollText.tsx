@@ -85,44 +85,6 @@ const animateLettersOnScroll = (containerRef: MutableRefObject<any>) => {
   });
 };
 
-function handleCollisions(containerRef: MutableRefObject<any>) {
-  const lettersContainer = containerRef.current;
-  const letterElements = lettersContainer?.querySelectorAll('.letter');
-
-  if (letterElements) {
-    const letterBoxes: { [key: string]: LetterBounds } = {};
-
-    letterElements.forEach((letter: Element) => {
-      letterBoxes[letter.textContent || ''] = getLetterBounds(letter);
-    });
-
-    letterElements.forEach((letter: Element) => {
-      const letterBox = letterBoxes[letter.textContent || ''];
-
-      if (!letterBox) return;
-
-      Object.entries(letterBoxes).forEach(([otherLetter, otherBox]) => {
-        if (otherLetter === letter.textContent) return;
-
-        if (isRectanglesColliding(letterBox, otherBox)) {
-          const dx = otherBox.left - letterBox.left;
-          const dy = otherBox.top - letterBox.top;
-          const angle = Math.atan2(dy, dx);
-          const newX = Math.cos(angle) * 10;
-          const newY = Math.sin(angle) * 10;
-
-          gsap.to(letter, {
-            duration: 0.8,
-            x: `+=${newX}`,
-            y: `+=${newY}`,
-            rotation: `+=${angle * (3 / Math.PI)}`
-          });
-        }
-      });
-    });
-  }
-}
-
 function LetterDisplay({ word }: { word: string }) {
   return word.split('').map((letter, index) => (
     <div
@@ -140,30 +102,21 @@ export function LetterCollision() {
 
   useEffect(() => {
     animateLettersOnScroll(containerRef);
-
-    // const collisionInterval = setInterval(() => {
-    //   handleCollisions(containerRef);
-    // }, 100);
-
-    // return () => {
-    //   clearInterval(collisionInterval);
-    // };
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className="relative mt-16 flex flex-col justify-end lg:mt-80 lg:h-screen xl:mt-[55vh] 2xl:mt-[25vh]"
-    >
-      <div className="flex flex-wrap p-0">
-        <LetterDisplay word={creativity} />
-        <div className="xs:w-4 w-2 sm:w-10"></div>
-        <LetterDisplay word={is} />
-      </div>
-      <div className="flex flex-wrap">
-        <LetterDisplay word={my} />
-        <div className="xs:w-4 w-2 sm:w-10"></div>
-        <LetterDisplay word={craft} />
+    <div ref={containerRef}>
+      <div className="relative -mt-28 mb-24 flex h-screen flex-col justify-end">
+        <div className="flex flex-wrap p-0">
+          <LetterDisplay word={creativity} />
+          <div className="xs:w-4 w-2 sm:w-10"></div>
+          <LetterDisplay word={is} />
+        </div>
+        <div className="flex flex-wrap">
+          <LetterDisplay word={my} />
+          <div className="xs:w-4 w-2 sm:w-10"></div>
+          <LetterDisplay word={craft} />
+        </div>
       </div>
       <div className="xs:top-96 absolute top-80 flex flex-wrap md:relative md:top-10 md:-mb-96 lg:top-0 lg:mb-0 lg:pt-24">
         <LetterDisplay word={sentence3} />

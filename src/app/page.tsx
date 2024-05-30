@@ -7,6 +7,7 @@ import { Element, scroller } from 'react-scroll';
 import Cta from '@/app/home/cta';
 import ProjectsSection from '@/app/home/projects';
 import { AboutSection } from '@/app/home/aboutSection';
+import TextParallax from '@/components/scrollAnimation/textParallax';
 
 export default function Home() {
   const [showScrollButton, setShowScrollButton] = useState(true);
@@ -43,6 +44,7 @@ export default function Home() {
       <Element name="hero">
         <Hero />
       </Element>
+      <TextParallax />
       <ProjectsSection />
       <AboutSection />
       <Cta />
