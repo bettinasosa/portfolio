@@ -11,7 +11,7 @@ import BlurryCursor from '@/components/cursor/blendCursor';
 
 export default function Home() {
   const [showScrollButton, setShowScrollButton] = useState(true);
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
   const scrollContainerRef = useRef(null);
   const heroRef = useRef(null);
 
@@ -55,7 +55,6 @@ export default function Home() {
       <div
         id="hero"
         ref={heroRef}
-        className="bg-gray-800 snap-start text-white"
         onMouseEnter={() => setIsActive(true)}
         onMouseLeave={() => setIsActive(false)}
       >
@@ -65,7 +64,7 @@ export default function Home() {
       <ProjectsSection />
       <AboutSection />
       <Cta />
-      <BlurryCursor isActive={isActive} />
+      <BlurryCursor isActive={isActive} text={'Go to projects'} />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { clsx } from 'clsx';
 
 type BlurCursorProps = {
   isActive: boolean;
@@ -16,7 +17,7 @@ export default function BlurryCursor({ isActive, text }: BlurCursorProps) {
 
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
-  const springConfig = { damping: 25, stiffness: 700 };
+  const springConfig = { damping: 25, stiffness: 500 };
   const cursorXSpring = useSpring(cursorX, springConfig);
   const cursorYSpring = useSpring(cursorY, springConfig);
 
@@ -29,15 +30,22 @@ export default function BlurryCursor({ isActive, text }: BlurCursorProps) {
     window.addEventListener('mousemove', handleMouseMove);
 
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  }, [isActive]);
 
   return (
     <motion.div
-      className="pointer-events-none fixed left-0 top-0 z-50 h-10 w-10 rounded-full bg-white mix-blend-difference shadow-md"
+      className={clsx(
+        'pointer-events-none fixed left-0 top-0 z-50 mix-blend-difference shadow-md',
+        isActive
+          ? ' w-400 bg-secondary bg-opacity-50 p-4 text-6xl font-bold text-white'
+          : 'h-10 w-10 rounded-full bg-white'
+      )}
       style={{
         translateX: cursorXSpring,
         translateY: cursorYSpring
       }}
-    ></motion.div>
+    >
+      {isActive && text}
+    </motion.div>
   );
 }
