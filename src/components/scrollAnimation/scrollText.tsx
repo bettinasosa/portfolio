@@ -10,58 +10,12 @@ const my = 'my ';
 const craft = 'craft';
 const sentence3 = 'abstract thinking is my passion';
 
-type LetterBounds = {
-  left: number;
-  right: number;
-  top: number;
-  bottom: number;
-};
-
-type LetterPositions = {
-  x: number;
-  y: number;
-  rotation: number;
-  speed: number;
-};
-
 function getRandomSpeed() {
   const randomDecimal = Math.random();
-  return 0.5 + randomDecimal * (1 - 0.6);
+  return 0.8 + randomDecimal * (1.5 - 0.8); // Increased speed range
 }
-
-const creativityPositions: LetterPositions[] = [
-  { x: 8, y: 100, rotation: -3, speed: 0.3 }, // C
-  { x: 5, y: 200, rotation: 2, speed: 0.3 }, // r
-  { x: 21, y: 150, rotation: -10, speed: 0.1 }, // e
-  { x: 16, y: 258, rotation: 40, speed: 0.5 }, // a
-  { x: 15, y: 96, rotation: -20, speed: 0.3 }, // t
-  { x: 10, y: 412, rotation: 30, speed: 0.2 }, // i
-  { x: 33, y: 353, rotation: -15, speed: 0.1 }, // v
-  { x: 9, y: 368, rotation: 25, speed: 0.4 }, // i
-  { x: 11, y: 128, rotation: -35, speed: 0.2 }, // t
-  { x: 25, y: 300, rotation: 15, speed: 0.4 } // y
-];
-
-function getLetterBounds(letter: Element): LetterBounds {
-  const letterBounds = letter.getBoundingClientRect();
-  return {
-    top: letterBounds.top,
-    left: letterBounds.left,
-    right: letterBounds.right,
-    bottom: letterBounds.bottom
-  };
-}
-
-function isRectanglesColliding(
-  rect1: LetterBounds,
-  rect2: LetterBounds
-): boolean {
-  return (
-    rect1.left < rect2.right &&
-    rect1.right > rect2.left &&
-    rect1.top < rect2.bottom &&
-    rect1.bottom > rect2.top
-  );
+function getRandomRotation() {
+  return Math.random() * 60 - 30; // Random rotation between -30 and 30 degrees
 }
 
 const animateLettersOnScroll = (containerRef: MutableRefObject<any>) => {
@@ -73,14 +27,15 @@ const animateLettersOnScroll = (containerRef: MutableRefObject<any>) => {
       y: (i, el) =>
         (1 - parseFloat(el.getAttribute('data-speed'))) *
         ScrollTrigger.maxScroll(window),
-      ease: 'none',
+      ease: 'power2.out',
+      duration: 0.8,
       scrollTrigger: {
         start: 0,
         end: 'max',
         invalidateOnRefresh: true,
-        scrub: 0
+        scrub: true
       },
-      rotation: creativityPositions[index]?.rotation ?? 10
+      rotation: getRandomRotation()
     });
   });
 };
@@ -101,12 +56,13 @@ export function LetterCollision() {
   const containerRef = useRef(null);
 
   useEffect(() => {
+    if (!containerRef.current) return;
     animateLettersOnScroll(containerRef);
   }, []);
 
   return (
-    <div ref={containerRef}>
-      <div className="relative -mt-28 mb-24 flex h-screen flex-col justify-end">
+    <div ref={containerRef} className="scroll-smooth">
+      <div className="-mt-28 mb-24 flex h-screen flex-col justify-end">
         <div className="flex flex-wrap p-0">
           <LetterDisplay word={creativity} />
           <div className="xs:w-4 w-2 sm:w-10"></div>
@@ -118,7 +74,7 @@ export function LetterCollision() {
           <LetterDisplay word={craft} />
         </div>
       </div>
-      <div className="xs:top-96 absolute top-80 flex flex-wrap md:relative md:top-10 md:-mb-96 lg:top-0 lg:mb-0 lg:pt-24">
+      <div className="flex flex-wrap">
         <LetterDisplay word={sentence3} />
       </div>
     </div>

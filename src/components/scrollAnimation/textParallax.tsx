@@ -37,7 +37,13 @@ const Phrase = ({ src }: { src: string }) => {
     <div className={'flex items-center gap-5 px-5'}>
       <p className="text-[7.5vw]">Abstract thinker Software engineer</p>
       <span className="relative aspect-[4/2] h-[7.5vw] overflow-hidden rounded-full">
-        <Image style={{ objectFit: 'cover' }} src={src} alt="image" fill />
+        <Image
+          style={{ objectFit: 'cover' }}
+          src={src}
+          alt="image"
+          fill
+          sizes={'6'}
+        />
       </span>
     </div>
   );

@@ -1,16 +1,19 @@
 'use client';
 import { LetterCollision } from '@/components/scrollAnimation/scrollText';
 import Hero from '@/app/home/hero';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDownRight } from 'lucide-react';
-import { Element, scroller } from 'react-scroll';
 import Cta from '@/app/home/cta';
 import ProjectsSection from '@/app/home/projects';
 import { AboutSection } from '@/app/home/aboutSection';
 import TextParallax from '@/components/scrollAnimation/textParallax';
+import BlurryCursor from '@/components/cursor/blendCursor';
 
 export default function Home() {
   const [showScrollButton, setShowScrollButton] = useState(true);
+  const [isActive, setIsActive] = useState(true);
+  const scrollContainerRef = useRef(null);
+  const heroRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,11 +22,6 @@ export default function Home() {
       } else {
         setShowScrollButton(true);
       }
-      scroller.scrollTo('hero', {
-        duration: 800,
-        smooth: 'easeInOutQuart',
-        offset: -100 // Adjust the offset as needed
-      });
     };
 
     window?.addEventListener('scroll', handleScroll);
@@ -33,21 +31,41 @@ export default function Home() {
     };
   }, []);
 
+  const scrollToHero = () => {
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="bg-background min-h-screen scroll-smooth pt-10">
+    <div
+      ref={scrollContainerRef}
+      className="bg-background h-[480vh] scroll-smooth pt-10"
+    >
       <LetterCollision />
       {showScrollButton && (
-        <div className="fixed bottom-8 right-8 flex items-center space-x-2 text-3xl font-semibold">
+        <div
+          className="fixed bottom-8 right-8 flex cursor-pointer items-center space-x-2 text-3xl font-semibold"
+          onClick={scrollToHero}
+        >
           <p>Scroll</p> <ArrowDownRight strokeWidth={3} className="size-6" />
         </div>
       )}
-      <Element name="hero">
+      <div
+        id="hero"
+        ref={heroRef}
+        className="bg-gray-800 snap-start text-white"
+        onMouseEnter={() => setIsActive(true)}
+        onMouseLeave={() => setIsActive(false)}
+      >
         <Hero />
-      </Element>
+      </div>
       <TextParallax />
       <ProjectsSection />
       <AboutSection />
       <Cta />
+      <BlurryCursor isActive={isActive} />
     </div>
   );
 }
