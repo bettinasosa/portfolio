@@ -3,7 +3,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
-import Menu from '../../components/nav';
+import Menu from '../nav';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { isMobile } from '@/components/util';
@@ -47,37 +47,35 @@ export default function Header() {
     <>
       <div
         ref={header}
-        className="absolute top-0 z-10 box-border flex w-full items-center p-8 font-light text-black"
+        className="absolute top-0 z-10 box-border flex w-full items-center p-4 font-light text-black lg:p-8"
       >
-        <div className="flex">
+        <div className="flex lg:pr-56">
           <Link href={'/'} className="group z-20 flex items-center space-x-2">
             <img className="h-8 w-auto" src="/assets/logo.jpg" alt="Bettina" />
-            <p className="hover:rotate-[360deg]">©</p>
-            <div className="relative flex overflow-hidden">
-              <div className="ease-custom-cubic transition-transform duration-500 group-hover:translate-x-[-100%]">
-                created by
-              </div>
-              <div className="ease-custom-cubic px-1 transition-transform duration-500 group-hover:translate-x-[-65px]">
-                Bettina
-              </div>
+            {!isMobile() && (
+              <>
+                <p className="hover:rotate-[360deg]">©</p>
+                <div className="relative flex overflow-hidden">
+                  <div className="ease-custom-cubic transition-transform duration-500 group-hover:translate-x-[-100%]">
+                    created by
+                  </div>
+                  <div className="ease-custom-cubic px-1 transition-transform duration-500 group-hover:translate-x-[-65px]">
+                    Bettina
+                  </div>
 
-              <div
-                className="ease-custom-cubic
+                  <div
+                    className="ease-custom-cubic
               translate-x-full transition-transform duration-500 group-hover:translate-x-[-65px]"
-              >
-                Sosa
-              </div>
-            </div>
+                  >
+                    Sosa
+                  </div>
+                </div>
+              </>
+            )}
           </Link>
         </div>
-        {!isMobile ? (
+        {!isMobile() ? (
           <div className="flex flex-1 items-center justify-between font-semibold">
-            <div className="group relative z-10 flex cursor-pointer flex-col p-3">
-              <div className="flex flex-col">
-                <a>Abstract</a>
-                <a>Thinker</a>
-              </div>
-            </div>
             <div className="group relative z-10 flex cursor-pointer flex-col p-3">
               <div className="flex flex-col">
                 <Link href={'/about'}>About</Link>
@@ -91,7 +89,7 @@ export default function Header() {
               </div>
             </div>
             <div className="group relative z-10 flex cursor-pointer flex-col p-3">
-              <div className="flex flex-col">
+              <div className="flex">
                 <Link href={'/contact'}>Contact</Link>
                 <ArrowUpRight size={18} />
               </div>
@@ -101,7 +99,7 @@ export default function Header() {
           <Menu />
         )}
       </div>
-      {!isMobile && (
+      {!isMobile() && (
         <div ref={button} className="fixed right-0 z-40 scale-0 transform">
           <Menu />
         </div>

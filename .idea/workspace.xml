@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/projects/m31/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/util.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/home/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/heading.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/projectHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projectHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cursor/blendCursor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cursor/blendCursor.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/nav/NavLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavLinks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/nav/anim.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/anim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/nav/menuButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/menuButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/Layout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/Layout.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/subheading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/project.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/util.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/util.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +89,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/layout" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/header/nav" />
       <recent name="$PROJECT_DIR$/src/components/homePage" />
       <recent name="$PROJECT_DIR$/src/components/scrollAnimation" />
-      <recent name="$PROJECT_DIR$/src/app/projects/astra" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -132,7 +127,7 @@
       <workItem from="1696949304328" duration="521000" />
       <workItem from="1697034444221" duration="1078000" />
       <workItem from="1697619428487" duration="6176000" />
-      <workItem from="1716505246630" duration="113560000" />
+      <workItem from="1716505246630" duration="115203000" />
     </task>
     <servers />
   </component>
