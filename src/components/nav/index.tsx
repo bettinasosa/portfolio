@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import MenuButton from '@/components/header/nav/menuButton';
+import MenuButton from '@/components/nav/menuButton';
 import React, { useState } from 'react';
-import NavLinks from '@/components/header/nav/NavLinks';
+import NavLinks from '@/components/nav/NavLinks';
 
 const links = [
   {

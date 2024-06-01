@@ -1,5 +1,4 @@
 import ProjectBody from '@/app/projects/body';
-import ProjectHeading from '@/app/projects/heading';
 import ProjectHero from '@/app/projects/projectHero';
 
 export default function AstraProject() {
@@ -18,9 +17,8 @@ export default function AstraProject() {
     'A circular hologram can be viewed in the center of the machine. The projection is created by a Raspberry Pi (Retropie) running a space arcade game. The user can then play the game with an Xbox controller connected to the Raspberry Pi remotely. After 2 minutes, the curtain closes (end of the game). ASTRA is encased in a two-story cylindrical black acrylic structure that can be opened and closed at the top by an iris linkage mechanism.';
   return (
     <div>
-      <ProjectHeading title={'Astra'} description={description} />
       <ProjectHero
-        description={'hey'}
+        description={description}
         media={'/assets/astra/gizmo.png'}
         isImage={true}
         title={'Astra'}

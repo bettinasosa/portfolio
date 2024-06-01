@@ -8,6 +8,8 @@ import {
   TooltipTrigger
 } from '@/components/ui/tooltip';
 import { Button } from '@/components/ui/button';
+import BlurryCursor from '@/components/cursor/blendCursor';
+import React from 'react';
 
 export default function ContactInfo() {
   const Card = ({ children }) => {
@@ -54,6 +56,7 @@ export default function ContactInfo() {
           </TooltipProvider>
         </div>
       </div>
+      <BlurryCursor isActive={false} text={''} />
       <ContactForm />
     </div>
   );

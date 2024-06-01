@@ -3,8 +3,10 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
-import Menu from '@/components/header/nav';
+import Menu from '../../components/nav';
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
+import { isMobile } from '@/components/util';
 
 export default function Header() {
   const header = useRef(null);
@@ -48,7 +50,7 @@ export default function Header() {
         className="absolute top-0 z-10 box-border flex w-full items-center p-8 font-light text-black"
       >
         <div className="flex">
-          <div className="group z-20 flex items-center space-x-2">
+          <Link href={'/'} className="group z-20 flex items-center space-x-2">
             <img className="h-8 w-auto" src="/assets/logo.jpg" alt="Bettina" />
             <p className="hover:rotate-[360deg]">©</p>
             <div className="relative flex overflow-hidden">
@@ -66,33 +68,44 @@ export default function Header() {
                 Sosa
               </div>
             </div>
-          </div>
+          </Link>
         </div>
-        <div className="flex flex-1 items-center justify-between font-semibold">
-          <div className="relative z-10 flex cursor-pointer flex-col p-3">
-            <a>Abstract</a>
-            <a>Thinker</a>
-            <div className="ease-custom-cubic absolute left-1/2 top-11 h-1 w-1 -translate-x-1/2 scale-0 transform rounded-full bg-white transition-transform duration-200"></div>
+        {!isMobile ? (
+          <div className="flex flex-1 items-center justify-between font-semibold">
+            <div className="group relative z-10 flex cursor-pointer flex-col p-3">
+              <div className="flex flex-col">
+                <a>Abstract</a>
+                <a>Thinker</a>
+              </div>
+            </div>
+            <div className="group relative z-10 flex cursor-pointer flex-col p-3">
+              <div className="flex flex-col">
+                <Link href={'/about'}>About</Link>
+                <Link href="/projects">Work</Link>
+              </div>
+            </div>
+            <div className="group relative z-10 flex cursor-pointer flex-col p-3">
+              <div className="flex flex-col">
+                <Link href={'/gallery'}>Gallery</Link>
+                <Link href={'/blog'}>Blog</Link>
+              </div>
+            </div>
+            <div className="group relative z-10 flex cursor-pointer flex-col p-3">
+              <div className="flex flex-col">
+                <Link href={'/contact'}>Contact</Link>
+                <ArrowUpRight size={18} />
+              </div>
+            </div>
           </div>
-          <div className="relative z-10 flex cursor-pointer flex-col p-3">
-            <Link href="/about"> About</Link>
-            <Link href="/projects">Work</Link>
-            <div className="ease-custom-cubic absolute left-1/2 top-11 h-1 w-1 -translate-x-1/2 scale-0 transform rounded-full bg-white transition-transform duration-200"></div>
-          </div>
-          <div className="relative z-10 flex cursor-pointer flex-col p-3">
-            <a>Gallery</a>
-            <a>Blog</a>
-            <div className="ease-custom-cubic absolute left-1/2 top-11 h-1 w-1 -translate-x-1/2 scale-0 transform rounded-full bg-white transition-transform duration-200"></div>
-          </div>
-          <div className="relative z-10 flex cursor-pointer flex-col p-3">
-            <a>Contact</a>
-            <div className="ease-custom-cubic absolute left-1/2 top-11 h-1 w-1 -translate-x-1/2 scale-0 transform rounded-full bg-white transition-transform duration-200"></div>
-          </div>
+        ) : (
+          <Menu />
+        )}
+      </div>
+      {!isMobile && (
+        <div ref={button} className="fixed right-0 z-40 scale-0 transform">
+          <Menu />
         </div>
-      </div>
-      <div ref={button} className="fixed right-0 z-40 scale-0 transform">
-        <Menu />
-      </div>
+      )}
     </>
   );
 }

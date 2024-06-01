@@ -1,18 +1,16 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 import { clsx } from 'clsx';
+import { isMobile } from '@/components/util';
 
 type BlurCursorProps = {
-  isActive: boolean;
+  isActive?: boolean;
   text?: string;
 };
 
 export default function BlurryCursor({ isActive, text }: BlurCursorProps) {
-  const isMobile = () => {
-    const ua = navigator.userAgent;
-    return /Android|Mobi/i.test(ua);
-  };
+  const [isClicked, setIsClicked] = useState(false);
   if (typeof navigator !== 'undefined' && isMobile()) return null;
 
   const cursorX = useMotionValue(0);
@@ -27,9 +25,23 @@ export default function BlurryCursor({ isActive, text }: BlurCursorProps) {
       cursorY.set(e.clientY - 20);
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
+    const handleMouseDown = () => {
+      setIsClicked(true);
+    };
 
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    const handleMouseUp = () => {
+      setIsClicked(false);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mousedown', handleMouseDown);
+    window.addEventListener('mouseup', handleMouseUp);
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mousedown', handleMouseDown);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
   }, [isActive]);
 
   return (
@@ -37,8 +49,9 @@ export default function BlurryCursor({ isActive, text }: BlurCursorProps) {
       className={clsx(
         'pointer-events-none fixed left-0 top-0 z-50 mix-blend-difference shadow-md',
         isActive
-          ? ' w-400 bg-secondary bg-opacity-50 p-4 text-6xl font-bold text-white'
-          : 'h-10 w-10 rounded-full bg-white'
+          ? 'w-400 bg-secondary bg-opacity-50 p-4 text-6xl font-bold text-white'
+          : 'h-10 w-10 rounded-full',
+        isClicked ? 'bg-orange-600' : 'bg-white'
       )}
       style={{
         translateX: cursorXSpring,

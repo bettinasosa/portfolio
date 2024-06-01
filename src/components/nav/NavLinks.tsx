@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { perspective } from '@/components/header/nav/anim';
+import { perspective } from '@/components/nav/anim';
 
 type NavLinksProps = {
   links: { title: string; href?: string }[];
@@ -21,7 +21,7 @@ export default function NavLinks({ links }: NavLinksProps) {
             >
               <a
                 href={href}
-                className="text-background text-[46px] no-underline"
+                className="text-[46px] text-background no-underline"
               >
                 {title}
               </a>
