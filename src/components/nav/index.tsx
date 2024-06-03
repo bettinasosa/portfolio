@@ -6,7 +6,7 @@ import NavLinks from '@/components/nav/NavLinks';
 
 const links = [
   {
-    title: '.home( )',
+    title: '.homePage( )',
     href: '/'
   },
   {
@@ -14,8 +14,8 @@ const links = [
     href: '/about'
   },
   {
-    title: '.projects( )',
-    href: '/projects'
+    title: '.projectPage( )',
+    href: '/projectPage'
   },
   {
     title: '.gallery( )',

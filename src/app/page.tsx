@@ -1,17 +1,15 @@
 'use client';
-import { LetterCollision } from '@/components/scrollAnimation/scrollText';
-import Hero from '@/app/home/hero';
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDownRight } from 'lucide-react';
-import Cta from '@/app/home/cta';
-import ProjectsSection from '@/app/home/projects';
-import { AboutSection } from '@/app/home/aboutSection';
-import TextParallax from '@/components/scrollAnimation/textParallax';
 import BlurryCursor from '@/components/cursor/blendCursor';
+import Description from '@/components/homePage/description';
+import SlidingImages from '@/components/homePage/slidingImages';
+import ContactInfo from '@/components/homePage/contactInfo';
+import Hero from '@/components/homePage/hero';
+import { LetterCollision } from '@/components/scrollAnimation/scrollText';
 
 export default function Home() {
   const [showScrollButton, setShowScrollButton] = useState(true);
-  const [isActive, setIsActive] = useState(false);
   const scrollContainerRef = useRef(null);
   const heroRef = useRef(null);
 
@@ -38,10 +36,26 @@ export default function Home() {
     }
   };
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    (async () => {
+      // @ts-ignore
+      const LocomotiveScroll = (await import('locomotive-scroll')).default;
+      const locomotiveScroll = new LocomotiveScroll();
+
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = 'default';
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
+
   return (
     <div
       ref={scrollContainerRef}
-      className="bg-background h-[480vh] scroll-smooth pt-10"
+      className="bg-background min-h-[500vh] overflow-x-hidden scroll-smooth"
     >
       <LetterCollision />
       {showScrollButton && (
@@ -52,19 +66,14 @@ export default function Home() {
           <p>Scroll</p> <ArrowDownRight strokeWidth={3} className="size-6" />
         </div>
       )}
-      <div
-        id="hero"
-        ref={heroRef}
-        onMouseEnter={() => setIsActive(true)}
-        onMouseLeave={() => setIsActive(false)}
-      >
+      <div id="hero" ref={heroRef}>
         <Hero />
       </div>
-      <TextParallax />
-      <ProjectsSection />
-      <AboutSection />
-      <Cta />
-      <BlurryCursor isActive={isActive} text={'Go to projects'} />
+      {/*<TextParallax />*/}
+      <Description />
+      <SlidingImages />
+      <ContactInfo />
+      <BlurryCursor isActive={false} text={'Go to projectPage'} />
     </div>
   );
 }

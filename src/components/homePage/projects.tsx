@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectSwiper from '../../components/swiper/ProjectSwiper';
+import ProjectSwiper from '../swiper/ProjectSwiper';
 
 interface Project {
   name: string;
@@ -20,7 +20,7 @@ export default function ProjectsSection() {
         '                  visual impairments.',
       image: '/assets/m31/controller.jpg',
       tag: '',
-      link: 'projects/m31',
+      link: 'projectPage/m31',
       features: []
     },
     {
@@ -29,7 +29,7 @@ export default function ProjectsSection() {
         'Reusable packaging made of highly recyclable materials for baby bathing products.',
       image: '/assets/bottles/block.jpg',
       tag: '',
-      link: '/projects/stackers',
+      link: '/projectPage/stackers',
       features: []
     },
     {
@@ -38,7 +38,7 @@ export default function ProjectsSection() {
       isFlagged: true,
       image: '/assets/astra/astra.png',
       tag: '',
-      link: '/projects/astra',
+      link: '/projectPage/astra',
       features: []
     }
   ];

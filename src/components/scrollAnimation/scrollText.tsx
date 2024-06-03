@@ -30,10 +30,11 @@ const animateLettersOnScroll = (containerRef: MutableRefObject<any>) => {
       ease: 'power2.out',
       duration: 0.8,
       scrollTrigger: {
+        trigger: document.documentElement,
         start: 0,
-        end: 'max',
+        end: window.innerHeight,
         invalidateOnRefresh: true,
-        scrub: true
+        scrub: 0.5
       },
       rotation: getRandomRotation()
     });

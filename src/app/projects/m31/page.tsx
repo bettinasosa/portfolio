@@ -1,5 +1,6 @@
 import ProjectBody from '@/app/projects/body';
 import ProjectHero from '@/app/projects/projectHero';
+import ProjectsCarousel from '@/app/projects/projectsCarousel';
 
 export default function M31Project() {
   const introduction =
@@ -28,6 +29,7 @@ export default function M31Project() {
         subtitle={'Expanding the Non-Visual Output of Games'}
         video={'https://www.youtube.com/embed/bXaLimCtK50'}
       />
+      <ProjectsCarousel />
     </div>
   );
 }

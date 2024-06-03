@@ -33,7 +33,7 @@ const bottomLinks = [
       },
       {
         name: 'Projects',
-        href: '/projects',
+        href: '/projectPage',
         isExternal: false
       },
       {
