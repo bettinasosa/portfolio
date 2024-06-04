@@ -10,14 +10,14 @@ const index = [
     src: 'm31/controller.jpg',
     description:
       'A video/audio game controller to make digital entertainment more approachable to those with visual impairments.',
-    href: '/projectPage/m31',
+    href: '/projects/m31',
     tag: 'Prototyping',
     color: '#000000'
   },
   {
     title: 'AXO',
     src: 'axo/astra.png',
-    href: '/projectPage/axo',
+    href: '/projects/axo',
     tag: 'Bio Materials',
     color: '#303030'
   },
@@ -26,7 +26,7 @@ const index = [
     description:
       'Reusable packaging made of highly recyclable materials for baby bathing products.',
     src: 'bottles/block.png',
-    href: '/projectPage/stackers',
+    href: '/projects/stackers',
     tag: 'Packaging',
     color: '#EFE8D3'
   },
@@ -34,28 +34,28 @@ const index = [
     title: 'ASTRA',
     description: 'An interstellar games arcade with a hollogramic screen.',
     src: 'astra/astra.png',
-    href: '/projectPage/astra',
+    href: '/projects/astra',
     tag: 'GIZMO',
     color: '#303030'
   },
   {
     title: 'DAO social network',
     src: 'sojo/astra.png',
-    href: '/projectPage/catapult-v1',
+    href: '/projects/catapult-v1',
     tag: 'Software',
     color: '#303030'
   },
   {
     title: 'SOJO',
     src: 'sojo/astra.png',
-    href: '/projectPage/sojo',
+    href: '/projects/sojo',
     tag: 'Software',
     color: '#303030'
   },
   {
     title: 'JENGA',
     src: 'jenga.jpg',
-    href: '/projectPage/robot-jenga',
+    href: '/projects/robot-jenga',
     tag: 'Robotics',
     color: '#706D63'
   },
