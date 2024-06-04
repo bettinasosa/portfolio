@@ -62,7 +62,7 @@ export function LetterCollision() {
   }, []);
 
   return (
-    <div ref={containerRef} className="scroll-smooth">
+    <div ref={containerRef} className="ml-8 scroll-smooth">
       <div className="-mt-28 mb-24 flex h-screen flex-col justify-end">
         <div className="flex flex-wrap p-0">
           <LetterDisplay word={creativity} />
@@ -75,7 +75,7 @@ export function LetterCollision() {
           <LetterDisplay word={craft} />
         </div>
       </div>
-      <div className="flex flex-wrap">
+      <div className="-pb-36 flex flex-wrap">
         <LetterDisplay word={sentence3} />
       </div>
     </div>

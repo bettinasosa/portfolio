@@ -1,22 +1,22 @@
 'use client';
 
-import * as React from 'react';
-
-import { Progress } from '@/components/ui/progress';
+import { AnimatePresence } from 'framer-motion';
+import PreLoader from '../components/animations/preLoader';
+import React, { useEffect, useState } from 'react';
 
 export default function Loading() {
-  {
-    const [progress, setProgress] = React.useState(13);
-
-    React.useEffect(() => {
-      const timer = setTimeout(() => setProgress(66), 500);
-      return () => clearTimeout(timer);
-    }, []);
-
-    return (
-      <div className="flex h-screen items-center justify-center">
-        <Progress value={progress} className="w-[60%]" />
-      </div>
-    );
-  }
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    (async () => {
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = 'default';
+        window.scrollTo(0, 0);
+      }, 2000);
+      console.log('loading', isLoading);
+    })();
+  }, []);
+  return (
+    <AnimatePresence mode="wait">{isLoading && <PreLoader />}</AnimatePresence>
+  );
 }

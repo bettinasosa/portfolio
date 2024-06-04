@@ -22,7 +22,7 @@ export default function ProjectHero({
               <h1 className="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
                 {title}
               </h1>
-              <p className="text-primary-950/70 dark:text-primary-200/70 text-lg sm:text-xl">
+              <p className="dark:text-primary-200/70 text-lg text-primary sm:text-xl">
                 {description}
               </p>
             </div>

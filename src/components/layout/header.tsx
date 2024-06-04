@@ -7,6 +7,7 @@ import Menu from '../nav';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { isMobile } from '@/components/util';
+import Magnetic from '@/components/animations/magnetic';
 
 export default function Header() {
   const header = useRef(null);
@@ -51,7 +52,13 @@ export default function Header() {
       >
         <div className="flex lg:pr-56">
           <Link href={'/'} className="group z-20 flex items-center space-x-2">
-            <img className="h-8 w-auto" src="/assets/logo.jpg" alt="Bettina" />
+            <Magnetic>
+              <img
+                className="h-8 w-auto"
+                src="/assets/logo.jpg"
+                alt="Bettina"
+              />
+            </Magnetic>
             {!isMobile() && (
               <>
                 <p className="hover:rotate-[360deg]">©</p>
@@ -78,21 +85,31 @@ export default function Header() {
           <div className="flex flex-1 items-center justify-between font-semibold">
             <div className="group relative z-10 flex cursor-pointer flex-col p-3">
               <div className="flex flex-col">
-                <Link href={'/about'}>About</Link>
-                <Link href="/projects">Work</Link>
+                <Magnetic>
+                  <Link href={'/about'}>About</Link>
+                </Magnetic>
+                <Magnetic>
+                  <Link href="/projects">Work</Link>
+                </Magnetic>
               </div>
             </div>
             <div className="group relative z-10 flex cursor-pointer flex-col p-3">
               <div className="flex flex-col">
-                <Link href={'/gallery'}>Gallery</Link>
-                <Link href={'/blog'}>Blog</Link>
+                <Magnetic>
+                  <Link href={'/gallery'}>Gallery</Link>
+                </Magnetic>
+                <Magnetic>
+                  <Link href={'/blog'}>Blog</Link>
+                </Magnetic>
               </div>
             </div>
             <div className="group relative z-10 flex cursor-pointer flex-col p-3">
-              <div className="flex">
-                <Link href={'/contact'}>Contact</Link>
-                <ArrowUpRight size={18} />
-              </div>
+              <Magnetic>
+                <div className="flex">
+                  <Link href={'/contact'}>Contact</Link>
+                  <ArrowUpRight size={18} />
+                </div>
+              </Magnetic>
             </div>
           </div>
         ) : (

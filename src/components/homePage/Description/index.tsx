@@ -1,8 +1,9 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { opacity, slideUp } from '@/components/homePage/descriptionAnim';
+import { opacity, slideUp } from './anim';
+import RoundedButton from '@/components/animations/roundedButton';
 
-export default function Description() {
+export default function Index() {
   const phrase1 =
     'A software engineer with a passion for innovation and\n' +
     'cutting-edge technology.\n\n ';
@@ -72,9 +73,10 @@ export default function Description() {
           positive impact on the world.
         </motion.p>
         <div data-scroll data-scroll-speed={0.1}>
-          <div className="ml-16 mt-16 flex h-64 w-64 cursor-pointer items-center justify-center rounded-full bg-gray-800 text-white">
-            <p className="relative z-10 m-0 text-base font-light">About me</p>
-          </div>
+          {' '}
+          <RoundedButton className="ml-16 mt-16 flex h-64 w-64 cursor-pointer items-center justify-center rounded-full bg-destructive text-white">
+            About me
+          </RoundedButton>
         </div>
       </div>
     </div>

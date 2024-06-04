@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import React, { ReactNode } from 'react';
 import { Metadata } from 'next';
+import Animations from './animations';
 import Header from '@/components/layout/header';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -18,15 +19,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="snap-mandatory">
-      <body className="snap-mandatory overflow-scroll">
-        <main className="">
-          <Header />
-          <div className="bg-background text-foreground flex flex-col">
-            <main className={`flex-grow ${inter.className}`}>{children}</main>
-          </div>
-          {/*<Footer />*/}
-        </main>
-      </body>
+      <Animations>
+        <body className="overflow-scroll">
+          <main>
+            <Header />
+            <div className="bg-background text-foreground flex flex-col">
+              <main className={`flex-grow ${inter.className}`}>{children}</main>
+            </div>
+            {/*<Footer />*/}
+          </main>
+        </body>
+      </Animations>
     </html>
   );
 }

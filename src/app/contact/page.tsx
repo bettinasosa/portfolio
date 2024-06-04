@@ -8,11 +8,11 @@ import {
   TooltipTrigger
 } from '@/components/ui/tooltip';
 import { Button } from '@/components/ui/button';
-import BlurryCursor from '@/components/cursor/blendCursor';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
+import BlurryCursor from '@/components/animations/cursor/blendCursor';
 
 export default function ContactInfo() {
-  const Card = ({ children }) => {
+  const Card = ({ children }: PropsWithChildren) => {
     return (
       <div className="bg-primary-500/10 dark:bg-primary-400/10 rounded-3xl px-6 py-8">
         {children}

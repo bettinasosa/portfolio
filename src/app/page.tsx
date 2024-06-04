@@ -1,12 +1,14 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDownRight } from 'lucide-react';
-import BlurryCursor from '@/components/cursor/blendCursor';
-import Description from '@/components/homePage/description';
-import SlidingImages from '@/components/homePage/slidingImages';
-import ContactInfo from '@/components/homePage/contactInfo';
+import SlidingImages from '@/components/homePage/SlidingImages';
+import BlurryCursor from '@/components/animations/cursor/blendCursor';
+import Curve from '@/components/animations/curveTransition/Curve';
+import { LetterCollision } from '@/components/animations/textAnimations/scrollText';
+import Magnetic from '@/components/animations/magnetic';
 import Hero from '@/components/homePage/hero';
-import { LetterCollision } from '@/components/scrollAnimation/scrollText';
+import Index from '@/components/homePage/Description';
+import ContactInfo from '@/components/homePage/ContactInfo';
 
 export default function Home() {
   const [showScrollButton, setShowScrollButton] = useState(true);
@@ -36,22 +38,6 @@ export default function Home() {
     }
   };
 
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    (async () => {
-      // @ts-ignore
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const locomotiveScroll = new LocomotiveScroll();
-
-      setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = 'default';
-        window.scrollTo(0, 0);
-      }, 2000);
-    })();
-  }, []);
-
   return (
     <div
       ref={scrollContainerRef}
@@ -59,21 +45,26 @@ export default function Home() {
     >
       <LetterCollision />
       {showScrollButton && (
-        <div
-          className="fixed bottom-8 right-8 flex cursor-pointer items-center space-x-2 text-3xl font-semibold"
-          onClick={scrollToHero}
-        >
-          <p>Scroll</p> <ArrowDownRight strokeWidth={3} className="size-6" />
-        </div>
+        <Magnetic>
+          <div
+            className="fixed bottom-8 right-8 flex cursor-pointer items-center space-x-2 text-3xl font-semibold"
+            onClick={scrollToHero}
+          >
+            <p>Scroll</p>
+
+            <ArrowDownRight strokeWidth={3} className="size-6" />
+          </div>
+        </Magnetic>
       )}
       <div id="hero" ref={heroRef}>
         <Hero />
       </div>
       {/*<TextParallax />*/}
-      <Description />
+      <Index />
       <SlidingImages />
       <ContactInfo />
-      <BlurryCursor isActive={false} text={'Go to projectPage'} />
+      <BlurryCursor isActive={false} text={'Go to projects'} />
+      <Curve backgroundColor="primary" link={'/'} />
     </div>
   );
 }

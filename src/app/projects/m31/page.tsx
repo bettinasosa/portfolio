@@ -1,6 +1,6 @@
 import ProjectBody from '@/app/projects/body';
-import ProjectHero from '@/app/projects/projectHero';
-import ProjectsCarousel from '@/app/projects/projectsCarousel';
+import ProjectsCarousel from '@/components/projectPage/projectsCarousel';
+import ProjectHero from '@/components/projectPage/projectHero';
 
 export default function M31Project() {
   const introduction =

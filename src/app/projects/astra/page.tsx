@@ -1,5 +1,5 @@
 import ProjectBody from '@/app/projects/body';
-import ProjectHero from '@/app/projects/projectHero';
+import ProjectHero from '@/components/projectPage/projectHero';
 
 export default function AstraProject() {
   const introduction =

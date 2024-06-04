@@ -9,15 +9,15 @@ const slider1 = [
   },
   {
     color: '#d6d7dc',
-    src: 'astra/astra.png'
+    src: 'bottles/stack2.png'
   },
   {
     color: '#e3e3e3',
-    src: 'bottles/block.png'
+    src: 'm31/specs.png'
   },
   {
     color: '#21242b',
-    src: 'dresses/dress.jpg'
+    src: 'm31/controller.jpg'
   }
 ];
 
@@ -28,11 +28,11 @@ const slider2 = [
   },
   {
     color: '#e5e0e1',
-    src: 'posters/coffee.jpg'
+    src: 'catapult-trading/dashboard.png'
   },
   {
     color: '#d7d4cf',
-    src: 'posters/cheese-w.jpg'
+    src: 'm31/app.png'
   },
   {
     color: '#e1dad6',
@@ -53,7 +53,7 @@ export default function SlidingImages() {
   return (
     <div
       ref={container}
-      className="relative z-10 mt-[200px] flex flex-col gap-[3vw] bg-white"
+      className="relative z-10 mt-[200px] flex flex-col gap-[3vw] bg-background"
     >
       <motion.div
         style={{ x: x1 }}
@@ -93,7 +93,7 @@ export default function SlidingImages() {
         ))}
       </motion.div>
       <motion.div style={{ height }} className="relative mt-[100px]">
-        <div className="absolute left-[-10%] z-10 h-[3050%] w-[120%] rounded-b-[100%] bg-white shadow-[0_60px_50px_0px_rgba(0,0,0,0.748)]"></div>
+        <div className="absolute left-[-10%] z-10 h-[3050%] w-[120%] rounded-b-[100%] bg-background shadow-[0_60px_50px_0px_rgba(0,0,0,0.748)]"></div>
       </motion.div>
     </div>
   );

@@ -27,13 +27,13 @@ const bottomLinks = [
         isExternal: false
       },
       {
-        name: 'About',
+        name: 'Pages',
         href: '/about',
         isExternal: false
       },
       {
         name: 'Projects',
-        href: '/projectPage',
+        href: '/projects',
         isExternal: false
       },
       {
