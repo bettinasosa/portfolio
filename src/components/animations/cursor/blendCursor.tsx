@@ -51,7 +51,7 @@ export default function BlurryCursor({ isActive, text }: BlurCursorProps) {
         isActive
           ? 'w-400 bg-secondary bg-opacity-50 p-4 text-6xl font-bold text-white'
           : 'h-10 w-10 rounded-full',
-        isClicked ? 'bg-orange-600' : 'bg-white'
+        isClicked ? 'bg-primary' : 'bg-green-500'
       )}
       style={{
         translateX: cursorXSpring,
