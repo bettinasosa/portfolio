@@ -1,5 +1,5 @@
-import ProjectBody from '@/app/projects/body';
-import ProjectHero from '@/components/projectPage/projectHero';
+import ProjectBody from '@/app/projects/projects/body';
+import ProjectHero from '@/app/projects/projects/hero';
 
 export default function AstraProject() {
   const introduction =
@@ -27,7 +27,6 @@ export default function AstraProject() {
         introduction={introduction}
         myRole={myRole}
         paragraphs={[]}
-        slides={[]}
         subtitle={'Holographic arcade'}
         video={'/assets/astra/gizmo.png'}
       />

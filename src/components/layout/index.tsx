@@ -1,10 +1,15 @@
 import React, { PropsWithChildren } from 'react';
-import BlurryCursor from '@/components/animations/cursor/blendCursor';
+import ContrastCursor from '@/components/animations/cursor/contrastCursor';
 
-export default function Layout({ children }: PropsWithChildren) {
+type Props = {
+  title: string;
+};
+
+export default function Layout({ children, title }: PropsWithChildren<Props>) {
   return (
-    <div className="px-12 py-24">
-      {children} <BlurryCursor isActive={false} text={''} />
+    <div className="mt-12 px-8 py-16 sm:py-20">
+      <p className="3xl font-medium sm:text-[150px]">{title}</p>
+      {children} <ContrastCursor isActive={false} text={''} />
     </div>
   );
 }

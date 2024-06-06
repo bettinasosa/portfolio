@@ -1,5 +1,6 @@
+'use client';
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Magnetic from '@/components/animations/magnetic';
 import RoundedButton from '@/components/animations/roundedButton';
@@ -35,15 +36,20 @@ export default function ContactInfo() {
       ref={container}
       className="relative flex flex-col items-center justify-center bg-foreground p-6 text-white"
     >
-      <div className="w-full max-w-[1800px] bg-foreground pt-[150px]">
+      <div className="w-full bg-foreground pt-[150px] sm:max-w-[1800px]">
         <div className="relative mx-[100px] border-b border-gray-600 pb-12">
           <span className="flex items-center">
             <div className="relative h-[100px] w-[100px] overflow-hidden rounded-full">
-              <Image fill={true} alt={'image'} src={`/assets/profile.jpg`} />
+              <Image
+                fill={true}
+                objectFit="cover"
+                alt={'profile'}
+                src={`/assets/profile.jpg`}
+              />
             </div>
-            <h2 className="ml-3 text-[90px] font-medium">Let's work</h2>
+            <h2 className="ml-3 font-medium sm:text-[90px]">Let's work</h2>
           </span>
-          <h2 className="ml-1 text-[90px] font-medium">together</h2>
+          <h2 className="ml-1 font-medium sm:text-[90px]">together</h2>
           <motion.div
             style={{ x }}
             className="absolute left-[calc(100%-400px)] top-[calc(100%-75px)]"
@@ -56,15 +62,17 @@ export default function ContactInfo() {
             </RoundedButton>
           </motion.div>
         </div>
-        <div className="mx-48 mt-24 flex gap-5">
+        <div className="mt-6 flex gap-5 sm:mx-[100px]">
           <RoundedButton>bettinasosarohl@gmail.com</RoundedButton>
-          <div className="relative flex cursor-pointer items-center justify-center rounded-3xl border border-gray-500 px-14 py-3">
-            bettinasosarohl@gmail.com
-          </div>
         </div>
-        <div className="mt-48 flex justify-between p-5">
+        <div className="mt-48 flex justify-between p-5 sm:mx-[100px]">
           <div className="flex items-end gap-2">
             <span className="flex flex-col gap-3">
+              <p className="max-w-sm text-base text-destructive">
+                AI/LLM enthusiast | Cutting-edge tech advocate | Web3 builder |
+                Passionate about using technology to make the world a better
+                place.
+              </p>
               <h3 className="m-0 cursor-default p-1 text-base font-light text-gray-500">
                 Version
               </h3>
@@ -81,18 +89,18 @@ export default function ContactInfo() {
           </div>
           <div className="flex items-end gap-2">
             <span className="flex flex-col gap-3">
-              <h3 className="m-0 cursor-default p-1 text-base font-light text-gray-500">
-                socials
+              <h3 className="m-0 cursor-default text-base font-light text-gray-500">
+                Socials
               </h3>
+              <Magnetic>
+                <Link
+                  href="https://twitter.com/bettysrohl"
+                  className={animatedUnderlineStyle}
+                >
+                  Twitter
+                </Link>
+              </Magnetic>
             </span>
-            <Magnetic>
-              <Link
-                href="https://twitter.com/bettysrohl"
-                className={animatedUnderlineStyle}
-              >
-                Twitter
-              </Link>
-            </Magnetic>
             <Magnetic>
               <Link
                 href="https://github.com/bettinasosa"

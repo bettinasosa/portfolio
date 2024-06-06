@@ -1,8 +1,7 @@
 'use client';
 
 import React from 'react';
-import Tilt from '@/components/artworks/Tilt';
-import ProjectSwiper, { Slide } from '@/components/swiper/ProjectSwiper';
+import ImgTilt from '@/app/gallery/imgTilt';
 
 interface Paragraph {
   title: string;
@@ -16,15 +15,13 @@ interface ProjectBodyProps {
   myRole: string;
   video: string;
   paragraphs: Paragraph[];
-  slides: Slide[];
 }
 
 export default function ProjectBody({
   subtitle,
   introduction,
   myRole,
-  paragraphs,
-  slides
+  paragraphs
 }: ProjectBodyProps) {
   const options = {
     scale: 1.4,
@@ -47,17 +44,13 @@ export default function ProjectBody({
             {myRole}
           </p>
         </div>
-        <div className="space-y-12 py-12">
-          <ProjectSwiper slides={slides} />
-        </div>
+        <div className="space-y-12 py-12">{/*  TODO: add slides here*/}</div>
 
         {paragraphs.map((paragraph, index) => (
           <div key={index} className="gris-cols-1 grid gap-10 sm:grid-cols-2">
-            <Tilt
+            <ImgTilt
               className="shadow-3xl z-10 m-10 overflow-hidden rounded-3xl bg-cover"
-              input=""
-              options={options}
-              bgImage={paragraph.images[0]}
+              src={paragraph.images[0]}
             />
             <div className="space-y-6 sm:space-y-8">
               <h3 className="text-xl font-medium tracking-tight">

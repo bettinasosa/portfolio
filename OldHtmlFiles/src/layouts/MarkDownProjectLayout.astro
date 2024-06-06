@@ -1,10 +1,10 @@
 ---
 import Layout from './Layout.astro';
-import Cta from '../components/projectPage/cta.tsx';
-import ProjectHero from '../components/projectPage/projectHero.tsx';
-import Body from '../components/projectPage/body.tsx';
+import Cta from '../components/projects/cta.tsx';
+import ProjectHero from '../components/projects/hero.tsx';
+import Body from '../components/projects/body.tsx';
 // Import multiple files with Astro.glob
-const projects = await Astro.glob('../app/projectPage/*.md');
+const projects = await Astro.glob('../app/projects/*.md');
 
 const { frontmatter } = Astro.props;
 ---

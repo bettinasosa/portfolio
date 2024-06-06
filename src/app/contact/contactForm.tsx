@@ -9,7 +9,7 @@ import {
   FormMessage
 } from '@/components/ui/form';
 import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
+import RoundedButton from '@/components/animations/roundedButton';
 
 type ContactFormData = {
   subject: string;
@@ -29,7 +29,7 @@ export function ContactForm() {
     console.log(data);
   };
   return (
-    <div className="py-16 sm:py-20">
+    <div className=" min-h-screen py-16 sm:py-20">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="flex flex-col gap-4 sm:gap-6">
@@ -102,12 +102,7 @@ export function ContactForm() {
                 )}
               />
               <div className="flex justify-end">
-                <Button
-                  className="rounded-full bg-secondary hover:bg-primary dark:bg-primary dark:text-primary dark:hover:bg-primary"
-                  type="submit"
-                >
-                  Submit
-                </Button>
+                <RoundedButton>Submit</RoundedButton>
               </div>
             </form>
           </FormProvider>

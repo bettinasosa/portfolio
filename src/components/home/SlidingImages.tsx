@@ -1,46 +1,19 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
+import RoundedButton from '@/components/animations/roundedButton';
+import Link from 'next/link';
 
-const slider1 = [
-  {
-    color: '#e3e5e7',
-    src: 'art/draw1.png'
-  },
-  {
-    color: '#d6d7dc',
-    src: 'bottles/stack2.png'
-  },
-  {
-    color: '#e3e3e3',
-    src: 'm31/specs.png'
-  },
-  {
-    color: '#21242b',
-    src: 'm31/controller.jpg'
-  }
-];
+type Slider = {
+  color: string;
+  src: string;
+};
+type Props = {
+  slider1: Slider[];
+  slider2: Slider[];
+};
 
-const slider2 = [
-  {
-    color: '#d4e3ec',
-    src: 'm31/app.png'
-  },
-  {
-    color: '#e5e0e1',
-    src: 'catapult-trading/dashboard.png'
-  },
-  {
-    color: '#d7d4cf',
-    src: 'm31/app.png'
-  },
-  {
-    color: '#e1dad6',
-    src: 'vcp/VCP.png'
-  }
-];
-
-export default function SlidingImages() {
+export default function SlidingImages({ slider1, slider2 }: Props) {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -57,20 +30,20 @@ export default function SlidingImages() {
     >
       <motion.div
         style={{ x: x1 }}
-        className="relative left-[-10vw] flex w-[120vw] gap-12"
+        className="relative left-[-10vw] flex w-[300vw] gap-4 sm:w-[120vw] sm:gap-12"
       >
         {slider1.map((project, index) => (
           <div
             key={index}
-            className="flex h-80 w-1/4 items-center justify-center"
+            className="flex h-60 w-1/2 items-center justify-center sm:h-80 sm:w-1/4"
             style={{ backgroundColor: project.color }}
           >
-            <div className="relative h-4/5 w-4/5">
+            <div className="relative h-full w-full  sm:h-4/5 sm:w-4/5">
               <Image
                 alt="image"
                 src={`/assets/${project.src}`}
                 fill
-                // objectFit={'cover'}
+                objectFit={'cover'}
               />
             </div>
           </div>
@@ -78,20 +51,33 @@ export default function SlidingImages() {
       </motion.div>
       <motion.div
         style={{ x: x2 }}
-        className="relative left-[-10vw] flex w-[120vw] gap-12"
+        className="relative left-[-10vw] flex  w-[300vw] gap-6 sm:w-[120vw] sm:gap-12"
       >
         {slider2.map((project, index) => (
           <div
             key={index}
-            className="flex h-80 w-1/4 items-center justify-center"
+            className="flex h-60 w-3/4 items-center justify-center sm:h-80 sm:w-1/4"
             style={{ backgroundColor: project.color }}
           >
-            <div key={index} className="relative h-4/5 w-4/5">
-              <Image fill alt="image" src={`/assets/${project.src}`} />
+            <div
+              key={index}
+              className="relative h-full w-full sm:h-[90%] sm:w-[90%]"
+            >
+              <Image
+                fill
+                alt="image"
+                src={`/assets/${project.src}`}
+                objectFit="cover"
+              />
             </div>
           </div>
         ))}
       </motion.div>
+      <div className="flex w-full justify-center">
+        <Link href={'/projects'}>
+          <RoundedButton>View Projects</RoundedButton>
+        </Link>
+      </div>
       <motion.div style={{ height }} className="relative mt-[100px]">
         <div className="absolute left-[-10%] z-10 h-[3050%] w-[120%] rounded-b-[100%] bg-background shadow-[0_60px_50px_0px_rgba(0,0,0,0.748)]"></div>
       </motion.div>

@@ -6,27 +6,27 @@ import NavLinks from '@/components/nav/NavLinks';
 
 const links = [
   {
-    title: '.home( )',
+    title: 'home',
     href: '/'
   },
   {
-    title: '.about( )',
+    title: 'about',
     href: '/about'
   },
   {
-    title: '.projects( )',
+    title: 'projects',
     href: '/projects'
   },
   {
-    title: '.gallery( )',
+    title: 'gallery',
     href: '/gallery'
   },
   {
-    title: '.blog( )',
+    title: 'blog',
     href: '/blog'
   },
   {
-    title: '.contact( )',
+    title: 'contact',
     href: '/contact'
   }
 ];
@@ -51,9 +51,9 @@ export default function Menu() {
     <div className="fixed right-[20px] top-[20px] z-20 lg:right-[30px] lg:top-[30px]">
       <motion.div
         className={cn('relative rounded-3xl border bg-secondary', {
-          'right-[-15px] top-[-15px] h-[640px] w-[350px] sm:h-[650px] sm:w-[480px] lg:right-[-25px] lg:top-[-25px]':
+          'lg:top-[-25px right-[-15px] top-[-15px] h-[640px] w-[350px] sm:h-[650px] sm:w-[480px] lg:right-[-25px] ':
             isActive,
-          'right-0 top-0 h-[40px] w-[100px]': !isActive
+          'right-0 top-0 h-[40px] w-[100px] opacity-0': !isActive
         })}
         variants={menu}
         animate={isActive ? 'open' : 'closed'}

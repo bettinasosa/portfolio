@@ -21,7 +21,7 @@ export default function NavLinks({ links }: NavLinksProps) {
             >
               <a
                 href={href}
-                className="text-[46px] text-background no-underline"
+                className="text-[46px] text-destructive no-underline"
               >
                 {title}
               </a>

@@ -10,7 +10,7 @@ interface Props {
   tag: string;
 }
 
-export default function Project({ index, title, setModal, tag }: Props) {
+export default function ProjectLink({ index, title, setModal, tag }: Props) {
   return (
     <div
       onMouseEnter={() => {

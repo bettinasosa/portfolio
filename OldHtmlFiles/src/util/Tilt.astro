@@ -1,5 +1,5 @@
 ---
-import Tilt from '../../../src/components/artworks/Tilt.jsx';
+import ImgTilt from '../../../src/app/gallery/imgTilt.js';
 
 const options = {
   scale: 1.2,
@@ -12,7 +12,7 @@ const { input, styling, bgImage } = Astro.props;
 
 <html lang="en">
   <body>
-    <Tilt
+    <ImgTilt
       className={styling}
       input={input}
       options={options}

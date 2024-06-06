@@ -1,14 +1,50 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDownRight } from 'lucide-react';
-import SlidingImages from '@/components/homePage/SlidingImages';
-import BlurryCursor from '@/components/animations/cursor/blendCursor';
+import SlidingImages from '@/components/home/SlidingImages';
+import ContrastCursor from '@/components/animations/cursor/contrastCursor';
 import Curve from '@/components/animations/curveTransition/Curve';
 import { LetterCollision } from '@/components/animations/textAnimations/scrollText';
 import Magnetic from '@/components/animations/magnetic';
-import Hero from '@/components/homePage/hero';
-import Index from '@/components/homePage/Description';
-import ContactInfo from '@/components/homePage/ContactInfo';
+import Hero from '@/components/home/hero';
+import Description from '@/components/home/Description/description';
+
+const slider1 = [
+  {
+    color: '#e3e5e7',
+    src: 'art/draw1.png'
+  },
+  {
+    color: '#d6d7dc',
+    src: 'bottles/stack2.png'
+  },
+  {
+    color: '#e3e3e3',
+    src: 'm31/specs.png'
+  },
+  {
+    color: '#21242b',
+    src: 'm31/controller.jpg'
+  }
+];
+const slider2 = [
+  {
+    color: '#d4e3ec',
+    src: 'm31/app.png'
+  },
+  {
+    color: '#e5e0e1',
+    src: 'catapult-trading/dashboard.png'
+  },
+  {
+    color: '#d7d4cf',
+    src: 'm31/app.png'
+  },
+  {
+    color: '#e1dad6',
+    src: 'vcp/VCP.png'
+  }
+];
 
 export default function Home() {
   const [showScrollButton, setShowScrollButton] = useState(true);
@@ -39,10 +75,7 @@ export default function Home() {
   };
 
   return (
-    <div
-      ref={scrollContainerRef}
-      className="bg-background min-h-[500vh] overflow-x-hidden scroll-smooth"
-    >
+    <div ref={scrollContainerRef} className=" overflow-x-hidden">
       <LetterCollision />
       {showScrollButton && (
         <Magnetic>
@@ -60,10 +93,9 @@ export default function Home() {
         <Hero />
       </div>
       {/*<TextParallax />*/}
-      <Index />
-      <SlidingImages />
-      <ContactInfo />
-      <BlurryCursor isActive={false} text={'Go to projects'} />
+      <Description />
+      <SlidingImages slider1={slider1} slider2={slider2} />
+      <ContrastCursor isActive={false} text={'Go to projects'} />
       <Curve backgroundColor="primary" link={'/'} />
     </div>
   );

@@ -1,21 +1,35 @@
 'use client';
-import React, { useEffect, useRef } from 'react';
-import VanillaTilt from 'vanilla-tilt';
+import React, { MutableRefObject, useEffect, useRef } from 'react';
+import VanillaTilt, { TiltOptions } from 'vanilla-tilt';
 
-export default function Tilt(props) {
-  const { options, className, input, bgImage } = props;
-  const tilt = useRef(null);
+type TiltProps = {
+  src: string;
+  options?: TiltOptions;
+  className?: string;
+  input?: string;
+};
+
+export default function ImgTilt({
+  options = {
+    scale: 1.4,
+    speed: 800,
+    max: 30,
+    glare: true
+  },
+  className,
+  input,
+  src
+}: TiltProps) {
+  const tilt: MutableRefObject<any> = useRef(null);
 
   useEffect(() => {
-    VanillaTilt.init(tilt.current, options);
+    VanillaTilt.init(tilt.current!, options);
   }, [options]);
 
   return (
     <div ref={tilt} className={className}>
-      {bgImage && (
-        <img src={`${bgImage}`} alt="artwork" className="object-cover" />
-      )}
-      {input && <div>{input}</div>}
+      <img src={src} alt="artwork" className="object-cover" />
+      {input && <div className="text-white">{input}</div>}
     </div>
   );
 }

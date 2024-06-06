@@ -9,7 +9,7 @@ type BlurCursorProps = {
   text?: string;
 };
 
-export default function BlurryCursor({ isActive, text }: BlurCursorProps) {
+export default function ContrastCursor({ isActive, text }: BlurCursorProps) {
   const [isClicked, setIsClicked] = useState(false);
   if (typeof navigator !== 'undefined' && isMobile()) return null;
 

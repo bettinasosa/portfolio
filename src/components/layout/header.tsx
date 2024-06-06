@@ -44,17 +44,19 @@ export default function Header() {
     });
   }, []);
 
+  console.log('ismobile', isMobile());
+
   return (
     <>
       <div
         ref={header}
-        className="absolute top-0 z-10 box-border flex w-full items-center p-4 font-light text-black lg:p-8"
+        className="absolute top-0 z-20 box-border flex w-full items-center p-4 font-light text-white mix-blend-difference lg:p-8"
       >
         <div className="flex lg:pr-56">
           <Link href={'/'} className="group z-20 flex items-center space-x-2">
             <Magnetic>
               <img
-                className="h-8 w-auto"
+                className="h-8 w-auto mix-blend-color"
                 src="/assets/logo.jpg"
                 alt="Bettina"
               />
@@ -81,7 +83,7 @@ export default function Header() {
             )}
           </Link>
         </div>
-        {!isMobile() ? (
+        {!isMobile() && (
           <div className="flex flex-1 items-center justify-between font-semibold">
             <div className="group relative z-10 flex cursor-pointer flex-col p-3">
               <div className="flex flex-col">
@@ -112,12 +114,15 @@ export default function Header() {
               </Magnetic>
             </div>
           </div>
-        ) : (
-          <Menu />
         )}
       </div>
       {!isMobile() && (
         <div ref={button} className="fixed right-0 z-40 scale-0 transform">
+          <Menu />
+        </div>
+      )}
+      {isMobile() && (
+        <div className="fixed right-2 z-40 transform">
           <Menu />
         </div>
       )}

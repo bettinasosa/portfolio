@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { opacity, slideUp } from './anim';
 import RoundedButton from '@/components/animations/roundedButton';
 
-export default function Index() {
+export default function Description() {
   const phrase1 =
     'A software engineer with a passion for innovation and\n' +
     'cutting-edge technology.\n\n ';
@@ -18,10 +18,10 @@ export default function Index() {
   return (
     <div
       ref={description}
-      className="relative mt-[200px] flex justify-center gap-12 p-20 "
+      className="relative flex flex-col justify-center gap-12 p-8 sm:mt-[200px] sm:flex-row sm:p-20 "
     >
       <div className="space-y-4">
-        <p className="m-0 gap-2 text-4xl leading-snug">
+        <p className="m-0 gap-2 leading-snug sm:text-4xl">
           {phrase1.split(' ').map((word, index) => (
             <span
               key={index}
@@ -37,7 +37,7 @@ export default function Index() {
             </span>
           ))}
         </p>
-        <p className="m-0 gap-2 text-4xl leading-snug">
+        <p className="m-0 gap-2 leading-snug sm:text-4xl">
           {phrase2.split(' ').map((word, index) => (
             <span
               key={index}
@@ -58,7 +58,7 @@ export default function Index() {
         <motion.p
           variants={opacity}
           animate={isInView ? 'open' : 'closed'}
-          className="m-0 pb-3 text-lg font-light"
+          className="m-0 pb-3 font-light sm:text-lg"
         >
           Currently the founding full stack software engineer @Catapult a DeFi
           startup.

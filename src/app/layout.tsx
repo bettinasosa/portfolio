@@ -18,9 +18,9 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en" className="snap-mandatory">
-      <Animations>
-        <body className="overflow-scroll">
+    <html lang="en">
+      <body className="overflow-scroll overflow-x-hidden">
+        <Animations>
           <main>
             <Header />
             <div className="bg-background text-foreground flex flex-col">
@@ -28,8 +28,8 @@ export default function RootLayout({
             </div>
             {/*<Footer />*/}
           </main>
-        </body>
-      </Animations>
+        </Animations>
+      </body>
     </html>
   );
 }
