@@ -91,7 +91,7 @@ export default function Header() {
                   <Link href={'/about'}>About</Link>
                 </Magnetic>
                 <Magnetic>
-                  <Link href="/projects">Work</Link>
+                  <Link href="/work">Work</Link>
                 </Magnetic>
               </div>
             </div>

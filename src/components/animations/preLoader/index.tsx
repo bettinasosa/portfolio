@@ -16,6 +16,8 @@ const words = [
 export default function PreLoader() {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
+  const url = window.location.href.split('/');
+  const lastWord = url[url.length - 1];
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
@@ -50,7 +52,7 @@ export default function PreLoader() {
       transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 }
     }
   };
-
+  console.log('lastWord', lastWord);
   return (
     <motion.div
       variants={slideUp}
@@ -75,7 +77,7 @@ export default function PreLoader() {
                 `bg-${words[index].colour}`
               )}
             ></span>
-            {words[index].text}
+            {lastWord === '' ? words[index].text : lastWord}
           </motion.p>
           <svg className="absolute top-0 h-[calc(100%+300px)] w-full fill-[#141516]">
             <motion.path

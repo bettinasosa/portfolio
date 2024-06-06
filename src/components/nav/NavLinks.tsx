@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { perspective } from '@/components/nav/anim';
+import Magnetic from '@/components/animations/magnetic';
+import Link from 'next/link';
 
 type NavLinksProps = {
   links: { title: string; href?: string }[];
@@ -19,12 +21,14 @@ export default function NavLinks({ links }: NavLinksProps) {
               animate="enter"
               exit="exit"
             >
-              <a
-                href={href}
-                className="text-[46px] text-destructive no-underline"
-              >
-                {title}
-              </a>
+              <Magnetic>
+                <Link
+                  href={href!}
+                  className="text-[46px] italic text-background no-underline"
+                >
+                  {title}
+                </Link>
+              </Magnetic>
             </motion.div>
           </div>
         );

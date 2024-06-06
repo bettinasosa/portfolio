@@ -15,7 +15,7 @@ const links = [
   },
   {
     title: 'projects',
-    href: '/projects'
+    href: '/work'
   },
   {
     title: 'gallery',

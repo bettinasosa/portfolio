@@ -36,7 +36,7 @@ export default function ContactInfo() {
       ref={container}
       className="relative flex flex-col items-center justify-center bg-foreground p-6 text-white"
     >
-      <div className="w-full bg-foreground pt-[150px] sm:max-w-[1800px]">
+      <div className="w-full  bg-foreground pt-[150px] sm:max-w-[1800px]">
         <div className="relative mx-[100px] border-b border-gray-600 pb-12">
           <span className="flex items-center">
             <div className="relative h-[100px] w-[100px] overflow-hidden rounded-full">
@@ -68,7 +68,7 @@ export default function ContactInfo() {
         <div className="mt-48 flex justify-between p-5 sm:mx-[100px]">
           <div className="flex items-end gap-2">
             <span className="flex flex-col gap-3">
-              <p className="max-w-sm text-base text-destructive">
+              <p className="max-w-sm text-base">
                 AI/LLM enthusiast | Cutting-edge tech advocate | Web3 builder |
                 Passionate about using technology to make the world a better
                 place.

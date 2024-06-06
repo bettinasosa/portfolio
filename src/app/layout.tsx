@@ -26,7 +26,6 @@ export default function RootLayout({
             <div className="bg-background text-foreground flex flex-col">
               <main className={`flex-grow ${inter.className}`}>{children}</main>
             </div>
-            {/*<Footer />*/}
           </main>
         </Animations>
       </body>

@@ -95,7 +95,7 @@ export default function Home() {
       {/*<TextParallax />*/}
       <Description />
       <SlidingImages slider1={slider1} slider2={slider2} />
-      <ContrastCursor isActive={false} text={'Go to projects'} />
+      <ContrastCursor isActive={false} text={'Go to work'} />
       <Curve backgroundColor="primary" link={'/'} />
     </div>
   );

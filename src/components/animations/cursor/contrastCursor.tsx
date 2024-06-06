@@ -47,11 +47,11 @@ export default function ContrastCursor({ isActive, text }: BlurCursorProps) {
   return (
     <motion.div
       className={clsx(
-        'pointer-events-none fixed left-0 top-0 z-50 mix-blend-difference shadow-md',
+        'pointer-events-none fixed left-0 top-0 z-50 mix-blend-multiply shadow-md',
         isActive
-          ? 'w-400 bg-secondary bg-opacity-50 p-4 text-6xl font-bold text-white'
+          ? 'w-400 bg-destructive bg-opacity-50 p-4 text-6xl font-bold text-white'
           : 'h-10 w-10 rounded-full',
-        isClicked ? 'bg-primary' : 'bg-green-500'
+        isClicked ? 'bg-primary' : 'bg-primary'
       )}
       style={{
         translateX: cursorXSpring,

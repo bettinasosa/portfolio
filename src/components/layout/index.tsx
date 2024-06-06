@@ -7,8 +7,8 @@ type Props = {
 
 export default function Layout({ children, title }: PropsWithChildren<Props>) {
   return (
-    <div className="mt-12 px-8 py-16 sm:py-20">
-      <p className="3xl font-medium sm:text-[150px]">{title}</p>
+    <div className=" mt-36 px-8 py-16 sm:py-20">
+      <h1 className="pb-14 text-3xl font-medium lg:text-[10rem]">{title}</h1>
       {children} <ContrastCursor isActive={false} text={''} />
     </div>
   );

@@ -72,9 +72,8 @@ export default function Description() {
           looking for new and innovative ways to use my skills to make a
           positive impact on the world.
         </motion.p>
-        <div data-scroll data-scroll-speed={0.1}>
-          {' '}
-          <RoundedButton className="ml-16 mt-16 flex h-64 w-64 cursor-pointer items-center justify-center rounded-full bg-destructive text-white">
+        <div data-scroll-speed={0.1}>
+          <RoundedButton className="absolute ml-16 mt-16 flex h-[200px] w-[200px] cursor-pointer items-center justify-center rounded-full bg-primary text-white">
             About me
           </RoundedButton>
         </div>

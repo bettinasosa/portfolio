@@ -12,7 +12,9 @@ const config = {
   theme: {
     fontFamily: {
       display: ['"Inria Serif"', 'serif'],
-      body: ['Inter', 'sans-serif']
+      body: ['Inter', 'sans-serif'],
+      design: ['"Design"', 'serif'],
+      playfair: ['"Playfair Display"', 'serif']
     },
     container: {
       center: true,

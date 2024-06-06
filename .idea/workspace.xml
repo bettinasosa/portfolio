@@ -5,65 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="fix the naming on the href for the projects">
-      <change afterPath="$PROJECT_DIR$/src/app/contact/contact.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/contact/textDisperse/anim.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/contact/textDisperse/textDisperse.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/gallery/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/gallery/parallaxgallery.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/template.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/animations/galleryParallax.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pageScrollParallax.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/design.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/LandingAnimation.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/LandingAnimation.astro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/MarkDownProjectLayout.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/MarkDownProjectLayout.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/about.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/contact.astro" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/gallery.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/gallery.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/home.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/index.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/privacy.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/styleguide.astro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/util/Tilt.astro" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/util/Tilt.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/posters/cheese-w.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/posters/sustainability.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/contactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/contactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/body.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projects/body.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/m31/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/m31/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/animations/cursor/blendCursor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/cursor/contrastCursor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/astra/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/m31/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/m31/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projectLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/projectLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projects/body.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/work/body.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projects/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/work/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projects/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/work/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/projects/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/work/modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/template.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/template.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animations/cursor/contrastCursor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/cursor/contrastCursor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animations/preLoader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/preLoader/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/animations/roundedButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/roundedButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/artworks/ArtworkCarousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/artworks/Tilt.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/gallery/imgTilt.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/artworks/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homePage/ContactInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/ContactInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homePage/Description/anim.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Description/anim.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homePage/Description/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Description/description.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homePage/SlidingImages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/SlidingImages.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homePage/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/ContactInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/ContactInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Description/description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Description/description.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/SlidingImages.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/SlidingImages.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/NavLinks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavLinks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projectPage/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projectPage/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projects/modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projectPage/project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projectLink.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projectPage/projectHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projects/hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projectPage/projectsCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/projects/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/scrollAnimation/textParallax.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/textAnimations/textParallax.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/scrollAnimation/textScramble.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/textAnimations/textScramble.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swiper/ProjectSwiper.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/swiper/Swiper.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,11 +106,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/fonts" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/app/contact/textDisperse" />
       <recent name="$PROJECT_DIR$/src/components/animations" />
       <recent name="$PROJECT_DIR$/src/app/projects" />
-      <recent name="$PROJECT_DIR$/src/app/projects/projects" />
-      <recent name="$PROJECT_DIR$/src/app/gallery" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -176,7 +144,7 @@
       <workItem from="1696949304328" duration="521000" />
       <workItem from="1697034444221" duration="1078000" />
       <workItem from="1697619428487" duration="6176000" />
-      <workItem from="1716505246630" duration="189297000" />
+      <workItem from="1716505246630" duration="199530000" />
     </task>
     <task id="LOCAL-00001" summary="moved animations and added new page animations for the description and contact page">
       <option name="closed" value="true" />
