@@ -1,8 +1,8 @@
 'use client';
 
-import { AnimatePresence } from 'framer-motion';
-import PreLoader from '../components/animations/preLoader';
 import React, { useEffect, useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import PreLoader from '@/components/animations/preLoader';
 
 export default function Loading() {
   const [isLoading, setIsLoading] = useState(true);

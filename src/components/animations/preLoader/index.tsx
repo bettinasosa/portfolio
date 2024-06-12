@@ -16,7 +16,7 @@ const words = [
 export default function PreLoader() {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
-  const url = window.location.href.split('/');
+  const url = window?.location.href.split('/') ?? '/';
   const lastWord = url[url.length - 1];
 
   useEffect(() => {

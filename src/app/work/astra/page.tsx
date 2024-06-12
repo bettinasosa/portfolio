@@ -1,5 +1,5 @@
-import ProjectBody from '@/app/work/work/body';
-import ProjectHero from '@/app/work/work/hero';
+import ProjectBody from '@/app/work/project/body';
+import ProjectHero from '@/app/work/project/hero';
 
 export default function AstraProject() {
   const introduction =

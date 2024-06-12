@@ -8,8 +8,8 @@ import {
 } from 'framer-motion';
 import ContactInfo from '@/components/home/ContactInfo';
 import { isMobile } from '@/components/util';
-import PreLoader from '@/components/animations/preLoader';
 import { clsx } from 'clsx';
+import PreLoader from '@/components/animations/preLoader';
 
 export default function RootTemplate({ children }: PropsWithChildren) {
   const container = useRef(null);
@@ -23,6 +23,7 @@ export default function RootTemplate({ children }: PropsWithChildren) {
   const [isLoading, setIsLoading] = useState(true);
   const url = window.location.href.split('/');
   const lastWord = url[url.length - 1];
+  const darkModeScreens = ['gallery', 'contact', 'm31'];
 
   useEffect(() => {
     (async () => {
@@ -41,9 +42,7 @@ export default function RootTemplate({ children }: PropsWithChildren) {
         ref={container}
         className={clsx(
           'relative z-10',
-          lastWord === 'gallery' || lastWord === 'contact'
-            ? 'bg-foreground'
-            : 'bg-background'
+          darkModeScreens.includes(lastWord) ? 'bg-foreground' : 'bg-background'
         )}
       >
         <AnimatePresence mode="wait">
@@ -54,7 +53,7 @@ export default function RootTemplate({ children }: PropsWithChildren) {
           <div
             className={clsx(
               'absolute left-[-10%] z-10 h-[1050%] w-[120%] rounded-b-[100%] shadow-[0_60px_50px_0px_rgba(0,0,0,0.748)]',
-              lastWord === 'gallery' || lastWord === 'contact'
+              darkModeScreens.includes(lastWord)
                 ? 'bg-foreground'
                 : 'bg-background'
             )}

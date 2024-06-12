@@ -41,12 +41,14 @@ export default function PageScrollParallax({
     <div ref={container} className="mb-[16vh] mt-[6vh] min-h-screen">
       <div className="ml-[10vw]">
         <motion.h1
-          className="mt-[24px] text-[3vw] uppercase leading-[5vw] text-secondary"
+          className="mt-[24px] text-[3vw] uppercase leading-[5vw] text-background mix-blend-difference"
           style={{ y: sm }}
         >
           {title}
         </motion.h1>
-        <p className={'mb-12'}>{body}</p>
+        <p className="mb-12 max-w-6xl text-background mix-blend-difference">
+          {body}
+        </p>
         <div>
           <p className="mt-12 text-[2vw] uppercase text-primary">
             {word.split('').map((letter, i) => {

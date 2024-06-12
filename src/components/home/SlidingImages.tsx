@@ -74,13 +74,10 @@ export default function SlidingImages({ slider1, slider2 }: Props) {
         ))}
       </motion.div>
       <div className="flex w-full justify-center">
-        <Link href={'/work'}>
+        <Link href={'/project'}>
           <RoundedButton>View Projects</RoundedButton>
         </Link>
       </div>
-      <motion.div style={{ height }} className="relative mt-[100px]">
-        <div className="absolute left-[-10%] z-10 h-[3050%] w-[120%] rounded-b-[100%] bg-background shadow-[0_60px_50px_0px_rgba(0,0,0,0.748)]"></div>
-      </motion.div>
     </div>
   );
 }

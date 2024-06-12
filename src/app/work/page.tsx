@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import ProjectLink from '@/app/work/projectLink';
-import Modal from '@/app/work/work/modal';
+import Modal from '@/app/work/project/modal';
 import Layout from '@/components/layout';
 
 const projects = [
@@ -18,10 +18,10 @@ const projects = [
   },
   {
     title: 'AXO',
-    src: 'axo/astra.png',
+    src: 'axo/astronaut-square.png',
     href: '/work/axo',
     tag: 'Bio Materials',
-    color: '#303030'
+    color: '#ee5622'
   },
   {
     title: 'StackeRs',

@@ -34,7 +34,7 @@ export default function ContactInfo() {
     <motion.div
       style={{ y }}
       ref={container}
-      className="relative flex flex-col items-center justify-center bg-foreground p-6 text-white"
+      className="relative flex flex-col items-center justify-center bg-foreground p-6 pt-32 text-white"
     >
       <div className="w-full  bg-foreground pt-[150px] sm:max-w-[1800px]">
         <div className="relative mx-[100px] border-b border-gray-600 pb-12">
@@ -55,7 +55,7 @@ export default function ContactInfo() {
             className="absolute left-[calc(100%-400px)] top-[calc(100%-75px)]"
           >
             <RoundedButton
-              backgroundColor="[#455CE9]"
+              backgroundColor="secondary"
               className="absolute flex h-[200px] w-[200px] cursor-pointer items-center justify-center rounded-full bg-primary p-0 text-white"
             >
               <Link href={'/contact'}>Get in touch</Link>

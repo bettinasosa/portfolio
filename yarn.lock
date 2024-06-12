@@ -2568,23 +2568,28 @@ electron-to-chromium@^1.4.477:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.523.tgz"
   integrity sha512-9AreocSUWnzNtvLcbpng6N+GkXnCcBR80IQkxRC9Dfdyg4gaWNUPBujAHUpKkiUkoSoR9UlhA4zD/IgBklmhzg==
 
-embla-carousel-react@^8.1.3:
-  version "8.1.3"
-  resolved "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-8.1.3.tgz"
-  integrity sha512-YrezDPgxPDKa+OKMhSrwuPEU2OgF5147vFW473EWT3bx9DETV3W/RyWTxq0/2pf3M4VXkjqFNbS/W1xM8lTaVg==
+embla-carousel-autoplay@^8.1.4:
+  version "8.1.4"
+  resolved "https://registry.npmjs.org/embla-carousel-autoplay/-/embla-carousel-autoplay-8.1.4.tgz"
+  integrity sha512-lsQkKiU5sIVg5vuaWo6BTzQT+7Z6AEMnCIQho4bS6KFeBE8FtsL/HOmtLx7fLu2reH6keJ1vNmLn6L/w9CQj+Q==
+
+embla-carousel-react@^8.1.4:
+  version "8.1.4"
+  resolved "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-8.1.4.tgz"
+  integrity sha512-0llfX4HlXrdgJKxlZ8q8LyI6EV+TvOI7KtZx9GkDTwdgP6/AyyuvzO8KYvDUNZOnbFBAPbVEe2qEgGMLEinlYw==
   dependencies:
-    embla-carousel "8.1.3"
-    embla-carousel-reactive-utils "8.1.3"
+    embla-carousel "8.1.4"
+    embla-carousel-reactive-utils "8.1.4"
 
-embla-carousel-reactive-utils@8.1.3:
-  version "8.1.3"
-  resolved "https://registry.npmjs.org/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.1.3.tgz"
-  integrity sha512-D8tAK6NRQVEubMWb+b/BJ3VvGPsbEeEFOBM6cCCwfiyfLzNlacOAt0q2dtUEA9DbGxeWkB8ExgXzFRxhGV2Hig==
+embla-carousel-reactive-utils@8.1.4:
+  version "8.1.4"
+  resolved "https://registry.npmjs.org/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.1.4.tgz"
+  integrity sha512-qkovXTiNaURsnYhJxUBsDx9YV6crxLIZwfO6jIFSKKn6ZZE1JVeZAvy/UsiyNxiFikVrO76iquvD6uBHI9YD8w==
 
-embla-carousel@8.1.3:
-  version "8.1.3"
-  resolved "https://registry.npmjs.org/embla-carousel/-/embla-carousel-8.1.3.tgz"
-  integrity sha512-GiRpKtzidV3v50oVMly8S+D7iE1r96ttt7fSlvtyKHoSkzrAnVcu8fX3c4j8Ol2hZSQlVfDqDIqdrFPs0u5TWQ==
+embla-carousel@8.1.4:
+  version "8.1.4"
+  resolved "https://registry.npmjs.org/embla-carousel/-/embla-carousel-8.1.4.tgz"
+  integrity sha512-AMe40ZpyLpztfNnGQtMWVIgYdcBoY2MuQttRwQ/xqSPC3UvDG2QF17CR5Efz4c8qEkno7pxdZFDRO2R11y6hRQ==
 
 emoji-regex@^10.2.1:
   version "10.2.1"
