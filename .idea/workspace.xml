@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="fix the naming on the href for the projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/work/project/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/work/project/hero.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,7 @@
       <workItem from="1696949304328" duration="521000" />
       <workItem from="1697034444221" duration="1078000" />
       <workItem from="1697619428487" duration="6176000" />
-      <workItem from="1716505246630" duration="268597000" />
+      <workItem from="1716505246630" duration="269080000" />
     </task>
     <task id="LOCAL-00001" summary="moved animations and added new page animations for the description and contact page">
       <option name="closed" value="true" />
