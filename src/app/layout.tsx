@@ -4,6 +4,7 @@ import React, { ReactNode } from 'react';
 import { Metadata } from 'next';
 import Animations from './animations';
 import Header from '@/components/layout/header';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,8 +24,9 @@ export default function RootLayout({
         <Animations>
           <main>
             <Header />
-            <div className="bg-background text-foreground flex flex-col">
+            <div className="flex flex-col bg-background text-foreground">
               <main className={`flex-grow ${inter.className}`}>{children}</main>
+              <Analytics />
             </div>
           </main>
         </Animations>
