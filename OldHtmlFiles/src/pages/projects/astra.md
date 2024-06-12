@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/MarkDownProjectLayout.astro'
 title: 'Astra'
 subtitle: 'Holographic arcade'
 description: 'Gamify space with ASTRA, a holographic arcade console'

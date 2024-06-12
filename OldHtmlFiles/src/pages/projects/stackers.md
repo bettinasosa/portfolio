@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/MarkDownProjectLayout.astro'
 title: 'StackeRs'
 subtitle: 'Sustainable packaging'
 description: 'Sustainable solutions for the lifecycle of baby care products'

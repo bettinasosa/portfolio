@@ -5,134 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="fix the naming on the href for the projects">
-      <change afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/Y5Anve_NPmb7dXLwaCa5H/_buildManifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/Y5Anve_NPmb7dXLwaCa5H/_ssgManifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/138-83094cc4bec759b7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/162-591c37cb1dd0f26f.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/173-3e4d66b01a416596.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/204-a69790d079346240.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/23-d25d8697751bd243.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/340-18b2c59768ae6830.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/505-590fb5f3534e6814.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/581.d45e8dc89f430f84.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/582-f3c7c2cbd640b9ac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/76-1257407c45f3fc86.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/868-0495c84223e4f3d3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/981.ff8953efade90d5b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/_not-found/page-7f6a09f2e4056156.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/about/page-2cc492d6aa3c8141.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/contact/page-63d9e03136651b9d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/gallery/page-11de3229a9409e38.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/layout-c582458c3410f1d4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/loading-086b3928527a9f6b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/page-66671dec59249de7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/template-0ba264ebb19ead71.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/work/astra/page-ef76491158270dcb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/work/axo/page-ba87b9b5ed23ce95.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/work/m31/page-7f293d6702d1ecfe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/app/work/page-4e7d5c0f2d23ee2e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/fd9d1056-844a5cc198651369.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/framework-f66176bb897dc684.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/main-app-969532679b8f1794.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/main-c8cb4b2415082ac2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/pages/_app-6a626577ffa902a4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/pages/_error-1be831200e60c5c0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/chunks/webpack-e0b459bfa348aa11.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/css/f9c1794ac1a49593.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/05a31a2ca4975f99-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/513657b02c5c193f-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/51ed15f9841b9f9d-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/controller.0a958f7d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/d6b16ce4a6175f26-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/design.f1f795d4.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/ec159349637c90ad-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/fd4db3eb5472fc27-s.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/gold.9485651f.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/_next/static/media/logoblack.e537f830.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/about.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/android-chrome-512x512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/art/BraunManual.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/art/draw1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/art/draw2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/astra/astra.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/astra/giz1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/astra/gizmo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/axo/astronaut-square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/axo/astronaut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/axo/prototype.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/block.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/stack1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/stack2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/stack3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/stack4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/bottles/stack5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/catapult-trading/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/catapult-trading/dashboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/dresses/dress.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/dresses/dress1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/dresses/dress2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/dresses/dress3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/dresses/dress4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/app.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/controller.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/controller.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/gold.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/linedots.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/logoblack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/logowhite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/package.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/packaging.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/pattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/prototype.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/research.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/specs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/system.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/m31/topview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/posters/cheesew.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/posters/coffee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/posters/poster.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/posters/sustainability.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/posters/talksposter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/posters/teacoffee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/theme.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/vcp/VCP.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/contact.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/fonts/design.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/gallery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/gallery.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/index.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work/astra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work/astra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work/axo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work/axo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work/m31.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/work/m31.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/Particles.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/bettina_CV_2020.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/bettina_portfolio_2020.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/bettina_portfolio_2020.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/LandingAnimation.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/Layout.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/layouts/MarkDownProjectLayout.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/404.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/gallery.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/astra.md" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/astra.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/m31.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/stackers.md" beforeDir="false" afterPath="$PROJECT_DIR$/OldHtmlFiles/src/pages/projects/stackers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OldHtmlFiles/src/util/Tilt.astro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +138,7 @@
       <workItem from="1696949304328" duration="521000" />
       <workItem from="1697034444221" duration="1078000" />
       <workItem from="1697619428487" duration="6176000" />
-      <workItem from="1716505246630" duration="269837000" />
+      <workItem from="1716505246630" duration="272205000" />
     </task>
     <task id="LOCAL-00001" summary="moved animations and added new page animations for the description and contact page">
       <option name="closed" value="true" />
