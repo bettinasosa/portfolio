@@ -42,12 +42,14 @@ export default function ProjectHero({
         ></iframe>
       )}
       <div className="absolute bottom-0 left-0 h-[60vh] w-full bg-gradient-to-b from-transparent to-foreground"></div>
-      <Button
-        className="absolute bottom-32 right-6 z-10 sm:bottom-16"
-        onClick={toggleMute}
-      >
-        {isMuted ? 'Unmute' : 'Mute'}
-      </Button>
+      {!isImage && (
+        <Button
+          className="absolute bottom-32 right-6 z-10 sm:bottom-16"
+          onClick={toggleMute}
+        >
+          {isMuted ? 'Unmute' : 'Mute'}
+        </Button>
+      )}
       <div className="absolute bottom-4 left-12 flex w-full sm:bottom-16">
         <div className="flex max-w-xs flex-col gap-4 sm:max-w-4xl sm:gap-6">
           <h1 className="text-2xl font-medium tracking-tight text-background mix-blend-difference sm:text-5xl lg:text-6xl">

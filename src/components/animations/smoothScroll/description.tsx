@@ -3,15 +3,7 @@ import React, { useLayoutEffect, useRef } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import gsap from 'gsap';
 
-const phrases = [
-  'Los Flamencos National Reserve',
-  'is a nature reserve located',
-  'in the commune of San Pedro de Atacama',
-  'The reserve covers a total area',
-  'of 740 square kilometres (290 sq mi)'
-];
-
-export default function Description() {
+export default function Description({ phrases }: { phrases: string[] }) {
   return (
     <div className="relative ml-[10vw] mt-[30vw] text-[3vw] uppercase text-white">
       {phrases.map((phrase, index) => (

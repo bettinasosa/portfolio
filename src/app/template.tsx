@@ -23,18 +23,16 @@ export default function RootTemplate({ children }: PropsWithChildren) {
   const height = useTransform(scrollYProgress, [0, input], [50, 0]);
   const [isLoading, setIsLoading] = useState(true);
   const pathname = usePathname().split('/').pop();
-  const darkModeScreens = ['gallery', 'contact', 'm31'];
+  const darkModeScreens = ['gallery', 'contact', 'm31', 'astra'];
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = 'default';
-        window.scrollTo(0, 0);
-      }, 800);
-      console.log('loading', isLoading);
-    }
-  }, [isLoading]);
+    setTimeout(() => {
+      setIsLoading(false);
+      document.body.style.cursor = 'default';
+      window.scrollTo(0, 0);
+    }, 800);
+    console.log('loading', isLoading);
+  }, []);
 
   return (
     <main className="min-h-screen overflow-x-hidden">

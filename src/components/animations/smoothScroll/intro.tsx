@@ -5,10 +5,16 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
-export default function Intro({ images }: { images: string[] }) {
+
+export default function Intro({
+  images,
+  title
+}: {
+  images: string[];
+  title: string;
+}) {
   const background = useRef<HTMLDivElement>(null);
   const introImage = useRef<HTMLDivElement>(null);
-  const homeHeader = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     const timeline = gsap.timeline({
@@ -34,7 +40,7 @@ export default function Intro({ images }: { images: string[] }) {
     timeline.to(
       introImage.current,
       {
-        height: 0,
+        height: 20,
         top: '-100%',
         ease: 'power2.out'
       },
@@ -43,42 +49,40 @@ export default function Intro({ images }: { images: string[] }) {
   }, []);
 
   return (
-    <div ref={homeHeader} className="relative flex w-full justify-center">
+    <div className="relative flex w-full justify-center">
       <div
         className="absolute h-[140vh] w-full brightness-[60%]"
         ref={background}
       >
         <div className="w-full rounded-3xl">
-          <iframe
-            src="https://player.vimeo.com/video/955515979?badge=0&controls=0&loop=1&autoplay=1&&player_id=0&app_id=58479"
-            title="AxoWear"
-            className="aspect-video h-full w-full rounded-3xl"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; clipboard-write "
-            allowFullScreen
-          ></iframe>
+          <Image
+            src={images[1]}
+            alt="hero image"
+            fill
+            priority
+            className="object-cover object-top"
+          />
         </div>
       </div>
       <div className="relative mt-[35vh] flex justify-center">
         <div
           ref={introImage}
-          data-scroll
           data-scroll-speed="0.3"
           className="absolute h-[475px] w-[350px] brightness-[70%]"
         >
           <Image
             src={images[0]}
             alt="intro image"
-            fill={true}
-            priority={true}
+            fill
+            priority
             className="object-cover object-top"
           />
         </div>
         <h1
-          data-scroll
           data-scroll-speed="0.7"
-          className="z-[3] whitespace-nowrap text-center text-[7vw] text-white"
+          className="z-20 whitespace-nowrap text-center text-[7vw] text-white"
         >
-          SMOOTH SCROLL
+          {title}
         </h1>
       </div>
     </div>

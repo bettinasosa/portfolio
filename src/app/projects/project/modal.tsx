@@ -106,7 +106,7 @@ export default function Modal({ projects }: ModalProps) {
                 key={`modal_${index}`}
               >
                 <Image
-                  src={`/assets/${src}`}
+                  src={`/images/${src}`}
                   width={350}
                   height={0}
                   alt="image"

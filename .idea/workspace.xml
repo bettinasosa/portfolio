@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="fix the naming on the href for the projects">
+      <change afterPath="$PROJECT_DIR$/src/components/animations/smoothScroll/body.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/animations/smoothScroll/intro.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/astra/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/axo/zoomParallax.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/project/zoomParallax.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/m31/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/m31/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/project/description.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/smoothScroll/description.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/project/hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/project/hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/project/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/projects/project/modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/projects/project/scrollParallax.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/template.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/template.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animations/curveTransition/Curve.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animations/curveTransition/anim.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animations/galleryParallax.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/galleryParallax.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/animations/textAnimations/textParallax.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/animations/textAnimations/textParallax.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/ContactInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/ContactInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useScreenSize.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useScreenSize.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +101,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/projects/project" />
+      <recent name="$PROJECT_DIR$/src/app/projects/astra" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/static" />
       <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src/app/work/axo" />
-      <recent name="$PROJECT_DIR$/public/assets/m31" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -126,6 +141,7 @@
       <workItem from="1697619428487" duration="6176000" />
       <workItem from="1716505246630" duration="277468000" />
       <workItem from="1718204077938" duration="2272000" />
+      <workItem from="1718206641620" duration="7438000" />
     </task>
     <task id="LOCAL-00001" summary="moved animations and added new page animations for the description and contact page">
       <option name="closed" value="true" />

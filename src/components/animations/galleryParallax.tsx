@@ -83,7 +83,7 @@ const Column = ({ images, y }: ColumnProps) => {
           key={i}
           className="relative h-1/3 w-full overflow-hidden rounded-[1vw]"
         >
-          <Image src={`/assets/${src}`} alt="image" fill objectFit="cover" />
+          <Image src={`/images/${src}`} alt="image" fill />{' '}
         </div>
       ))}
     </motion.div>

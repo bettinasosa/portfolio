@@ -9,11 +9,11 @@ import React from 'react';
 
 export default function M31Project() {
   const researchAssets = [
-    '/assets/m31/controller.png',
-    '/assets/m31/app.png',
-    '/assets/m31/packaging.png',
-    '/assets/m31/research.png',
-    '/assets/m31/specs.png'
+    '/images/m31/controller.png',
+    '/images/m31/app.png',
+    '/images/m31/packaging.png',
+    '/images/m31/research.png',
+    '/images/m31/specs.png'
   ];
   const introduction =
     'Andromeda is a new audio-tactile gaming system that promotes socially inclusive play between visually impaired and sighted individuals. ' +
