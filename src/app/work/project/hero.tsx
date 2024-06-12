@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 interface HeroSectionProps {
   description: string;
@@ -23,7 +24,7 @@ export default function ProjectHero({
   return (
     <div className="relative h-screen bg-black">
       {isImage ? (
-        <img
+        <Image
           className="mx-auto h-auto w-full"
           width="300"
           height="300"
