@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { isMobile } from '@/components/util';
 import Magnetic from '@/components/animations/magnetic';
+import Image from 'next/image';
 
 export default function Header() {
   const header = useRef(null);
@@ -44,8 +45,6 @@ export default function Header() {
     });
   }, []);
 
-  console.log('ismobile', isMobile());
-
   return (
     <>
       <div
@@ -55,7 +54,8 @@ export default function Header() {
         <div className="flex lg:pr-56">
           <Link href={'/'} className="group z-20 flex items-center space-x-2">
             <Magnetic>
-              <img
+              <Image
+                fill
                 className="h-8 w-auto mix-blend-color"
                 src="/assets/logo.jpg"
                 alt="Bettina"
@@ -91,7 +91,7 @@ export default function Header() {
                   <Link href={'/about'}>About</Link>
                 </Magnetic>
                 <Magnetic>
-                  <Link href="/work">Work</Link>
+                  <Link href={'/work'}>Work</Link>
                 </Magnetic>
               </div>
             </div>
