@@ -23,6 +23,7 @@
     "@types/alpinejs": "3.7.2",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "class-variance-authority": "^0.7.0",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
     "embla-carousel-autoplay": "^8.1.4",

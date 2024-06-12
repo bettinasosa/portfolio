@@ -1,85 +1,76 @@
-  @tailwind base;
+@tailwind base;
   @tailwind components;
   @tailwind utilities;
 
-  @font-face {
-    font-family: 'Playfair';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 400 900;
-    src: url(https://cdn.jsdelivr.net/fontsource/fonts/playfair-display:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-  }
-
   @layer base {
     :root {
-      --background:0 0% 100%; /* eddfef pale purple 0 100% 100%; */
-      --foreground: 0 0% 8%; /* 141414 night */;
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
 
-      --card: 0 0% 100%; /* ffffff white */
-      --card-foreground: 20 14.3% 4.1%; /* 0c0a09 smoky black */
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
 
-      --popover: 0 0% 100%; /* ffffff white */
-      --popover-foreground: 20 14.3% 4.1%; /* 0c0a09 smoky black */
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
 
-      --primary: 210 100% 56%; /* 1f8fff Dodger blue */
-      --primary-foreground: 60 9.1% 97.8%;
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
 
-      --secondary: 282, 100%, 81%; /*  e2a0ff / 332 93% 67%; f95ca4 brilliant rose / 332 92% 80% fb9dc9 carnation pink*/
-      --secondary-foreground: 24 9.8% 10%; /* 1c197 eerie black */
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
 
-      --muted: 293 33% 91%; /* eddfef pale purple */
-      --muted-foreground: 25 5.3% 44.7%;
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
 
-      --accent: 60 4.8% 95.9%;
-      --accent-foreground: 24 9.8% 10%;
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
 
-      --destructive: 2 100% 50%; /* ff0800 candy apple red */
-      --destructive-foreground: 60 9.1% 97.8%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
 
-      --border: 20 5.9% 90%;
-      --input: 20 5.9% 90%;
-      --ring: 20 14.3% 4.1%;
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
 
       --radius: 0.5rem;
     }
 
     .dark {
-      --background: 20 14.3% 4.1%;
-      --foreground: 60 9.1% 97.8%;
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
 
-      --card: 20 14.3% 4.1%;
-      --card-foreground: 60 9.1% 97.8%;
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
 
-      --popover: 20 14.3% 4.1%;
-      --popover-foreground: 60 9.1% 97.8%;
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
 
-      --primary: 60 9.1% 97.8%;
-      --primary-foreground: 24 9.8% 10%;
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
 
-      --secondary: 12 6.5% 15.1%;
-      --secondary-foreground: 60 9.1% 97.8%;
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
 
-      --muted: 12 6.5% 15.1%;
-      --muted-foreground: 24 5.4% 63.9%;
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
 
-      --accent: 12 6.5% 15.1%;
-      --accent-foreground: 60 9.1% 97.8%;
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
 
       --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 60 9.1% 97.8%;
+      --destructive-foreground: 210 40% 98%;
 
-      --border: 12 6.5% 15.1%;
-      --input: 12 6.5% 15.1%;
-      --ring: 24 5.7% 82.9%;
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
     }
   }
 
-  /*@layer base {*/
-  /*  * {*/
-  /*    @apply border-border;*/
-  /*  }*/
-  /*  body {*/
-  /*    @apply bg-background text-foreground;*/
-  /*  }*/
-  /*}*/
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
