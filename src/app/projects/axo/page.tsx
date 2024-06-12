@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import Lenis from 'lenis';
-import ProjectHero from '@/app/work/project/hero';
+import ProjectHero from '@/app/projects/project/hero';
 import Image from 'next/image';
 import TextGradient from '@/components/animations/textAnimations/textGradient';
 
@@ -15,9 +15,9 @@ export default function AstraProject() {
     })();
   }, []);
 
-  const researchAssets = [
-    '/assets/axo/astronaut.png',
-    '/assets/axo/prototype.png'
+  const researchImages = [
+    '/images/axo/astronaut.png',
+    '/images/axo/prototype.png'
   ];
   const phrase =
     'Fashion is one of the most polluting industries on earth, with shoes' +
@@ -54,7 +54,7 @@ export default function AstraProject() {
       />
       <div className="h-[20vh] w-full bg-gradient-to-b from-foreground to-background opacity-60"></div>
       <TextGradient phrase={phrase} colour={'destructive'} />
-      {researchAssets.map((asset, index) => (
+      {researchImages.map((asset, index) => (
         <Image
           key={index}
           src={asset}

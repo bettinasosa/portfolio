@@ -1,10 +1,10 @@
 import Picture1 from '../../../../public/assets/m31/packaging.png';
-import Picture2 from '../../../../public/static/assets/astra/astra.png';
-import Picture3 from '../../../../public/static/assets/m31/app.png';
-import Picture4 from '../../../../public/static/assets/m31/controller.jpg';
-import Picture5 from '../../../../public/static/assets/m31/research.png';
-import Picture6 from '../../../../public/static/assets/m31/specs.png';
-import Picture7 from '../../../../public/static/assets/m31/controller.png';
+import Picture2 from '../../../../public/images/assets/astra/astra.png';
+import Picture3 from '../../../../public/images/assets/m31/app.png';
+import Picture4 from '../../../../public/images/assets/m31/controller.jpg';
+import Picture5 from '../../../../public/images/m31/research.png';
+import Picture6 from '../../../../public/images/m31/specs.png';
+import Picture7 from '../../../../public/images/m31/controller.png';
 import Image, { StaticImageData } from 'next/image';
 import classNames from 'classnames';
 import { motion, MotionValue, useScroll, useTransform } from 'framer-motion';

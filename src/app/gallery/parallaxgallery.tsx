@@ -62,7 +62,7 @@ export default function ParallaxGallery() {
         <div ref={plane1} className="absolute h-full w-full brightness-[80%]">
           <div className="absolute left-[3%] top-[46%] min-h-[300px] min-w-[150px] ">
             <Image
-              src={'/assets/dresses/dress1.jpg'}
+              src={'/images/dresses/dress1.jpg'}
               alt={'dress'}
               fill
               objectFit="cover"
@@ -73,14 +73,14 @@ export default function ParallaxGallery() {
               alt={'dress collection 3'}
               fill
               objectFit="cover"
-              src={'/assets/dresses/dress3.jpg'}
+              src={'/images/dresses/dress3.jpg'}
             />
           </div>
         </div>
         <div ref={plane2} className="absolute h-full w-full brightness-[85%]">
           <div className="absolute left-[1%] top-[1%] min-h-[300px] min-w-[200px]">
             <Image
-              src={'/assets/dresses/dress4.jpg'}
+              src={'/images/dresses/dress4.jpg'}
               alt={'dress collection 4'}
               fill
               objectFit="cover"
@@ -89,7 +89,7 @@ export default function ParallaxGallery() {
           <div className="absolute left-[82%] top-[5%] min-h-[300px] min-w-[220px]">
             <Image
               alt={'cheese'}
-              src={'/assets/posters/cheesew.jpg'}
+              src={'/images/posters/cheesew.jpg'}
               fill
               objectFit={'cover'}
             />
@@ -98,7 +98,7 @@ export default function ParallaxGallery() {
             <Image
               alt="coffee poster"
               fill
-              src="/assets/posters/coffee.jpg"
+              src="/images/posters/coffee.jpg"
               objectFit="cover"
             />
           </div>
@@ -106,23 +106,23 @@ export default function ParallaxGallery() {
         <div ref={plane3} className="absolute h-full w-full">
           <ImgTilt
             className="absolute left-[65%] top-[2.5%] z-10 max-w-[200px]"
-            src={'/assets/posters/teacoffee.jpg'}
+            src={'/images/posters/teacoffee.jpg'}
           />
           <ImgTilt
             className="absolute left-[15%] top-[35%] z-10 max-w-[220px]"
-            src={'/assets/dresses/dress2.jpg'}
+            src={'/images/dresses/dress2.jpg'}
           />
           <ImgTilt
             className="absolute left-[55%] top-[30%] z-10 max-w-[200px]"
-            src={'/assets/posters/talksposter.jpg'}
+            src={'/images/posters/talksposter.jpg'}
           />
           <ImgTilt
             className="absolute left-[60%] top-[70%] z-10 max-w-[150px]"
-            src={'/assets/posters/sustainability.jpg'}
+            src={'/images/posters/sustainability.jpg'}
           />
           <div className="absolute left-[30%] top-[65%] min-h-[250px] min-w-[200px]">
             <Image
-              src="/assets/dresses/dress.jpg"
+              src="/images/dresses/dress.jpg"
               alt="dress"
               fill
               objectFit="cover"

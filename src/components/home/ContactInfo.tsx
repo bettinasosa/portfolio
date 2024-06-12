@@ -40,12 +40,7 @@ export default function ContactInfo() {
         <div className="relative mx-[100px] border-b border-gray-600 pb-12">
           <span className="flex items-center">
             <div className="relative h-[100px] w-[100px] overflow-hidden rounded-full">
-              <Image
-                fill={true}
-                objectFit="cover"
-                alt={'profile'}
-                src={`/assets/profile.jpg`}
-              />
+              <Image fill alt={'profile'} src={`/assets/profile.jpg`} />
             </div>
             <h2 className="ml-3 font-medium sm:text-[90px]">Let&apos;s work</h2>
           </span>

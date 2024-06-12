@@ -55,9 +55,9 @@ export default function Header() {
           <Link href={'/'} className="group z-20 flex items-center space-x-2">
             <Magnetic>
               <Image
-                fill
-                className="h-8 w-auto mix-blend-color"
-                src="/assets/logo.jpg"
+                height={32}
+                width={32}
+                src="/images/logo.jpg"
                 alt="Bettina"
               />
             </Magnetic>
@@ -91,7 +91,7 @@ export default function Header() {
                   <Link href={'/about'}>About</Link>
                 </Magnetic>
                 <Magnetic>
-                  <Link href={'/work'}>Work</Link>
+                  <Link href={'/projects'}>Projects</Link>
                 </Magnetic>
               </div>
             </div>

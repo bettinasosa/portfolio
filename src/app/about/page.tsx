@@ -11,7 +11,7 @@ export default function About() {
             className="mx-auto h-auto w-full max-w-xl rounded-3xl"
             width="1440"
             height="1800"
-            src="/assets/profile.jpg"
+            src="/images/profile.jpg"
             alt="profle picture"
           />
           <div className="flex flex-col gap-10">

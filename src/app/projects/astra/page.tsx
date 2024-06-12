@@ -1,5 +1,5 @@
-import ProjectBody from '@/app/work/project/body';
-import ProjectHero from '@/app/work/project/hero';
+import ProjectBody from '@/app/projects/project/body';
+import ProjectHero from '@/app/projects/project/hero';
 
 export default function AstraProject() {
   const introduction =
@@ -19,7 +19,7 @@ export default function AstraProject() {
     <div>
       <ProjectHero
         description={description}
-        media={'/assets/astra/gizmo.png'}
+        media={'/images/astra/gizmo.png'}
         isImage={true}
         title={'Astra'}
       />
@@ -28,7 +28,7 @@ export default function AstraProject() {
         myRole={myRole}
         paragraphs={[]}
         subtitle={'Holographic arcade'}
-        video={'/assets/astra/gizmo.png'}
+        video={'/images/astra/gizmo.png'}
       />
     </div>
   );

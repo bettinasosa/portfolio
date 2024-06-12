@@ -21,7 +21,6 @@ export default function SlidingImages({ slider1, slider2 }: Props) {
   });
   const x1 = useTransform(scrollYProgress, [0, 1], [0, 150]);
   const x2 = useTransform(scrollYProgress, [0, 1], [0, -150]);
-  const height = useTransform(scrollYProgress, [0, 0.9], [50, 0]);
 
   return (
     <div
@@ -39,12 +38,7 @@ export default function SlidingImages({ slider1, slider2 }: Props) {
             style={{ backgroundColor: project.color }}
           >
             <div className="relative h-full w-full  sm:h-4/5 sm:w-4/5">
-              <Image
-                alt="image"
-                src={`/assets/${project.src}`}
-                fill
-                objectFit={'cover'}
-              />
+              <Image alt="image" src={`/images/${project.src}`} fill />
             </div>
           </div>
         ))}
@@ -63,12 +57,7 @@ export default function SlidingImages({ slider1, slider2 }: Props) {
               key={index}
               className="relative h-full w-full sm:h-[90%] sm:w-[90%]"
             >
-              <Image
-                fill
-                alt="image"
-                src={`/assets/${project.src}`}
-                objectFit="cover"
-              />
+              <Image fill alt="image" src={`/images/${project.src}`} />
             </div>
           </div>
         ))}

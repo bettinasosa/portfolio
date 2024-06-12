@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import ProjectLink from '@/app/work/projectLink';
-import Modal from '@/app/work/project/modal';
+import ProjectLink from '@/app/projects/projectLink';
+import Modal from '@/app/projects/project/modal';
 import Layout from '@/components/layout';
 import { ModalContext } from './modalContext';
 
@@ -13,14 +13,14 @@ const projects = [
     src: 'm31/controller.jpg',
     description:
       'A video/audio game controller to make digital entertainment more approachable to those with visual impairments.',
-    href: '/work/m31',
+    href: '/projects/m31',
     tag: 'Prototyping',
     color: '#000000'
   },
   {
     title: 'AXO',
     src: 'axo/astronaut-square.png',
-    href: '/work/axo',
+    href: '/projects/axo',
     tag: 'Bio Materials',
     color: '#ee5622'
   },
@@ -29,7 +29,7 @@ const projects = [
     description:
       'Reusable packaging made of highly recyclable materials for baby bathing products.',
     src: 'bottles/block.png',
-    href: '/work/stackers',
+    href: '/projects/stackers',
     tag: 'Packaging',
     color: '#EFE8D3'
   },
@@ -37,56 +37,56 @@ const projects = [
     title: 'ASTRA',
     description: 'An interstellar games arcade with a hologram screen.',
     src: 'astra/astra.png',
-    href: '/work/astra',
+    href: '/projects/astra',
     tag: 'GIZMO',
     color: '#303030'
   },
   {
     title: 'DAO social network',
     src: 'sojo/astra.png',
-    href: '/work/catapult-v1',
+    href: '/projects/catapult-v1',
     tag: 'Software',
     color: '#303030'
   },
   {
     title: 'SOJO',
     src: 'sojo/astra.png',
-    href: '/work/sojo',
+    href: '/projects/sojo',
     tag: 'Software',
     color: '#303030'
   },
   {
     title: 'JENGA',
     src: 'jenga.jpg',
-    href: '/work/robot-jenga',
+    href: '/projects/robot-jenga',
     tag: 'Robotics',
     color: '#706D63'
   },
   {
     title: 'Woody',
     src: 'woody.jpg',
-    href: '/work/woody',
+    href: '/projects/woody',
     tag: 'Electronics',
     color: '#706D63'
   },
   {
     title: 'DAFT(PUNK)BOT',
     src: 'cubo/cubo.jpg',
-    href: '/work/cubo',
+    href: '/projects/cubo',
     tag: 'Electronics',
     color: '#EFE8D3'
   },
   {
     title: 'Tandem bike',
     src: 'bike.png',
-    href: '/work/tandem-bike',
+    href: '/projects/tandem-bike',
     tag: 'CAD & optimisation',
     color: '#EFE8D3'
   },
   {
     title: 'TETRIS',
     src: 'tetris.png',
-    href: '/work/tetris',
+    href: '/projects/tetris',
     tag: 'Software',
     color: '#EFE8D3'
   }

@@ -1,9 +1,9 @@
 'use client';
-import ProjectHero from '@/app/work/project/hero';
+import ProjectHero from '@/app/projects/project/hero';
 import PageScrollParallax from '@/components/pageScrollParallax';
-import Picture1 from '../../../../public/static/assets/m31/controller.jpg';
-import Picture3 from '../../../../public/static/assets/m31/gold.webp';
-import Picture2 from '../../../../public/static/assets/m31/logoblack.png';
+import Picture1 from '../../../../public/images/m31/controller.jpg';
+import Picture3 from '../../../../public/images/m31/gold.webp';
+import Picture2 from '../../../../public/images/m31/logoblack.png';
 import Image from 'next/image';
 import React from 'react';
 

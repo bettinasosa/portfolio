@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useContext, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Link from 'next/link';
-import { ModalContext } from '@/app/work/modalContext';
+import { ModalContext } from '@/app/projects/modalContext';
 
 const scaleAnimation = {
   initial: { scale: 0, x: '-50%', y: '-50%' },

@@ -1,6 +1,6 @@
 'use client';
 import React, { useContext } from 'react';
-import { ModalContext } from '@/app/work/modalContext';
+import { ModalContext } from '@/app/projects/modalContext';
 
 interface Props {
   index: number;
