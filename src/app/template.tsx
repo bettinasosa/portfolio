@@ -21,20 +21,26 @@ export default function RootTemplate({ children }: PropsWithChildren) {
   const input = isMobile() ? 0.9 : 1.2;
   const height = useTransform(scrollYProgress, [0, input], [50, 0]);
   const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      (async () => {
+        setTimeout(() => {
+          setIsLoading(false);
+          document.body.style.cursor = 'default';
+          window.scrollTo(0, 0);
+        }, 800);
+        console.log('loading', isLoading);
+      })();
+    }
+  }, [isLoading]);
+
+  if (typeof window === 'undefined') {
+    return null;
+  }
   const url = window.location.href.split('/');
   const lastWord = url[url.length - 1];
   const darkModeScreens = ['gallery', 'contact', 'm31'];
-
-  useEffect(() => {
-    (async () => {
-      setTimeout(() => {
-        setIsLoading(false);
-        document.body.style.cursor = 'default';
-        window.scrollTo(0, 0);
-      }, 800);
-      console.log('loading', isLoading);
-    })();
-  }, []);
 
   return (
     <div className="min-h-screen overflow-x-hidden">

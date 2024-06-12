@@ -1,16 +1,16 @@
 'use client';
-import React from 'react';
+import React, { useContext } from 'react';
+import { ModalContext } from '@/app/work/modalContext';
 
 interface Props {
   index: number;
   title: string;
-  setModal: React.Dispatch<
-    React.SetStateAction<{ active: boolean; index: number }>
-  >;
   tag: string;
 }
 
-export default function ProjectLink({ index, title, setModal, tag }: Props) {
+export default function ProjectLink({ index, title, tag }: Props) {
+  const { setModal } = useContext(ModalContext);
+
   return (
     <div
       onMouseEnter={() => {

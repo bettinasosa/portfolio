@@ -11,7 +11,6 @@ type BlurCursorProps = {
 
 export default function ContrastCursor({ isActive, text }: BlurCursorProps) {
   const [isClicked, setIsClicked] = useState(false);
-  if (typeof navigator !== 'undefined' && isMobile()) return null;
 
   const cursorX = useMotionValue(0);
   const cursorY = useMotionValue(0);
@@ -43,6 +42,8 @@ export default function ContrastCursor({ isActive, text }: BlurCursorProps) {
       window.removeEventListener('mouseup', handleMouseUp);
     };
   }, [isActive]);
+
+  if (typeof navigator !== 'undefined' && isMobile()) return null;
 
   return (
     <motion.div

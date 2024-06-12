@@ -47,7 +47,7 @@ export default function ContactInfo() {
                 src={`/assets/profile.jpg`}
               />
             </div>
-            <h2 className="ml-3 font-medium sm:text-[90px]">Let's work</h2>
+            <h2 className="ml-3 font-medium sm:text-[90px]">Let&apos;s work</h2>
           </span>
           <h2 className="ml-1 font-medium sm:text-[90px]">together</h2>
           <motion.div

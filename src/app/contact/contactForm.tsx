@@ -34,11 +34,11 @@ export function ContactForm() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="flex flex-col gap-4 sm:gap-6">
             <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
-              Let's talk!
+              Let&apos;s talk!
             </h2>
             <p className="text-primary-950/70 dark:text-primary-200/70 max-w-lg text-lg sm:text-xl">
-              I'm always looking for new and innovative ways to use my skills.
-              Let's collaborate!
+              I&apos;m always looking for new and innovative ways to use my
+              skills. Let&apos;s collaborate!
             </p>
           </div>
           <FormProvider {...form}>

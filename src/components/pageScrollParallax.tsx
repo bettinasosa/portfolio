@@ -14,7 +14,6 @@ interface Props {
   title: string;
   body: string;
 }
-
 export default function PageScrollParallax({
   staticImgs,
   word,
@@ -51,22 +50,19 @@ export default function PageScrollParallax({
         </p>
         <div>
           <p className="mt-12 text-[2vw] uppercase text-primary">
-            {word.split('').map((letter, i) => {
-              const y = useTransform(
-                scrollYProgress,
-                [0, 1],
-                [0, Math.floor(Math.random() * -75) - 25]
-              );
-              return (
-                <motion.span
-                  key={`l_${i}`}
-                  className="relative"
-                  style={{ top: y }}
-                >
-                  {letter}
-                </motion.span>
-              );
-            })}
+            {word.split('').map((letter, i) => (
+              <motion.span
+                key={`l_${i}`}
+                className="relative"
+                style={{
+                  top:
+                    scrollYProgress.get() *
+                    (Math.floor(Math.random() * -75) - 25)
+                }}
+              >
+                {letter}
+              </motion.span>
+            ))}
           </p>
         </div>
       </div>

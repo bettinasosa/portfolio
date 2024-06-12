@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ProjectLink from '@/app/work/projectLink';
 import Modal from '@/app/work/project/modal';
 import Layout from '@/components/layout';
+import { ModalContext } from './modalContext';
 
 const projects = [
   {
@@ -34,7 +35,7 @@ const projects = [
   },
   {
     title: 'ASTRA',
-    description: 'An interstellar games arcade with a hollogramic screen.',
+    description: 'An interstellar games arcade with a hologram screen.',
     src: 'astra/astra.png',
     href: '/work/astra',
     tag: 'GIZMO',
@@ -94,25 +95,25 @@ const projects = [
 export default function ProjectsHome() {
   const [modal, setModal] = useState({ active: false, index: 0 });
   return (
-    <Layout title={'My Work'}>
-      <div className="m-0">
-        <div className="m-0 overflow-hidden">
-          {projects.map((project, index) => {
-            return (
-              <Link href={project.href}>
-                <ProjectLink
-                  index={index}
-                  title={project.title}
-                  setModal={setModal}
-                  key={index}
-                  tag={project.tag}
-                />
-              </Link>
-            );
-          })}
+    <ModalContext.Provider value={{ modal, setModal }}>
+      <Layout title={'My Work'}>
+        <div className="m-0">
+          <div className="m-0 overflow-hidden">
+            {projects.map((project, index) => {
+              return (
+                <Link href={project.href} key={index}>
+                  <ProjectLink
+                    index={index}
+                    title={project.title}
+                    tag={project.tag}
+                  />
+                </Link>
+              );
+            })}
+          </div>
+          <Modal projects={projects} />
         </div>
-        <Modal modal={modal} projects={projects} />
-      </div>
-    </Layout>
+      </Layout>
+    </ModalContext.Provider>
   );
 }

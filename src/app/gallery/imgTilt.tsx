@@ -1,6 +1,7 @@
 'use client';
 import React, { MutableRefObject, useEffect, useRef } from 'react';
 import VanillaTilt, { TiltOptions } from 'vanilla-tilt';
+import Image from 'next/image';
 
 type TiltProps = {
   src: string;
@@ -28,7 +29,7 @@ export default function ImgTilt({
 
   return (
     <div ref={tilt} className={className}>
-      <img src={src} alt="artwork" className="object-cover" />
+      <Image src={src} alt="artwork" className="object-cover" />
       {input && <div className="text-white">{input}</div>}
     </div>
   );
@@ -39,7 +40,7 @@ export default function ImgTilt({
 {
   reverse:           false,  // reverse the tilt direction
   max:               35,     // max tilt rotation (degrees)
-  perspective:       1000,   // Transform perspective, the lower the more extreme the tilt gets.
+  perspective:       1000,   // Transform perspective, the lower, the more extreme the tilt gets.
   scale:             1,      // 2 = 200%, 1.5 = 150%, etc..
   speed:             300,    // Speed of the enter/exit transition
   transition:        true,   // Set a transition on enter/exit.
