@@ -3,11 +3,6 @@
   @tailwind utilities;
 
   @font-face {
-    font-family: "Design";
-    src: url("./../../public/fonts/design.ttf")
-  }
-
-  @font-face {
     font-family: 'Playfair';
     font-style: normal;
     font-display: swap;
