@@ -5,9 +5,10 @@ import Link from 'next/link';
 
 type NavLinksProps = {
   links: { title: string; href?: string }[];
+  setIsActive: (isActive: boolean) => void;
 };
 
-export default function NavLinks({ links }: NavLinksProps) {
+export default function NavLinks({ links, setIsActive }: NavLinksProps) {
   return (
     <div className="flex flex-col gap-2.5">
       {links.map((link, i) => {
@@ -24,6 +25,7 @@ export default function NavLinks({ links }: NavLinksProps) {
               <Magnetic>
                 <Link
                   href={href!}
+                  onClick={() => setIsActive(false)}
                   className="text-[46px] italic text-background no-underline"
                 >
                   {title}

@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 export default function Description({ phrases }: { phrases: string[] }) {
   return (
-    <div className="relative ml-[10vw] mt-[30vw] text-[3vw] uppercase text-white">
+    <div className="relative ml-[10vw] mt-[60vh] text-[3vw] uppercase text-white sm:mt-[60vh]">
       {phrases.map((phrase, index) => (
         <AnimatedText key={index}>{phrase}</AnimatedText>
       ))}
@@ -25,8 +25,8 @@ function AnimatedText({ children }: AnimatedTextProps) {
     gsap.from(text.current, {
       scrollTrigger: {
         trigger: text.current,
-        start: '0px bottom',
-        end: 'bottom+=400px bottom',
+        start: '60vh bottom',
+        end: 'bottom+=60vh bottom',
         onEnter: () => {
           gsap.to(text.current, {
             opacity: 1,

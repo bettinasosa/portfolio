@@ -2,19 +2,22 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { clsx } from 'clsx';
 
 interface HeroSectionProps {
   description: string;
   title: string;
   isImage: boolean;
   media: string;
+  bgColour?: string;
 }
 
 export default function ProjectHero({
   description,
   title,
   isImage,
-  media
+  media,
+  bgColour
 }: HeroSectionProps) {
   const [isMuted, setIsMuted] = useState(true);
 
@@ -22,13 +25,19 @@ export default function ProjectHero({
     setIsMuted(!isMuted);
   };
   return (
-    <div className="relative h-screen bg-black">
+    <div
+      className={clsx(
+        'relative h-screen',
+        bgColour ? `bg-${bgColour}` : 'bg-black'
+      )}
+    >
       {isImage ? (
         <Image
-          className="mx-auto h-auto w-full"
+          className="mx-auto h-auto w-full max-w-4xl pt-12"
           width="300"
           height="300"
           src={media}
+          quality={100}
           alt="project image"
         />
       ) : (
@@ -41,7 +50,9 @@ export default function ProjectHero({
           allowFullScreen
         ></iframe>
       )}
-      <div className="absolute bottom-0 left-0 h-[60vh] w-full bg-gradient-to-b from-transparent to-foreground"></div>
+      {!isImage && (
+        <div className="absolute bottom-0 left-0 h-[60vh] w-full bg-gradient-to-b from-transparent to-foreground"></div>
+      )}
       {!isImage && (
         <Button
           className="absolute bottom-32 right-6 z-10 sm:bottom-16"

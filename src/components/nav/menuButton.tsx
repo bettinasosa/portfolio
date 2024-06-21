@@ -7,7 +7,7 @@ type ButtonProps = {
 
 export default function MenuButton({ isActive, toggleMenu }: ButtonProps) {
   return (
-    <div className="absolute right-0 top-0 z-30 h-[40px] w-[100px] cursor-pointer overflow-hidden rounded-[25px]">
+    <div className="absolute right-0 top-0 z-20 h-[40px] w-[100px] cursor-pointer overflow-hidden rounded-[25px]">
       <motion.div
         className="relative h-full w-full"
         animate={{ top: isActive ? '-100%' : '0%' }}

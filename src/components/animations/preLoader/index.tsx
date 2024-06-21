@@ -18,6 +18,7 @@ export default function PreLoader() {
   const [index, setIndex] = useState(0);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const pathname = usePathname().split('/').pop();
+  console.log('pathname', pathname);
 
   useEffect(() => {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
@@ -57,7 +58,7 @@ export default function PreLoader() {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="fixed z-50 flex h-screen w-screen items-center justify-center bg-black text-white"
+      className="fixed z-30 flex h-screen w-screen items-center justify-center bg-black text-white"
     >
       {dimension.width > 0 && (
         <>
@@ -66,16 +67,17 @@ export default function PreLoader() {
             initial="initial"
             animate="enter"
             className={clsx(
-              'absolute z-50 flex items-center justify-center text-4xl',
+              'absolute flex items-center justify-center text-4xl text-white',
               `text-${words[index].colour}`
             )}
           >
             <span
               className={clsx(
-                'mr-3 block size-3 rounded-full',
+                'size-3 mr-3 block rounded-full',
                 `bg-${words[index].colour}`
               )}
             ></span>
+            hii
             {pathname === '' ? words[index].text : pathname}
           </motion.p>
           <svg className="absolute top-0 h-[calc(100%+300px)] w-full fill-[#141516]">

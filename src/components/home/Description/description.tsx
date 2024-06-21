@@ -73,7 +73,7 @@ export default function Description() {
           positive impact on the world.
         </motion.p>
         <div data-scroll-speed={0.1}>
-          <RoundedButton className="absolute ml-16 mt-16 flex h-[200px] w-[200px] cursor-pointer items-center justify-center rounded-full bg-destructive text-white">
+          <RoundedButton className="absolute ml-56 mt-6 flex h-[100px] w-[100px] cursor-pointer items-center justify-center rounded-full bg-destructive text-white sm:ml-16 sm:mt-16 sm:h-[200px] sm:w-[200px]">
             About me
           </RoundedButton>
         </div>

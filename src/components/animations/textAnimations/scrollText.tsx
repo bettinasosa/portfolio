@@ -45,7 +45,7 @@ function LetterDisplay({ word }: { word: string }) {
   return word.split('').map((letter, index) => (
     <div
       key={index}
-      className="letter xs:leading-none xs:text-[90px] text-6xl font-semibold md:text-[120px] lg:text-[150px] xl:text-[210px] "
+      className="letter text-6xl font-semibold xs:text-[90px] xs:leading-none md:text-[120px] lg:text-[150px] xl:text-[210px] "
       data-speed={getRandomSpeed()}
     >
       {letter}
@@ -63,19 +63,19 @@ export function LetterCollision() {
 
   return (
     <div ref={containerRef} className="ml-8 scroll-smooth">
-      <div className="-mt-28 mb-24 flex h-screen flex-col justify-end">
+      <div className="-mt-28 mb-36 flex h-screen flex-col justify-end lg:mb-24">
         <div className="flex flex-wrap p-0">
           <LetterDisplay word={creativity} />
-          <div className="xs:w-4 w-2 sm:w-10"></div>
+          <div className="w-2 xs:w-4 sm:w-10"></div>
           <LetterDisplay word={is} />
         </div>
         <div className="flex flex-wrap">
           <LetterDisplay word={my} />
-          <div className="xs:w-4 w-2 sm:w-10"></div>
+          <div className="w-2 xs:w-4 sm:w-10"></div>
           <LetterDisplay word={craft} />
         </div>
       </div>
-      <div className="-pb-36 flex flex-wrap">
+      <div className="flex flex-wrap">
         <LetterDisplay word={sentence3} />
       </div>
     </div>

@@ -25,40 +25,44 @@ export function ContactForm() {
       body: ''
     }
   });
+
   const onSubmit = (data: ContactFormData) => {
-    console.log(data);
+    const { subject, email, body } = data;
+    window.location.href = `mailto:bettinasosarohl@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}%0D%0A%0D%0AFrom: ${encodeURIComponent(
+      email
+    )}`;
   };
+
   return (
-    <div className=" min-h-screen py-16 sm:py-20">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
-          <div className="flex flex-col gap-4 sm:gap-6">
-            <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
-              Let&apos;s talk!
-            </h2>
-            <p className="text-primary-950/70 dark:text-primary-200/70 max-w-lg text-lg sm:text-xl">
-              I&apos;m always looking for new and innovative ways to use my
-              skills. Let&apos;s collaborate!
-            </p>
-          </div>
+    <div className="min-h-screen pt-20">
+      <div className="flex flex-col gap-12 lg:grid lg:grid-cols-3 lg:gap-8">
+        <div className="flex flex-col gap-4 sm:gap-6">
+          <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
+            Let&apos;s talk!
+          </h2>
+          <p className="text-primary-950/70 dark:text-primary-200/70 max-w-lg text-lg sm:text-xl">
+            I&apos;m always looking for new and innovative ways to use my
+            skills.
+          </p>
+        </div>
+        <div className="col-span-2">
           <FormProvider {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              action="mailto:bettinasosarohl@gmail.com"
-              method="POST"
-              name="EmailForm"
-              className="mt-3 flex flex-col gap-y-6"
+              className="flex flex-col space-y-6"
             >
               <FormField
                 control={form.control}
                 name="subject"
                 render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Subject</FormLabel>
+                  <FormItem className="flex flex-col space-y-1">
+                    <FormLabel className="text-xl">Subject</FormLabel>
                     <FormControl>
                       <Input
                         placeholder="Full name"
-                        className="bg-primary-50 ring-primary-900/40 placeholder:text-primary-950/60 hover:ring-primary-600 focus:ring-primary-600 dark:bg-primary-950 dark:ring-primary-200/40 dark:placeholder:text-primary-200/60 dark:hover:ring-primary-400 dark:focus:ring-primary-400 block w-full appearance-none rounded-md border-0 px-4 py-4 text-base ring-1 transition focus:outline-none focus:ring-2"
+                        className="w-full rounded-xl bg-background text-foreground"
                         {...field}
                       />
                     </FormControl>
@@ -70,11 +74,11 @@ export function ContactForm() {
                 control={form.control}
                 name="email"
                 render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
+                  <FormItem className="flex flex-col space-y-1">
+                    <FormLabel className="text-xl">Email</FormLabel>
                     <FormControl>
                       <Input
-                        className="bg-primary-50 ring-primary-900/40 placeholder:text-primary-950/60 hover:ring-primary-600 focus:ring-primary-600 dark:bg-primary-950 dark:ring-primary-200/40 dark:placeholder:text-primary-200/60 dark:hover:ring-primary-400 dark:focus:ring-primary-400 block w-full appearance-none rounded-md border-0 px-4 py-4 text-base ring-1 transition focus:outline-none focus:ring-2"
+                        className="w-full rounded-xl bg-background text-foreground"
                         type="email"
                         placeholder="Email"
                         {...field}
@@ -88,11 +92,11 @@ export function ContactForm() {
                 control={form.control}
                 name="body"
                 render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Message</FormLabel>
+                  <FormItem className="flex flex-col space-y-1">
+                    <FormLabel className="text-xl">Message</FormLabel>
                     <FormControl>
                       <Textarea
-                        className="bg-primary-50 ring-primary-900/40 placeholder:text-primary-950/60 hover:ring-primary-600 focus:ring-primary-600 dark:bg-primary-950 dark:ring-primary-200/40 dark:placeholder:text-primary-200/60 dark:hover:ring-primary-400 dark:focus:ring-primary-400 block w-full appearance-none rounded-md border-0 px-4 py-4 text-base ring-1 transition focus:outline-none focus:ring-2"
+                        className="w-full rounded-xl bg-background text-foreground"
                         placeholder="Message"
                         {...field}
                       />

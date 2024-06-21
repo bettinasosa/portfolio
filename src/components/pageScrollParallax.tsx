@@ -2,6 +2,7 @@
 import { useRef } from 'react';
 import Image, { StaticImageData } from 'next/image';
 import { motion, MotionValue, useScroll, useTransform } from 'framer-motion';
+import TextFormatter from '@/components/util/textFormatter';
 
 interface ImageProps {
   src: StaticImageData;
@@ -45,9 +46,9 @@ export default function PageScrollParallax({
         >
           {title}
         </motion.h1>
-        <p className="mb-12 max-w-6xl text-background mix-blend-difference">
-          {body}
-        </p>
+        <div className="mb-12 max-w-6xl text-background mix-blend-difference">
+          <TextFormatter text={body} />
+        </div>
         <div>
           <p className="mt-12 text-[2vw] uppercase text-primary">
             {word.split('').map((letter, i) => (

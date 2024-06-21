@@ -65,15 +65,17 @@ export default function ParallaxGallery() {
               src={'/images/dresses/dress1.jpg'}
               alt={'dress'}
               fill
-              objectFit="cover"
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <div className="absolute left-[25%] top-[2%] min-h-[300px] min-w-[150px]">
             <Image
               alt={'dress collection 3'}
               fill
-              objectFit="cover"
+              className="object-cover"
               src={'/images/dresses/dress3.jpg'}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>
@@ -83,7 +85,8 @@ export default function ParallaxGallery() {
               src={'/images/dresses/dress4.jpg'}
               alt={'dress collection 4'}
               fill
-              objectFit="cover"
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <div className="absolute left-[82%] top-[5%] min-h-[300px] min-w-[220px]">
@@ -91,7 +94,8 @@ export default function ParallaxGallery() {
               alt={'cheese'}
               src={'/images/posters/cheesew.jpg'}
               fill
-              objectFit={'cover'}
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <div className="absolute left-[70%] top-[40%] min-h-[300px] min-w-[220px]">
@@ -99,25 +103,26 @@ export default function ParallaxGallery() {
               alt="coffee poster"
               fill
               src="/images/posters/coffee.jpg"
-              objectFit="cover"
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
         </div>
         <div ref={plane3} className="absolute h-full w-full">
           <ImgTilt
-            className="absolute left-[65%] top-[2.5%] z-10 max-w-[200px]"
+            className="absolute left-[65%] top-[2.5%] z-10 min-h-[200px] min-w-[150px]"
             src={'/images/posters/teacoffee.jpg'}
           />
           <ImgTilt
-            className="absolute left-[15%] top-[35%] z-10 max-w-[220px]"
+            className="absolute left-[15%] top-[35%] z-10 min-h-[300px] min-w-[220px]"
             src={'/images/dresses/dress2.jpg'}
           />
           <ImgTilt
-            className="absolute left-[55%] top-[30%] z-10 max-w-[200px]"
+            className="absolute left-[55%] top-[30%] z-10 min-h-[300px] min-w-[200px]"
             src={'/images/posters/talksposter.jpg'}
           />
           <ImgTilt
-            className="absolute left-[60%] top-[70%] z-10 max-w-[150px]"
+            className="absolute left-[60%] top-[70%] z-10 min-h-[300px] min-w-[150px]"
             src={'/images/posters/sustainability.jpg'}
           />
           <div className="absolute left-[30%] top-[65%] min-h-[250px] min-w-[200px]">
@@ -125,7 +130,8 @@ export default function ParallaxGallery() {
               src="/images/dresses/dress.jpg"
               alt="dress"
               fill
-              objectFit="cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover"
             />
           </div>
         </div>

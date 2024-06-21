@@ -40,56 +40,56 @@ const projects = [
     href: '/projects/astra',
     tag: 'GIZMO',
     color: '#303030'
-  },
-  {
-    title: 'DAO social network',
-    src: 'sojo/astra.png',
-    href: '/projects/catapult-v1',
-    tag: 'Software',
-    color: '#303030'
-  },
-  {
-    title: 'SOJO',
-    src: 'sojo/astra.png',
-    href: '/projects/sojo',
-    tag: 'Software',
-    color: '#303030'
-  },
-  {
-    title: 'JENGA',
-    src: 'jenga.jpg',
-    href: '/projects/robot-jenga',
-    tag: 'Robotics',
-    color: '#706D63'
-  },
-  {
-    title: 'Woody',
-    src: 'woody.jpg',
-    href: '/projects/woody',
-    tag: 'Electronics',
-    color: '#706D63'
-  },
-  {
-    title: 'DAFT(PUNK)BOT',
-    src: 'cubo/cubo.jpg',
-    href: '/projects/cubo',
-    tag: 'Electronics',
-    color: '#EFE8D3'
-  },
-  {
-    title: 'Tandem bike',
-    src: 'bike.png',
-    href: '/projects/tandem-bike',
-    tag: 'CAD & optimisation',
-    color: '#EFE8D3'
-  },
-  {
-    title: 'TETRIS',
-    src: 'tetris.png',
-    href: '/projects/tetris',
-    tag: 'Software',
-    color: '#EFE8D3'
   }
+  // {
+  //   title: 'DAO social network',
+  //   src: 'sojo/astra.png',
+  //   href: '/projects/catapult-v1',
+  //   tag: 'Software',
+  //   color: '#303030'
+  // },
+  // {
+  //   title: 'SOJO',
+  //   src: 'sojo/astra.png',
+  //   href: '/projects/sojo',
+  //   tag: 'Software',
+  //   color: '#303030'
+  // },
+  // {
+  //   title: 'JENGA',
+  //   src: 'jenga.jpg',
+  //   href: '/projects/robot-jenga',
+  //   tag: 'Robotics',
+  //   color: '#706D63'
+  // },
+  // {
+  //   title: 'Woody',
+  //   src: 'woody.jpg',
+  //   href: '/projects/woody',
+  //   tag: 'Electronics',
+  //   color: '#706D63'
+  // },
+  // {
+  //   title: 'DAFT(PUNK)BOT',
+  //   src: 'cubo/cubo.jpg',
+  //   href: '/projects/cubo',
+  //   tag: 'Electronics',
+  //   color: '#EFE8D3'
+  // },
+  // {
+  //   title: 'Tandem bike',
+  //   src: 'bike.png',
+  //   href: '/projects/tandem-bike-bike',
+  //   tag: 'CAD & optimisation',
+  //   color: '#EFE8D3'
+  // },
+  // {
+  //   title: 'TETRIS',
+  //   src: 'tetris.png',
+  //   href: '/projects/tetris',
+  //   tag: 'Software',
+  //   color: '#EFE8D3'
+  // }
 ];
 
 export default function ProjectsHome() {

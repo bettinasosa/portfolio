@@ -52,18 +52,19 @@ export default function Header() {
         className="absolute top-0 z-20 box-border flex w-full items-center p-4 font-light text-white mix-blend-difference lg:p-8"
       >
         <div className="flex lg:pr-56">
-          <Link href={'/'} className="group z-20 flex items-center space-x-2">
+          <Link href={'/'} className="group z-10 flex items-center space-x-2">
             <Magnetic>
               <Image
                 height={32}
                 width={32}
                 src="/images/logo.jpg"
-                alt="Bettina"
+                alt="Bettinas logo"
+                priority
               />
             </Magnetic>
             {!isMobile() && (
               <>
-                <p className="hover:rotate-[360deg]">©</p>
+                <div className="hover:rotate-[360deg]">©</div>
                 <div className="relative flex overflow-hidden">
                   <div className="ease-custom-cubic transition-transform duration-500 group-hover:translate-x-[-100%]">
                     created by
@@ -117,12 +118,12 @@ export default function Header() {
         )}
       </div>
       {!isMobile() && (
-        <div ref={button} className="fixed right-0 z-40 scale-0 transform">
+        <div ref={button} className="fixed right-0 z-20 scale-0 transform">
           <Menu />
         </div>
       )}
       {isMobile() && (
-        <div className="fixed right-2 z-40 transform">
+        <div className="fixed right-2 z-20 transform">
           <Menu />
         </div>
       )}

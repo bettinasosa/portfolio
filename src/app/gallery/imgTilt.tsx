@@ -29,7 +29,14 @@ export default function ImgTilt({
 
   return (
     <div ref={tilt} className={className}>
-      <Image src={src} alt="artwork" className="object-cover" />
+      hello
+      <Image
+        src={src}
+        alt="artwork"
+        fill
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
       {input && <div className="text-white">{input}</div>}
     </div>
   );

@@ -17,8 +17,14 @@ export default function AstraProject() {
 
   const researchImages = [
     '/images/axo/astronaut.png',
-    '/images/axo/prototype.png'
+    '/images/axo/prototype.png',
+    '/images/axo/concept.png',
+    '/images/axo/poster1.png',
+    '/images/axo/poster2.png',
+    '/images/axo/poster3.png',
+    '/images/axo/poster4.png'
   ];
+  ``;
   const phrase =
     'Fashion is one of the most polluting industries on earth, with shoes' +
     ' having the highest impact. We have to rethink this industry.' +

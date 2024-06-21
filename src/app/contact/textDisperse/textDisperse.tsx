@@ -44,7 +44,7 @@ export default function TextDisperse({
   return (
     <div
       onClick={onClick}
-      className="inline-flex text-[5.6vw] uppercase"
+      className="inline-flex text-[8.6vw] uppercase sm:text-[5.6vw]"
       style={{ cursor: 'pointer' }}
       onMouseEnter={() => {
         manageMouseEnter();

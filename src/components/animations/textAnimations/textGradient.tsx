@@ -41,7 +41,7 @@ export default function TextGradient({
       const letters = splitLetters(word);
       body.push(
         <p
-          className="m-0 mr-4 inline-block whitespace-nowrap p-0 text-[50px] font-semibold"
+          className="m-0 mr-4 inline-block whitespace-nowrap p-0 text-[24px] font-semibold sm:text-[50px]"
           key={word + '_' + i}
         >
           {letters}
@@ -73,7 +73,7 @@ export default function TextGradient({
     <main
       ref={container}
       className={clsx(
-        'align-end mb-[50vh] flex h-[50vh] justify-center pt-[10vh]',
+        'align-end mb-[20vh] flex h-[50vh] justify-center sm:pt-[10vh]',
         colour ? `text-${colour}` : 'text-background mix-blend-difference'
       )}
     >

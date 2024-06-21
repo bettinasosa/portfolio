@@ -24,13 +24,13 @@ export default function Body({
       trigger: imageContainer.current,
       pin: true,
       start: 'top',
-      end: () => `+=${projectList.current?.offsetHeight! - 100}`
+      end: () => `+=${projectList.current?.offsetHeight! - 110}`
     });
   }, []);
 
   return (
     <div ref={container} className="relative mt-[25vh] px-[10%] py-[10%]">
-      <div className="flex h-[700px] w-full justify-between gap-[5%]">
+      <div className="flex h-[300px] w-full justify-between gap-[5%] sm:h-[700px]">
         <div ref={imageContainer} className="relative h-full w-[40%]">
           <Image
             src={`/images/${body[selectedProject].src}`}
@@ -41,10 +41,10 @@ export default function Body({
           />
         </div>
         <div className="flex w-[60%] flex-col">
-          <div className="flex h-full text-[1.6vw] text-background mix-blend-difference">
+          <div className="flex h-full pb-5 text-[1.7vh] text-background mix-blend-difference sm:text-[1.6vw]">
             <p>{description}</p>
           </div>
-          <div className="align flex h-full w-[70%] self-end text-[1vw] text-background mix-blend-difference">
+          <div className="align flex h-full self-end text-[1.2vh] text-background mix-blend-difference sm:w-[70%] sm:text-[1vw]">
             <p>{text}</p>
           </div>
         </div>

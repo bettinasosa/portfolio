@@ -9,8 +9,8 @@ import {
 import ContactInfo from '@/components/home/ContactInfo';
 import { isMobile } from '@/components/util';
 import { clsx } from 'clsx';
-import PreLoader from '@/components/animations/preLoader';
 import { usePathname } from 'next/navigation';
+import PreLoader from '@/components/animations/preLoader';
 
 export default function RootTemplate({ children }: PropsWithChildren) {
   const container = useRef(null);
@@ -36,6 +36,9 @@ export default function RootTemplate({ children }: PropsWithChildren) {
 
   return (
     <main className="min-h-screen overflow-x-hidden">
+      <AnimatePresence mode="wait">
+        {isLoading && <PreLoader />}
+      </AnimatePresence>
       <div
         ref={container}
         className={clsx(
@@ -45,9 +48,6 @@ export default function RootTemplate({ children }: PropsWithChildren) {
             : 'bg-background'
         )}
       >
-        <AnimatePresence mode="wait">
-          {isLoading && <PreLoader />}
-        </AnimatePresence>
         {children}
         <motion.div style={{ height }} className="relative">
           <div
