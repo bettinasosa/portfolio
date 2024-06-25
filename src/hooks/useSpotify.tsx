@@ -11,6 +11,8 @@ export interface SpotifyTrack {
 
 export const useSpotify = () => {
   const [topTracks, setTopTracks] = useState<SpotifyTrack[]>([]);
+  const [topArtists, setTopArtists] = useState<SpotifyTrack[]>([]);
+
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -23,7 +25,8 @@ export const useSpotify = () => {
           throw new Error('Failed to fetch top tracks');
         }
         const data = await response.json();
-        setTopTracks(data);
+        setTopTracks(data.topTracks);
+        setTopArtists(data.topArtists);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
@@ -34,5 +37,5 @@ export const useSpotify = () => {
     fetchTopTracks();
   }, []);
 
-  return { topTracks, isLoading, error };
+  return { topTracks, topArtists, isLoading, error };
 };

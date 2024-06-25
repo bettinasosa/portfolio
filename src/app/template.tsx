@@ -23,7 +23,14 @@ export default function RootTemplate({ children }: PropsWithChildren) {
   const height = useTransform(scrollYProgress, [0, input], [50, 0]);
   const [isLoading, setIsLoading] = useState(true);
   const pathname = usePathname().split('/').pop();
+
+  let bgColour = 'bg-background';
   const darkModeScreens = ['gallery', 'contact', 'm31', 'astra'];
+  if (darkModeScreens.includes(pathname!)) {
+    bgColour = 'bg-foreground';
+  } else if (pathname === 'about') {
+    bgColour = 'bg-yellow-200';
+  }
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,23 +46,13 @@ export default function RootTemplate({ children }: PropsWithChildren) {
       <AnimatePresence mode="wait">
         {isLoading && <PreLoader />}
       </AnimatePresence>
-      <div
-        ref={container}
-        className={clsx(
-          'relative z-10',
-          darkModeScreens.includes(pathname!)
-            ? 'bg-foreground'
-            : 'bg-background'
-        )}
-      >
+      <div ref={container} className={clsx('relative z-10', bgColour)}>
         {children}
         <motion.div style={{ height }} className="relative">
           <div
             className={clsx(
               'absolute left-[-10%] z-10 h-[1050%] w-[120%] rounded-b-[100%] shadow-[0_60px_50px_0px_rgba(0,0,0,0.748)]',
-              darkModeScreens.includes(pathname!)
-                ? 'bg-foreground'
-                : 'bg-background'
+              bgColour
             )}
           ></div>
         </motion.div>
