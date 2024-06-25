@@ -1,9 +1,0 @@
-.swiper-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
-.swiper-slide {
-    flex: 1 0 30%;
-    /*width: 30%;*/
-}

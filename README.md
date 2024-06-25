@@ -2,10 +2,11 @@
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
 
-[![Built with Astro](https://astro.badg.es/v2/built-with-astro/tiny.svg)](https://astro.build)
+[![Built with Next](https://img.shields.io/badge/built%20with-Next.js-000000)](https://nextjs.org)
+[![Deployed on Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000000)](https://vercel.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/32341c7b-ba2e-4f42-835f-af9f4e429b4d/deploy-status)](https://app.netlify.com/sites/bettinaportfolio/deploys)
-
+[![Vercel Deploy](https://deploy-badge.vercel.app/?url=http://www.nextjs.org/&bettinasosa=bettinasosa.com)](https://vercel.com)
 [![Portfolio](https://img.shields.io/badge/link%20to%20website-8A2BE2)](https://www.bettinasosa.com)
 
 </div>
@@ -55,7 +56,7 @@ npm run build
 ```
 
 ```
-astro build
+yarn build
 ```
 
 This builds the app for production to the `./dist/` folder.
@@ -67,4 +68,4 @@ This project is licensed under the terms of the MIT license.
 ### My Portfolio Website
 
 This is my personal portfolio website, showcasing my skills and experience in [list of skills and experience]. It is
-built with Astro and deployed on Netlify.
+built with Next.js and deployed on Vercel.
