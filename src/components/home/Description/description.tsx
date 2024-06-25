@@ -2,6 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { opacity, slideUp } from './anim';
 import RoundedButton from '@/components/animations/roundedButton';
+import Link from 'next/link';
 
 export default function Description() {
   const phrase1 =
@@ -73,9 +74,11 @@ export default function Description() {
           positive impact on the world.
         </motion.p>
         <div data-scroll-speed={0.1}>
-          <RoundedButton className="absolute ml-56 mt-6 flex h-[100px] w-[100px] cursor-pointer items-center justify-center rounded-full bg-destructive text-white sm:ml-16 sm:mt-16 sm:h-[200px] sm:w-[200px]">
-            About me
-          </RoundedButton>
+          <Link href={'/about'}>
+            <RoundedButton className="absolute ml-56 mt-6 flex h-[100px] w-[100px] cursor-pointer items-center justify-center rounded-full bg-destructive text-white sm:ml-16 sm:mt-16 sm:h-[200px] sm:w-[200px]">
+              About me
+            </RoundedButton>
+          </Link>
         </div>
       </div>
     </div>

@@ -43,7 +43,7 @@ export default function ContactInfo() {
               <Image
                 fill
                 alt={'profile'}
-                src={`/images/profile.jpg`}
+                src={`/images/profile2.jpg`}
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
@@ -68,7 +68,7 @@ export default function ContactInfo() {
           <RoundedButton>bettinasosarohl@gmail.com</RoundedButton>
         </div>
 
-        <div className="2xs:mt-52 mt-20 flex flex-col justify-between p-5 sm:mx-[100px] sm:mt-48 sm:flex-row">
+        <div className="mt-20 flex flex-col justify-between p-5 2xs:mt-52 sm:mx-[100px] sm:mt-48 sm:flex-row">
           <p className="min-w-screen mb-5 text-base sm:max-w-xs">
             AI/LLM enthusiast | Cutting-edge tech advocate | Web3 builder |
             Passionate about using technology to make the world a better place.
