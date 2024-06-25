@@ -7,7 +7,6 @@
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="fix the naming on the href for the projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/api/spotify-playlists/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/spotify-playlists/route.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,7 @@
       <workItem from="1718206641620" duration="25593000" />
       <workItem from="1718640471795" duration="26000" />
       <workItem from="1718640505486" duration="51044000" />
-      <workItem from="1719298489226" duration="4469000" />
+      <workItem from="1719298489226" duration="4755000" />
     </task>
     <task id="LOCAL-00001" summary="moved animations and added new page animations for the description and contact page">
       <option name="closed" value="true" />

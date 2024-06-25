@@ -11,7 +11,7 @@ import SpotifyPlaylists from '@/app/about/spotifyPlaylists';
 import Link from 'next/link';
 
 export default function About() {
-  const starsRef = useRef(null);
+  const starsRef = useRef<HTMLDivElement>(null);
   const {
     playlists,
     isLoading: spotifyLoading,
