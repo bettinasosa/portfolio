@@ -69,7 +69,7 @@ export default function Contact() {
             <p className="m-0">→Email</p>
           </TextDisperse>
 
-          <Link href={'https://www.linkedin.com/in/bettina-sosa/'}>
+          <Link href={'https://github.com/bettinasosa'}>
             <TextDisperse setBackground={setBackground}>
               <p>→Github</p>
             </TextDisperse>
