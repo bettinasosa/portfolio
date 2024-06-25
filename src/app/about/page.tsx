@@ -7,10 +7,17 @@ import { useSpotify } from '@/hooks/useSpotify';
 import Layout from '@/components/layout';
 import { useGitHub } from '@/hooks/useGithub';
 import GitHubContributionsGraph from '@/app/about/githubActivity';
+import SpotifyPlaylists from '@/app/about/spotifyPlaylists';
 
 export default function About() {
   const starsRef = useRef(null);
-  const { topTracks } = useSpotify();
+  const {
+    playlists,
+    isLoading: spotifyLoading,
+    error: spotifyError,
+    topTracks
+  } = useSpotify();
+
   const {
     githubData,
     isLoading: githubLoading,
@@ -62,34 +69,13 @@ export default function About() {
                     alt="Profile picture"
                   />
                 </div>
-                <div className="rounded-3xl bg-purple-900 p-6 pt-12 text-white shadow-lg">
-                  <h3 className="mb-4  text-2xl font-bold">Spotify top 3</h3>
-                  {topTracks.slice(0, 3).map((track, index) => (
-                    <a
-                      key={index}
-                      href={track.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-4 rounded-xl p-4 transition-colors duration-300 hover:bg-foreground"
-                    >
-                      <div className="flex-shrink-0">
-                        <Image
-                          src={track?.albumArt! || '/placeholder-album-art.png'}
-                          alt={`${track.album} cover`}
-                          width={60}
-                          height={60}
-                          className="rounded-md"
-                        />
-                      </div>
-                      <div className="min-w-0 flex-grow">
-                        <p className="truncate font-semibold">{track.name}</p>
-                        <p className="truncate text-sm text-gray-400">
-                          {track.artist}
-                        </p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
+                {spotifyLoading ? (
+                  <p>Loading Spotify playlists...</p>
+                ) : spotifyError ? (
+                  <p>Error: {spotifyError}</p>
+                ) : playlists.length > 0 ? (
+                  <SpotifyPlaylists playlists={playlists} />
+                ) : null}
               </div>
 
               <div className="flex flex-col gap-10">
