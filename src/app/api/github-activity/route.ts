@@ -35,11 +35,12 @@ export async function GET() {
     const restrictedCount =
       response.user.contributionsCollection.restrictedContributionsCount;
 
-    const contributions = calendar.weeks.flatMap((week) =>
-      week.contributionDays.map((day) => ({
-        date: day.date,
-        count: day.contributionCount
-      }))
+    const contributions = calendar.weeks.flatMap(
+      (week: { contributionDays: any[] }) =>
+        week.contributionDays.map((day) => ({
+          date: day.date,
+          count: day.contributionCount
+        }))
     );
 
     return NextResponse.json({
