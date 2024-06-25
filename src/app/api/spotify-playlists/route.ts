@@ -15,8 +15,7 @@ export async function GET() {
 
     const playlistId = [
       '5gxD39PRtgwy8GCGMjB7oE',
-      '2GfLRoD5RzuU3qGBJwI5TT',
-      '5zX5kOmh7ib6Xy52GxHhBL',
+      // '2GfLRoD5RzuU3qGBJwI5TT',
       '7uC1v1Juca1fTeng1P9y8Q',
       '1UKWjkEXm2tYZ5R6BqVJR4'
     ];

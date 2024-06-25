@@ -8,6 +8,7 @@ import Layout from '@/components/layout';
 import { useGitHub } from '@/hooks/useGithub';
 import GitHubContributionsGraph from '@/app/about/githubActivity';
 import SpotifyPlaylists from '@/app/about/spotifyPlaylists';
+import Link from 'next/link';
 
 export default function About() {
   const starsRef = useRef(null);
@@ -89,18 +90,32 @@ export default function About() {
                     successful products.
                   </p>
                   <p className="text-lg sm:text-xl">
-                    At Sojo, I was the founding full-stack engineer, responsible
-                    for the design, development, and deployment of the
+                    At{' '}
+                    <Link
+                      href="https://www.sojo.uk/"
+                      className="font-semibold underline"
+                    >
+                      Sojo
+                    </Link>
+                    , I was the founding full-stack engineer, responsible for
+                    the design, development, and deployment of the
                     company&apos;s core platform. I built a scalable and
                     user-friendly app that allowed users to order repairs and
                     customisation clothing services online.
                   </p>
                   <p className="text-lg sm:text-xl">
-                    After Sojo, I joined Catapult Labs, a startup in the
-                    blockchain space, as a founding full-stack software
-                    engineer. I played a key role in the development of the
-                    company&apos;s flagship product, a Web3 profiles platform
-                    that enables networking in the decentralized space.
+                    After Sojo, I joined{' '}
+                    <Link
+                      href="https://www.catapultlabs.xyz/"
+                      className="font-semibold underline"
+                    >
+                      Catapult Labs
+                    </Link>
+                    , a startup in the blockchain space, as a founding
+                    full-stack software engineer. I played a key role in the
+                    development of the company&apos;s flagship product, a Web3
+                    profiles platform that enables networking in the
+                    decentralized space.
                   </p>
                   <p className="text-lg sm:text-xl">
                     I then worked on developing decentralised financial
@@ -119,18 +134,34 @@ export default function About() {
                   <p className="text-lg sm:text-xl">
                     At Imperial College London, I studied design engineering.
                     During my time at university, I worked on a number of
-                    projects, including Andromeda, which was awarded a gold
-                    prize in the Creative Conscience Awards, and AXOWear, which
-                    was exhibited at the Design Museum London.
+                    projects, including{' '}
+                    <Link
+                      href="/projects/m31"
+                      className="font-semibold underline"
+                    >
+                      Andromeda
+                    </Link>
+                    , which was awarded a gold prize in the Creative Conscience
+                    Awards, and{' '}
+                    <Link
+                      href="/projects/axo"
+                      className="font-semibold underline"
+                    >
+                      AxoWear
+                    </Link>
+                    , which was exhibited at the Design Museum London.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-10 pt-10">
+            <Link
+              className="flex flex-col gap-10 pt-10"
+              href="https://github.com/bettinasosa"
+            >
               {githubLoading ? (
-                <p>Loading GitHub contributions...</p>
+                <div></div>
               ) : githubError ? (
-                <p>Error: {githubError}</p>
+                <div></div>
               ) : githubData ? (
                 <GitHubContributionsGraph
                   contributions={githubData.contributions}
@@ -138,7 +169,7 @@ export default function About() {
                   restrictedContributions={githubData.restrictedContributions}
                 />
               ) : null}
-            </div>
+            </Link>
           </div>
         </div>
       </Layout>
