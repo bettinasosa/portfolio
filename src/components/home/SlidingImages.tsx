@@ -63,7 +63,7 @@ export default function SlidingImages({ slider1, slider2 }: Props) {
         ))}
       </motion.div>
       <div className="flex w-full justify-center">
-        <Link href={'/project'}>
+        <Link href={'/projects'}>
           <RoundedButton>View Projects</RoundedButton>
         </Link>
       </div>
