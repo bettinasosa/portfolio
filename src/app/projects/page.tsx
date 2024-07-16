@@ -25,6 +25,13 @@ const projects = [
     color: '#ee5622'
   },
   {
+    title: 'StyleSync',
+    src: 'stylesync/stylesync.png',
+    href: '/projects/stylesync',
+    tag: 'ML & IoT',
+    color: 'pink'
+  },
+  {
     title: 'StackeRs',
     description:
       'Reusable packaging made of highly recyclable materials for baby bathing products.',
@@ -41,6 +48,7 @@ const projects = [
     tag: 'GIZMO',
     color: '#303030'
   }
+
   // {
   //   title: 'DAO social network',
   //   src: 'sojo/astra.png',

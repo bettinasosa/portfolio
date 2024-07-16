@@ -27,13 +27,14 @@ export default function ProjectHero({
   return (
     <div
       className={clsx(
-        'relative h-screen',
+        'relative',
+        isImage ? 'h-[60vh] md:h-[80vh]' : 'h-screen',
         bgColour ? `bg-${bgColour}` : 'bg-black'
       )}
     >
       {isImage ? (
         <Image
-          className="mx-auto h-auto w-full max-w-4xl pt-12"
+          className="h-auto w-full pt-12"
           width="300"
           height="300"
           src={media}
@@ -55,13 +56,20 @@ export default function ProjectHero({
       )}
       {!isImage && (
         <Button
-          className="absolute bottom-32 right-6 z-10 sm:bottom-16"
+          className="absolute bottom-32 right-6 z-10 rounded sm:bottom-16"
           onClick={toggleMute}
         >
           {isMuted ? 'Unmute' : 'Mute'}
         </Button>
       )}
-      <div className="absolute bottom-4 left-12 flex w-full sm:bottom-16">
+      <div
+        className={clsx(
+          'absolute left-12 flex w-full',
+          isImage
+            ? 'from-transparent to-foreground'
+            : 'bottom-4 left-12 sm:bottom-16'
+        )}
+      >
         <div className="flex max-w-xs flex-col gap-4 sm:max-w-4xl sm:gap-6">
           <h1 className="text-2xl font-medium tracking-tight text-background mix-blend-difference sm:text-5xl lg:text-6xl">
             {title}

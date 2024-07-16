@@ -14,8 +14,8 @@ export async function GET() {
     spotifyApi.setAccessToken(data.body['access_token']);
 
     const [topArtists, topTracks] = await Promise.all([
-      spotifyApi.getMyTopArtists({ limit: 5 }),
-      spotifyApi.getMyTopTracks({ limit: 5 })
+      spotifyApi.getMyTopArtists({ limit: 25 }),
+      spotifyApi.getMyTopTracks({ limit: 25 })
     ]);
 
     const formattedArtists = topArtists.body.items.map((artist) => ({

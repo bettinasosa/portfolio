@@ -91,7 +91,7 @@ export default function Modal({ projects }: ModalProps) {
         ref={modalContainer}
         initial="initial"
         animate={active ? 'enter' : 'closed'}
-        className="pointer-events-none absolute flex h-[350px] w-[400px] items-center justify-center overflow-hidden bg-background"
+        className="pointer-events-none absolute z-50 flex h-[350px] w-[400px] items-center justify-center overflow-hidden bg-background"
       >
         <div
           style={{ top: index * -100 + '%' }}
