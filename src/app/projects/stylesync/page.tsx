@@ -99,8 +99,9 @@ export default function StyleSync() {
             </li>
             <li>
               <strong>Feature Selection:</strong> Based on initial analysis,
-              less relevant features like 'speechiness' and 'liveness' were
-              dropped to focus on more impactful attributes.
+              less relevant features like &apos;speechiness&apos; and
+              &apos;liveness&apos; were dropped to focus on more impactful
+              attributes.
             </li>
             <div className="flex justify-center">
               <Image
@@ -175,7 +176,7 @@ export default function StyleSync() {
           <p>
             To predict the appropriate music mood based on clothing choices, the
             clustered data was exported to CSV files with their respective
-            'mood' labels.
+            &apos;mood&apos; labels.
           </p>
           <li>
             Several classification models were tested, with the Random Forest
