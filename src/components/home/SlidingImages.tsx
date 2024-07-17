@@ -34,11 +34,16 @@ export default function SlidingImages({ slider1, slider2 }: Props) {
         {slider1.map((project, index) => (
           <div
             key={index}
-            className="flex h-60 w-1/2 items-center justify-center sm:h-80 sm:w-1/4"
+            className="flex h-60 w-1/2 items-center justify-center shadow-lg sm:h-80 sm:w-1/4"
             style={{ backgroundColor: project.color }}
           >
-            <div className="relative h-full w-full  sm:h-4/5 sm:w-4/5">
-              <Image alt="image" src={`/images/${project.src}`} fill />
+            <div className="relative h-full w-full">
+              <Image
+                alt="image"
+                src={`/images/${project.src}`}
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
         ))}
@@ -53,11 +58,13 @@ export default function SlidingImages({ slider1, slider2 }: Props) {
             className="flex h-60 w-3/4 items-center justify-center sm:h-80 sm:w-1/4"
             style={{ backgroundColor: project.color }}
           >
-            <div
-              key={index}
-              className="relative h-full w-full sm:h-[90%] sm:w-[90%]"
-            >
-              <Image fill alt="image" src={`/images/${project.src}`} />
+            <div key={index} className="relative h-full w-full shadow-lg ">
+              <Image
+                fill
+                alt="image"
+                src={`/images/${project.src}`}
+                objectFit="contain"
+              />
             </div>
           </div>
         ))}
