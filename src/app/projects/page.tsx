@@ -28,7 +28,7 @@ const projects = [
     title: 'StyleSync',
     src: 'stylesync/stylesync.png',
     href: '/projects/stylesync',
-    tag: 'ML & IoT',
+    tag: 'ML / AI',
     color: 'pink'
   },
   {

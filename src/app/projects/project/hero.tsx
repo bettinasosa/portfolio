@@ -28,19 +28,21 @@ export default function ProjectHero({
     <div
       className={clsx(
         'relative',
-        isImage ? 'h-[60vh] md:h-[80vh]' : 'h-screen',
+        isImage ? 'h-[60vh] lg:h-screen' : 'h-screen',
         bgColour ? `bg-${bgColour}` : 'bg-black'
       )}
     >
       {isImage ? (
-        <Image
-          className="h-auto w-full pt-12"
-          width="300"
-          height="300"
-          src={media}
-          quality={100}
-          alt="project image"
-        />
+        <div className="flex w-full justify-center">
+          <Image
+            className="h-auto w-[80vw] pt-12 "
+            width="300"
+            height="300"
+            src={media}
+            quality={100}
+            alt="project image"
+          />
+        </div>
       ) : (
         <iframe
           src={`${media}?autoplay=1&mute=${
@@ -65,9 +67,7 @@ export default function ProjectHero({
       <div
         className={clsx(
           'absolute left-12 flex w-full',
-          isImage
-            ? 'from-transparent to-foreground'
-            : 'bottom-4 left-12 sm:bottom-16'
+          isImage ? 'bottom-12' : 'bottom-4 left-12 sm:bottom-16'
         )}
       >
         <div className="flex max-w-xs flex-col gap-4 sm:max-w-4xl sm:gap-6">
