@@ -74,12 +74,12 @@ export default function Home() {
   };
 
   return (
-    <div ref={scrollContainerRef} className=" overflow-x-hidden">
+    <div ref={scrollContainerRef} className="overflow-x-hidden">
       <LetterCollision />
       {showScrollButton && (
         <Magnetic>
           <div
-            className="fixed bottom-8 right-8 flex cursor-pointer items-center space-x-2 text-3xl font-semibold"
+            className="fixed bottom-4 right-8 flex cursor-pointer items-center space-x-2 text-3xl font-semibold sm:bottom-8"
             onClick={scrollToHero}
           >
             <p>Scroll</p>
@@ -91,7 +91,6 @@ export default function Home() {
       <div id="hero" ref={heroRef}>
         <Hero />
       </div>
-      {/*<TextParallax />*/}
       <Description />
       <SlidingImages slider1={slider1} slider2={slider2} />
       <ContrastCursor isActive={false} text={'Go to project'} />
