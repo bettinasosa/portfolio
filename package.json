@@ -40,7 +40,7 @@
     "lenis": "^1.0.45",
     "locomotive-scroll": "^5.0.0-beta.13",
     "lucide-react": "^0.379.0",
-    "next": "14.2.3",
+    "next": "14.2.12",
     "npm": "^10.8.1",
     "prettier": "3.0.2",
     "prettier-plugin-tailwindcss": "0.5.3",
