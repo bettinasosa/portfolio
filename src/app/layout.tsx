@@ -6,6 +6,7 @@ import Animations from './animations';
 import Header from '@/components/layout/header';
 import { Analytics } from '@vercel/analytics/react';
 import { Toaster } from '@/components/ui/toaster';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <SpeedInsights />
       <body className="overflow-scroll overflow-x-hidden">
         <Animations>
           <main>

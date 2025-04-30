@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52f3ff7c-4ee3-479f-9c5a-3a0fe666bda2" name="Changes" comment="fix the naming on the href for the projects">
+      <change afterPath="$PROJECT_DIR$/jest.config.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/refunds/approvalCheckers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/refunds/helpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/refunds/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/refunds/refund.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/refunds/refundApproval.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/refunds/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/test/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/test/sampleData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/test/tests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/test/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +54,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Jest.refund.test.ts.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -51,6 +64,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/bettinasosa/portfolio/node_modules/jest",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/bettinasosa/portfolio/node_modules/prettier",
     "rearrange.code.on.save": "true",
