@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import ImgTilt from '@/app/gallery/imgTilt';
 
 interface Paragraph {
   title: string;
@@ -41,10 +40,6 @@ export default function ProjectBody({
 
         {paragraphs.map((paragraph, index) => (
           <div key={index} className="gris-cols-1 grid gap-10 sm:grid-cols-2">
-            <ImgTilt
-              className="shadow-3xl z-10 m-10 overflow-hidden rounded-3xl bg-cover"
-              src={paragraph.images[0]}
-            />
             <div className="space-y-6 sm:space-y-8">
               <h3 className="text-xl font-medium tracking-tight">
                 {paragraph.title}
