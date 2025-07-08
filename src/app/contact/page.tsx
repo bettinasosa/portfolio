@@ -56,24 +56,26 @@ export default function Contact() {
               </TextDisperse>
             </Link>
           </div>
-          <TextDisperse
-            setBackground={setBackground}
-            onClick={() => {
-              toast({
-                description:
-                  'Email copied to clipboard, alternatively write your enquiry on the form!'
-              });
-              scrollToEmail();
-            }}
-          >
-            <p className="m-0">→Email</p>
-          </TextDisperse>
-
-          <Link href={'https://github.com/bettinasosa'}>
-            <TextDisperse setBackground={setBackground}>
-              <p>→Github</p>
+          <div className="flex justify-between uppercase">
+            <TextDisperse
+              setBackground={setBackground}
+              onClick={() => {
+                toast({
+                  description:
+                    'Email copied to clipboard, alternatively write your enquiry on the form!'
+                });
+                scrollToEmail();
+              }}
+            >
+              <p className="m-0">→Email</p>
             </TextDisperse>
-          </Link>
+
+            <Link href={'https://github.com/bettinasosa'}>
+              <TextDisperse setBackground={setBackground}>
+                <p>→Github</p>
+              </TextDisperse>
+            </Link>
+          </div>
           <div
             ref={background}
             className={clsx(

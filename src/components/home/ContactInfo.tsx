@@ -113,7 +113,7 @@ export default function ContactInfo() {
             </Magnetic>
             <Magnetic>
               <Link
-                href="https://github.com/bettinasosa"
+                href="https://www.linkedin.com/in/bettina-sosa/"
                 className={animatedUnderlineStyle}
               >
                 Linkedin
