@@ -1,5 +1,11 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Magnetic from '@/components/animations/magnetic';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface ContributionDay {
   date: string;
@@ -14,10 +20,11 @@ interface GitHubContributionsGraphProps {
 
 export default function GitHubContributionsGraph({
   contributions,
-  totalContributions,
-  restrictedContributions
+  totalContributions
 }: GitHubContributionsGraphProps) {
-  const weeks = 53; // Show last year of contributions
+  const containerRef = useRef<HTMLDivElement>(null);
+  const cellsRef = useRef<HTMLDivElement[]>([]);
+  const weeks = 53;
   const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   const months = [
     'Jan',
@@ -34,12 +41,46 @@ export default function GitHubContributionsGraph({
     'Dec'
   ];
 
+  useEffect(() => {
+    const container = containerRef.current;
+    const cells = cellsRef.current;
+    if (!cells.length || !container) return;
+
+    gsap.fromTo(
+      cells,
+      { scale: 0, opacity: 0 },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 0.3,
+        ease: 'back.out(2)',
+        stagger: {
+          each: 0.002,
+          from: 'start'
+        },
+        scrollTrigger: {
+          trigger: container,
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
+        }
+      }
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => {
+        if (trigger.vars.trigger === container) {
+          trigger.kill();
+        }
+      });
+    };
+  }, [contributions]);
+
   const getColor = (count: number) => {
-    if (count === 0) return 'bg-gray-100';
-    if (count < 5) return 'bg-blue-400';
-    if (count < 10) return 'bg-blue-600';
-    if (count < 15) return 'bg-blue-800';
-    return 'bg-blue-900';
+    if (count === 0) return 'bg-foreground/10';
+    if (count < 5) return 'bg-green-500/50';
+    if (count < 10) return 'bg-green-600/60';
+    if (count < 15) return 'bg-green-700/70';
+    return 'bg-green-800';
   };
 
   const getTooltip = (date: string, count: number) => {
@@ -49,7 +90,6 @@ export default function GitHubContributionsGraph({
     } ${d.getDate()}, ${d.getFullYear()}`;
   };
 
-  // Generate an array of dates for the last year
   const generateDates = () => {
     const dates = [];
     const today = new Date();
@@ -65,36 +105,52 @@ export default function GitHubContributionsGraph({
   const allDates = generateDates();
 
   return (
-    <div className="rounded-xl bg-white/40  p-4 backdrop-blur-sm">
-      <h3 className="mb-2 text-xl font-bold text-foreground">
-        GitHub Contributions
-      </h3>
-      <p className="mb-4 text-sm text-gray-400">
-        Total Contributions: {totalContributions}
-      </p>
+    <div
+      ref={containerRef}
+      className="rounded-2xl border border-foreground/5 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-md md:p-8"
+    >
+      <div className="mb-6 flex items-center justify-between">
+        <div>
+          <h3 className="text-xl font-bold text-foreground md:text-2xl">
+            GitHub Activity
+          </h3>
+          <p className="mt-1 text-sm text-foreground/60">
+            {totalContributions.toLocaleString()} contributions in the last year
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="h-3 w-3 animate-pulse rounded-full bg-green-600" />
+          <span className="text-sm text-foreground/60">Active</span>
+        </div>
+      </div>
 
-      <div className="mb-2 flex">
-        {months.map((month, i) => (
-          <div key={month} className="flex-1 text-center text-xs text-gray-400">
+      {/* Month labels */}
+      <div className="mb-2 hidden md:flex">
+        <div className="w-8" />
+        {months.map((month) => (
+          <div
+            key={month}
+            className="flex-1 text-center text-xs text-foreground/40"
+          >
             {month}
           </div>
         ))}
       </div>
 
       <div className="flex">
-        <div className="pr-2">
+        <div className="hidden pr-2 md:block">
           {days.map((day, i) => (
             <div
               key={day}
-              className="mb-[2px] h-[13px] text-xs leading-3 text-gray-400"
+              className="mb-[2px] h-[13px] text-xs leading-3 text-foreground/40"
             >
               {i % 2 === 0 ? day : ''}
             </div>
           ))}
         </div>
 
-        <div className="grid-cols-53 grid flex-1 gap-[2px]">
-          {allDates.map((date) => {
+        <div className="grid flex-1 grid-cols-[repeat(53,1fr)] gap-[2px]">
+          {allDates.map((date, i) => {
             const contribution = contributions.find((c) => c.date === date) || {
               date,
               count: 0
@@ -102,10 +158,12 @@ export default function GitHubContributionsGraph({
             return (
               <Magnetic key={date}>
                 <div
-                  key={date}
-                  className={`h-[10px] w-[10px] ${getColor(
+                  ref={(el) => {
+                    if (el) cellsRef.current[i] = el;
+                  }}
+                  className={`aspect-square w-full rounded-sm ${getColor(
                     contribution.count
-                  )} rounded-sm`}
+                  )} cursor-pointer transition-transform duration-200 hover:scale-150`}
                   title={getTooltip(date, contribution.count)}
                 />
               </Magnetic>
@@ -113,17 +171,17 @@ export default function GitHubContributionsGraph({
           })}
         </div>
       </div>
-      <div className="mt-2 flex items-center justify-end">
-        <span className="mr-2 text-xs text-gray-400">Less</span>
+
+      {/* Legend */}
+      <div className="mt-4 flex items-center justify-end gap-2">
+        <span className="text-xs text-foreground/40">Less</span>
         {[0, 4, 9, 14, 20].map((level) => (
           <div
             key={level}
-            className={`h-[10px] w-[10px] ${getColor(
-              level
-            )} mr-[2px] rounded-sm`}
+            className={`h-3 w-3 rounded-sm ${getColor(level)}`}
           />
         ))}
-        <span className="ml-2 text-xs text-gray-400">More</span>
+        <span className="text-xs text-foreground/40">More</span>
       </div>
     </div>
   );
