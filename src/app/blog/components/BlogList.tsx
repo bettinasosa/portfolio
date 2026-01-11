@@ -1,7 +1,7 @@
 'use client';
 
 import { type BlogPost } from '../types';
-import { BlogPostCard } from './BlogPostCard';
+import { ProjectCard } from '@/components/ui/ProjectCard';
 import { motion } from 'framer-motion';
 
 interface BlogListProps {
@@ -42,7 +42,18 @@ export function BlogList({ posts }: BlogListProps) {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post, index) => (
-          <BlogPostCard key={post.id} post={post} index={index} />
+          <ProjectCard
+            key={post.id}
+            id={post.url}
+            title={post.title}
+            description={post.content}
+            imagePath={post.heroImage || ''}
+            link={post.url}
+            publishedAt={new Date(post.publishedAt)}
+            index={index}
+            animated
+            buttonText="Read Article"
+          />
         ))}
       </div>
     </div>
