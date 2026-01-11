@@ -82,29 +82,35 @@ export default function About() {
               <div className="flex flex-col gap-10">
                 <div className="text-primary-950/70 dark:text-primary-200/70 space-y-8">
                   <p className="text-2xl font-semibold">
-                    A software engineer and designer with a passion for
-                    innovation and cutting-edge technology.
+                    I&apos;m a design engineer turned software engineer who
+                    bridges creativity and code.
                   </p>
                   <p className="text-lg sm:text-xl">
-                    I have a strong track record of building and deploying
-                    successful products.
+                    I approach engineering through a design lens, interested in
+                    both the technical architecture and the human experience.
                   </p>
                   <p className="text-lg sm:text-xl">
-                    At{' '}
+                    <b> My superpower: </b>
+                    Taking abstract ideas and turning them into tangible,
+                    scalable products that people actually want to use. Aside
+                    from my engineer experience I speak at IRL developer events,
+                    lead workshops, and run a devRel Guild. I thrive at the
+                    intersection of technical depth, creative problem-solving,
+                    and community building.
+                  </p>
+                  <p className="text-lg sm:text-xl">
+                    I started as a founding full-stack engineer at{' '}
                     <Link
                       href="https://www.sojo.uk/"
                       className="font-semibold underline"
                     >
                       Sojo
                     </Link>
-                    , I was the founding full-stack engineer, responsible for
-                    the design, development, and deployment of the
-                    company&apos;s core platform. I built a scalable and
-                    user-friendly app that allowed users to order repairs and
-                    customisation clothing services online.
+                    ,shipping the core platform for clothing repairs and
+                    customisation, from product design through deployment.
                   </p>
                   <p className="text-lg sm:text-xl">
-                    After Sojo, I joined{' '}
+                    After that, I joined{' '}
                     <Link
                       href="https://www.catapultlabs.xyz/"
                       className="font-semibold underline"
