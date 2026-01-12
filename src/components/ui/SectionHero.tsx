@@ -2,7 +2,16 @@
 
 import { motion } from 'framer-motion';
 
-export function BlogHero() {
+interface SectionHeroProps {
+  title: string;
+  subtitle: string;
+}
+
+/**
+ * Reusable hero section with dark gradient background.
+ * Used for blog, gallery, and other section pages.
+ */
+export function SectionHero({ title, subtitle }: SectionHeroProps) {
   return (
     <motion.div
       className="relative mb-16 overflow-hidden rounded-2xl bg-zinc-900 py-20 text-center"
@@ -27,7 +36,7 @@ export function BlogHero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          Thoughts & Ideas
+          {title}
         </motion.h1>
         <motion.p
           className="mx-auto max-w-2xl text-lg text-zinc-300"
@@ -35,8 +44,7 @@ export function BlogHero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          My collected thoughts on design, development, and everything in
-          between.
+          {subtitle}
         </motion.p>
       </div>
     </motion.div>
