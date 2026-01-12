@@ -18,8 +18,8 @@ const links = [
     href: '/projects'
   },
   {
-    title: 'gallery',
-    href: '/gallery'
+    title: 'web gallery',
+    href: '/web'
   },
   {
     title: 'blog',
