@@ -4,6 +4,22 @@ import { z } from 'zod';
 const MEDIUM_USERNAME = 'bettinasosarohl';
 const TWITTER_USERNAME = 'bettysrohl';
 
+const EXTERNAL_POSTS: BlogPost[] = [
+  {
+    id: 'myosin-stablecoin-builders',
+    title: 'Why the Next Stablecoin Winners Start With Builders',
+    content:
+      "Builders who simplify real-world payments will define the next wave. Stablecoins have outgrown their roots as trading chips. In the past year they processed an estimated $46 trillion in on-chain transactions, even after filtering out bot activity the volume is roughly $9 trillion, comparable to PayPal and closing in on Visa's $16 trillion footprint.",
+    url: 'https://myosin.xyz/thinking/why-the-next-stablecoin-winners-start-with-builders',
+    publishedAt: '2025-11-04T00:00:00.000Z',
+    heroImage: '/images/blog/stablecoin.png',
+    author: {
+      name: 'Bettina Sosa',
+      handle: 'myosin'
+    }
+  }
+];
+
 async function fetchMediumPosts(): Promise<BlogPost[]> {
   try {
     const response = await fetch(
@@ -70,10 +86,12 @@ function convertTweetToBlogPost(tweet: Tweet): BlogPost {
 }
 
 export async function getBlogPosts(): Promise<BlogPost[]> {
-  const posts = await fetchMediumPosts();
+  const mediumPosts = await fetchMediumPosts();
 
-  // Combine and sort all posts
-  return posts.sort(
+  // Combine Medium posts with external posts and sort by date
+  const allPosts = [...mediumPosts, ...EXTERNAL_POSTS];
+
+  return allPosts.sort(
     (a, b) =>
       new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );

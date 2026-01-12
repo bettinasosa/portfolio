@@ -28,8 +28,6 @@ export default function RootTemplate({ children }: PropsWithChildren) {
   const darkModeScreens = ['contact', 'm31', 'astra'];
   if (darkModeScreens.includes(pathname!)) {
     bgColour = 'bg-foreground';
-  } else if (pathname === 'about') {
-    bgColour = 'bg-yellow-200';
   }
 
   useEffect(() => {
