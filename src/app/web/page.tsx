@@ -85,10 +85,10 @@ export default function Work() {
   }, []);
 
   return (
-    <Layout title="web gallery">
+    <Layout title="Web Gallery">
       <div className="container mx-auto min-h-screen px-4 py-16">
         <SectionHero
-          title="Web Gallery"
+          title="Design & Development"
           subtitle="A collection of my design work and web projects featuring various styles and approaches."
         />
 
