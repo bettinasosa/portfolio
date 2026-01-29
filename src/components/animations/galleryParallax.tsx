@@ -20,11 +20,11 @@ const images = [
 ];
 
 export default function ArtParallax() {
-  const gallery = useRef(null);
+  const web = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
   const { scrollYProgress } = useScroll({
-    target: gallery,
+    target: web,
     offset: ['start end', 'end start']
   });
 

@@ -9,10 +9,12 @@ import Layout from '@/components/layout';
 import AnimatedSection from '@/components/about/AnimatedSection';
 import TextReveal from '@/components/about/TextReveal';
 import JourneyTimeline from '@/components/about/JourneyTimeline';
-import SkillsCloud from '@/components/about/SkillsCloud';
-import GitHubContributionsGraph from '@/app/about/githubActivity';
 import SpotifyPlaylists from '@/app/about/spotifyPlaylists';
 import ContrastCursor from '@/components/animations/cursor/contrastCursor';
+import RoundedButton from '@/components/animations/roundedButton';
+import OpenSourceShowcase from '@/components/about/OpenSourceShowcase';
+import CompactGitHubWidget from '@/components/about/Widgets/CompactGitHubWidget';
+import IMessageWidget from '@/components/about/Widgets/IMessageWidget';
 
 export default function About() {
   const {
@@ -29,14 +31,14 @@ export default function About() {
 
   return (
     <div className="relative overflow-hidden">
-      <Layout title="About Me" center>
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <Layout title="About Me">
+        <div>
           <section className="grid gap-8 py-12 md:gap-12 lg:grid-cols-5 lg:gap-16">
             <AnimatedSection
               animation="fade-right"
               className="lg:sticky lg:top-32 lg:col-span-2 lg:self-start"
             >
-              <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl">
+              <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl">
                 <Image
                   src="/images/profile2.jpg"
                   alt="Bettina"
@@ -74,112 +76,98 @@ export default function About() {
               <AnimatedSection animation="fade-up" delay={0.2}>
                 <div className="space-y-4">
                   <h3 className="text-lg font-semibold text-foreground">
-                    Beyond Code
+                    Outside the IDE
                   </h3>
                   <p className="leading-relaxed text-foreground/70">
-                    I speak at IRL developer events, I write technical posts,
-                    run hands-on workshops, and run a devRel Guild. I thrive at
-                    the intersection of technical depth, creative
-                    problem-solving, and community building.
+                    Born in London. Raised in Barcelona. Venezuelan at heart. I
+                    speak at IRL developer events, I write
+                    <Link href="/blog" className="text-primary">
+                      {' '}
+                      technical posts
+                    </Link>
+                    , run hands-on workshops, and run a devRel Guild. I thrive
+                    at the intersection of technical depth, creative
+                    problem-solving, and community building. I am also a digital
+                    nomad, traveling the world and learning from different
+                    cultures and people.
                   </p>
                 </div>
               </AnimatedSection>
             </div>
           </section>
-
-          {/* Education Section */}
+          {/* Journey Section - split layout with widgets, inside card */}
           <section className="py-16">
             <AnimatedSection animation="fade-up">
-              <div className="rounded-2xl border border-foreground/5 bg-white p-6 shadow-sm sm:p-8">
-                <h2 className="mb-4 text-xl font-bold text-foreground sm:text-2xl">
-                  Education & Recognition
+              <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-baseline md:justify-between">
+                <h2 className="text-xl font-bold text-foreground sm:text-2xl">
+                  Where I&apos;ve Been
                 </h2>
-                <p className="mb-6 text-foreground/70">
-                  At{' '}
-                  <span className="font-semibold text-foreground">
-                    Imperial College London
-                  </span>
-                  , I studied design engineering, a unique program bridging
-                  creative thinking, design, and engineering, teaching us the
-                  full process of building a technical product from concept to
-                  launch.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <Link
-                    href="/projects/m31"
-                    className="group inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-2 text-sm text-amber-600 transition-all hover:bg-amber-500/20"
-                  >
-                    🏆 Andromeda — Creative Conscience Gold
-                    <span className="transition-transform group-hover:translate-x-1">
-                      →
-                    </span>
-                  </Link>
-                  <Link
-                    href="/projects/axo"
-                    className="group inline-flex items-center gap-2 rounded-full border border-pink-500/30 bg-pink-500/10 px-4 py-2 text-sm text-pink-600 transition-all hover:bg-pink-500/20"
-                  >
-                    🏛️ AxoWear — Design Museum London
-                    <span className="transition-transform group-hover:translate-x-1">
-                      →
-                    </span>
-                  </Link>
+              </div>
+
+              <div className="grid gap-4 lg:grid-cols-2">
+                {/* Timeline - takes 2/3 width */}
+                <div className="min-w-0 lg:col-span-1">
+                  <div className="rounded-2xl border border-foreground/5 bg-white p-6 shadow-sm sm:p-8">
+                    <JourneyTimeline />
+                  </div>
+                  {/* Education Section */}
+                  <section className="py-16">
+                    <AnimatedSection animation="fade-up">
+                      <div className="rounded-2xl border border-foreground/5 bg-white p-6 shadow-sm sm:p-8">
+                        <h2 className="mb-4 text-xl font-bold text-foreground sm:text-2xl">
+                          Education & Recognition
+                        </h2>
+                        <p className="mb-6 text-foreground/70">
+                          At{' '}
+                          <span className="font-semibold text-foreground">
+                            Imperial College London
+                          </span>
+                          , I studied design engineering, a unique program
+                          bridging creative thinking, design, and engineering,
+                          teaching us the full process of building a technical
+                          product from concept to launch.
+                        </p>
+                        <div className="flex flex-wrap gap-3">
+                          <Link href="/projects/m31">
+                            <RoundedButton>
+                              Andromeda — Creative Conscience Gold
+                            </RoundedButton>
+                          </Link>
+                          <Link href="/projects/axo">
+                            <RoundedButton>
+                              AxoWear — Design Museum London
+                            </RoundedButton>
+                          </Link>
+                        </div>
+                      </div>
+                    </AnimatedSection>
+                  </section>
+                </div>
+
+                {/* Widgets sidebar - takes 1/3 width */}
+                <div className="min-w-0 lg:col-span-1">
+                  <div className="space-y-4 lg:sticky lg:top-32">
+                    <AnimatedSection animation="fade-up">
+                      <CompactGitHubWidget />
+                    </AnimatedSection>
+                    <AnimatedSection animation="fade-up">
+                      <OpenSourceShowcase />
+                    </AnimatedSection>
+                    <AnimatedSection animation="fade-up">
+                      <IMessageWidget />
+                    </AnimatedSection>
+                    {!spotifyLoading &&
+                      !spotifyError &&
+                      playlists.length > 0 && (
+                        <AnimatedSection animation="fade-up">
+                          <SpotifyPlaylists playlists={playlists} />
+                        </AnimatedSection>
+                      )}
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
           </section>
-
-          {/* Journey Section */}
-          <section className="py-16">
-            <AnimatedSection animation="fade-up">
-              <div className="mb-12 text-center">
-                <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
-                  Where I&apos;ve Been
-                </h2>
-              </div>
-            </AnimatedSection>
-            <JourneyTimeline />
-          </section>
-
-          {/* Skills Section */}
-          <section className="py-16">
-            <AnimatedSection animation="fade-up">
-              <div className="mb-8 text-center">
-                <h2 className="text-2xl font-bold text-foreground sm:text-3xl">
-                  Tools & Technologies
-                </h2>
-              </div>
-            </AnimatedSection>
-            <SkillsCloud />
-          </section>
-
-          {/* GitHub Activity Section */}
-          {!githubLoading && !githubError && githubData && (
-            <section className="py-16">
-              <AnimatedSection animation="fade-up">
-                <Link
-                  href="https://github.com/bettinasosa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block transition-transform hover:scale-[1.01]"
-                >
-                  <GitHubContributionsGraph
-                    contributions={githubData.contributions}
-                    totalContributions={githubData.totalContributions}
-                    restrictedContributions={githubData.restrictedContributions}
-                  />
-                </Link>
-              </AnimatedSection>
-            </section>
-          )}
-
-          {/* Spotify Section */}
-          {!spotifyLoading && !spotifyError && playlists.length > 0 && (
-            <section className="py-16">
-              <AnimatedSection animation="fade-up">
-                <SpotifyPlaylists playlists={playlists} />
-              </AnimatedSection>
-            </section>
-          )}
         </div>
       </Layout>
 
