@@ -41,10 +41,9 @@ const questionsByStep: Record<
   Exclude<ConversationStep, 'intro' | 'done'>,
   string
 > = {
-  name: "what's your name?",
-  phone: "ahhh, i see 👀 what's your phone number? 📱",
-  email: 'good look 🙏what about your email? 📧',
-  extra: 'thanks 🙏anything else you wanna tell me?'
+  contact:
+    "ahhh, i see 👀 what's the best way to reach you? (email, Telegram, X, etc.)",
+  extra: 'thanks 🙏 anything else you wanna tell me?'
 };
 
 let messageIdCounter = 1;
@@ -66,9 +65,7 @@ export default function IMessageWidget() {
 
   const [formData, setFormData] = useState({
     topic: '',
-    name: '',
-    phone: '',
-    email: '',
+    contact: '',
     extra: ''
   });
 
@@ -95,24 +92,12 @@ export default function IMessageWidget() {
 
     if (step === 'intro') {
       setFormData((prev) => ({ ...prev, topic: text }));
-      askNextQuestion('name');
+      askNextQuestion('contact');
       return;
     }
 
-    if (step === 'name') {
-      setFormData((prev) => ({ ...prev, name: text }));
-      askNextQuestion('phone');
-      return;
-    }
-
-    if (step === 'phone') {
-      setFormData((prev) => ({ ...prev, phone: text }));
-      askNextQuestion('email');
-      return;
-    }
-
-    if (step === 'email') {
-      setFormData((prev) => ({ ...prev, email: text }));
+    if (step === 'contact') {
+      setFormData((prev) => ({ ...prev, contact: text }));
       askNextQuestion('extra');
       return;
     }
@@ -144,7 +129,7 @@ export default function IMessageWidget() {
 
     const timeout = setTimeout(() => {
       const summaryMessage =
-        "word ok, got it 🙌i'll hit you back as soon as i can 💬talk soon ✨";
+        "ok, got it 🙌 i'll hit you back as soon as i can 💬 talk soon ✨";
 
       setMessages((prev) => [
         ...prev,
@@ -159,9 +144,7 @@ export default function IMessageWidget() {
       const bodyLines = [
         `What they wrote first: ${formData.topic}`,
         '',
-        `Name: ${formData.name || '—'}`,
-        `Phone: ${formData.phone || '—'}`,
-        `Email: ${formData.email || '—'}`,
+        `How to reach them: ${formData.contact || '—'}`,
         '',
         `Extra details:`,
         formData.extra || '—'
@@ -183,10 +166,8 @@ export default function IMessageWidget() {
   };
 
   const currentPlaceholder = useMemo(() => {
-    if (step === 'intro') return 'Type your message...';
-    if (step === 'name') return 'Your name';
-    if (step === 'phone') return 'Phone or Telegram handle';
-    if (step === 'email') return 'Your email';
+    if (step === 'intro') return 'Type what you want to chat about...';
+    if (step === 'contact') return 'Best way to reach you';
     if (step === 'extra') return 'Anything else you want to share';
     return 'Conversation complete';
   }, [step]);
@@ -262,7 +243,7 @@ export default function IMessageWidget() {
                         alt="Betts avatar"
                         width={40}
                         height={40}
-                        className="h-full w-full rounded-full object-cover"
+                        className="w-full rounded-full object-cover"
                       />
                     </div>
                     <div className="space-y-1">
