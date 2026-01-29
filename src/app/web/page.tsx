@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Layout from '@/components/layout';
 import { ProjectCard } from '@/components/ui/ProjectCard';
 import { SectionHero } from '@/components/ui/SectionHero';
@@ -54,36 +54,6 @@ const workItems = [
 ];
 
 export default function Work() {
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    cardRefs.current = cardRefs.current.slice(0, workItems.length);
-
-    const handleParallax = () => {
-      cardRefs.current.forEach((card) => {
-        if (!card) return;
-
-        const rect = card.getBoundingClientRect();
-        const centerY = rect.top + rect.height / 2;
-        const viewportHeight = window.innerHeight;
-        const distance = centerY - viewportHeight / 2;
-        const parallaxValue = distance * -0.05;
-
-        const imageEl = card.querySelector('.parallax-image') as HTMLElement;
-        if (imageEl) {
-          imageEl.style.transform = `translateY(${parallaxValue}px) scale(1.1)`;
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleParallax);
-    handleParallax();
-
-    return () => {
-      window.removeEventListener('scroll', handleParallax);
-    };
-  }, []);
-
   return (
     <Layout title="Web Gallery">
       <div className="container mx-auto min-h-screen px-4 py-16">
@@ -96,12 +66,9 @@ export default function Work() {
           {workItems.map((item, index) => (
             <ProjectCard
               key={item.id}
-              ref={(el) => {
-                cardRefs.current[index] = el;
-              }}
               {...item}
               index={index}
-              imageClassName="parallax-image"
+              animated
             />
           ))}
         </div>
