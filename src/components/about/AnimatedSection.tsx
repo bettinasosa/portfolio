@@ -9,9 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 interface AnimatedSectionProps {
   children: ReactNode;
   className?: string;
-  animation?: 'fade-up' | 'fade-left' | 'fade-right' | 'scale' | 'parallax';
+  animation?:
+    | 'fade-up'
+    | 'fade-left'
+    | 'fade-right'
+    | 'scale'
+    | 'parallax'
+    | 'clip-reveal'
+    | 'blur-in';
   delay?: number;
   duration?: number;
+  stagger?: number;
 }
 
 /**
@@ -23,7 +31,8 @@ export default function AnimatedSection({
   className = '',
   animation = 'fade-up',
   delay = 0,
-  duration = 1
+  duration = 1.2,
+  stagger = 0
 }: AnimatedSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -31,42 +40,65 @@ export default function AnimatedSection({
     const el = sectionRef.current;
     if (!el) return;
 
-    const animations = {
-      'fade-up': { y: 80, opacity: 0 },
-      'fade-left': { x: -80, opacity: 0 },
-      'fade-right': { x: 80, opacity: 0 },
-      scale: { scale: 0.9, opacity: 0 },
-      parallax: { y: 100, opacity: 0 }
-    };
+    const ctx = gsap.context(() => {
+      const animations: Record<string, gsap.TweenVars> = {
+        'fade-up': { y: 60, opacity: 0 },
+        'fade-left': { x: -60, opacity: 0 },
+        'fade-right': { x: 60, opacity: 0 },
+        scale: { scale: 0.92, opacity: 0 },
+        parallax: { y: 80, opacity: 0 },
+        'clip-reveal': {
+          clipPath: 'inset(100% 0 0 0)',
+          opacity: 0,
+          y: 20
+        },
+        'blur-in': {
+          filter: 'blur(10px)',
+          opacity: 0,
+          y: 30
+        }
+      };
 
-    const initial = animations[animation];
+      const toStates: Record<string, gsap.TweenVars> = {
+        'fade-up': { y: 0, opacity: 1 },
+        'fade-left': { x: 0, opacity: 1 },
+        'fade-right': { x: 0, opacity: 1 },
+        scale: { scale: 1, opacity: 1 },
+        parallax: { y: 0, opacity: 1 },
+        'clip-reveal': {
+          clipPath: 'inset(0% 0 0 0)',
+          opacity: 1,
+          y: 0
+        },
+        'blur-in': {
+          filter: 'blur(0px)',
+          opacity: 1,
+          y: 0
+        }
+      };
 
-    gsap.set(el, initial);
+      const initial = animations[animation];
+      const target = toStates[animation];
 
-    gsap.to(el, {
-      y: 0,
-      x: 0,
-      scale: 1,
-      opacity: 1,
-      duration,
-      delay,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: el,
-        start: 'top 85%',
-        end: 'top 20%',
-        toggleActions: 'play none none reverse'
-      }
-    });
+      gsap.set(el, initial);
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => {
-        if (trigger.vars.trigger === el) {
-          trigger.kill();
+      gsap.to(el, {
+        ...target,
+        duration,
+        delay,
+        ease: 'power4.out',
+        stagger: stagger > 0 ? { each: stagger } : undefined,
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 88%',
+          end: 'top 20%',
+          toggleActions: 'play none none reverse'
         }
       });
-    };
-  }, [animation, delay, duration]);
+    }, el);
+
+    return () => ctx.revert();
+  }, [animation, delay, duration, stagger]);
 
   return (
     <div ref={sectionRef} className={className}>

@@ -24,7 +24,7 @@ export default function TextReveal({
   text,
   className = '',
   as: Tag = 'p',
-  stagger = 0.02,
+  stagger = 0.04,
   scrub = true,
   highlightWords = []
 }: TextRevealProps) {
@@ -32,58 +32,67 @@ export default function TextReveal({
   const wordsRef = useRef<HTMLSpanElement[]>([]);
 
   useEffect(() => {
+    const container = containerRef.current;
     const words = wordsRef.current;
-    if (!words.length) return;
+    if (!words.length || !container) return;
 
-    if (scrub) {
-      gsap.fromTo(
-        words,
-        { opacity: 0.15, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          ease: 'none',
-          stagger,
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: 'top 80%',
-            end: 'top 30%',
-            scrub: 0.5
+    const ctx = gsap.context(() => {
+      if (scrub) {
+        gsap.fromTo(
+          words,
+          {
+            opacity: 0.1,
+            y: 24,
+            rotateX: -40,
+            filter: 'blur(4px)'
+          },
+          {
+            opacity: 1,
+            y: 0,
+            rotateX: 0,
+            filter: 'blur(0px)',
+            ease: 'none',
+            stagger,
+            scrollTrigger: {
+              trigger: container,
+              start: 'top 80%',
+              end: 'top 30%',
+              scrub: 0.8
+            }
           }
-        }
-      );
-    } else {
-      gsap.fromTo(
-        words,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: 'power3.out',
-          stagger,
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: 'top 85%',
-            toggleActions: 'play none none reverse'
+        );
+      } else {
+        gsap.fromTo(
+          words,
+          {
+            opacity: 0,
+            y: 32,
+            rotateX: -20
+          },
+          {
+            opacity: 1,
+            y: 0,
+            rotateX: 0,
+            duration: 1,
+            ease: 'power4.out',
+            stagger,
+            scrollTrigger: {
+              trigger: container,
+              start: 'top 88%',
+              toggleActions: 'play none none reverse'
+            }
           }
-        }
-      );
-    }
+        );
+      }
+    }, container);
 
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => {
-        if (trigger.vars.trigger === containerRef.current) {
-          trigger.kill();
-        }
-      });
-    };
+    return () => ctx.revert();
   }, [stagger, scrub]);
 
   const words = text.split(' ');
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} style={{ perspective: '1000px' }}>
       <Tag className={clsx('flex flex-wrap', className)}>
         {words.map((word, i) => (
           <span
@@ -93,9 +102,11 @@ export default function TextReveal({
             }}
             className={clsx(
               'mr-[0.25em] inline-block',
-              highlightWords.includes(word.toLowerCase()) &&
-                'font-bold text-primary'
+              highlightWords.includes(word.toLowerCase().replace(/[.,!?]$/, ''))
+                ? 'font-bold text-primary'
+                : ''
             )}
+            style={{ transformStyle: 'preserve-3d' }}
           >
             {word}
           </span>
